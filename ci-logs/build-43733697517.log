@@ -1,0 +1,14 @@
+shared:INFO: (Emscripten: Running sanity checks)
+upstream/c/src/st_kernels.c:211:13: warning: unused function 'store_tile' [-Wunused-function]
+  211 | static void store_tile(float acc[MR][NR], float* C, int ldc, int mr, int nr, int mode) {
+      |             ^~~~~~~~~~
+1 warning generated.
+studio/src/wasm/scl_bridge.c:305:10: error: use of undeclared identifier 'dlg'; did you mean 'dlgs'?
+  305 |     free(dlg);
+      |          ^~~
+      |          dlgs
+studio/src/wasm/scl_bridge.c:300:8: note: 'dlgs' declared here
+  300 |   int *dlgs = 0, n = 0;
+      |        ^
+1 error generated.
+emcc: error: '/home/runner/work/_temp/a62265c1-aa79-495d-ab1f-a836891c0c43/emsdk-main/upstream/bin/clang -target wasm32-unknown-emscripten -fignore-exceptions -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr --sysroot=/home/runner/work/_temp/a62265c1-aa79-495d-ab1f-a836891c0c43/emsdk-main/upstream/emscripten/cache/sysroot -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/fakesdl -Xclang -iwithsysroot/include/compat -O2 -std=c11 -ffp-contract=off -fno-fast-math -Wall -Iupstream/c/include -Iupstream/c/src studio/src/wasm/scl_bridge.c -c -o /tmp/emscripten_temp_sr_q1lzd/scl_bridge_24.o' failed (returned 1)
