@@ -27,7 +27,7 @@ const char *scl_version(void) {
   // steertts_version() is upstream's own version string; suffix ours.
   static char buf[256];
   const char *v = steertts_version();
-  snprintf(buf, sizeof buf, "scl-bridge-0.3.0+libsteertts-%s single-thread scalar MEMFS", v ? v : "?");
+  snprintf(buf, sizeof buf, "scl-bridge-0.3.1+libsteertts-%s single-thread scalar MEMFS", v ? v : "?");
   return buf;
 }
 
@@ -95,6 +95,7 @@ EMSCRIPTEN_KEEPALIVE
 void scl_free_wav(float *wav) { steertts_free(wav); }
 
 // ---- 0.3.0: prompt mapping, request resolve, director, speaker vector ----
+// ---- 0.3.1: director plan has_speaker defaults to 0 (upstream parity; was dialogue)
 
 // Free a NUL-terminated JSON string returned by scl_map_prompt /
 // scl_resolve_json / scl_director_plan_json (allocated by libsteertts).
@@ -316,7 +317,9 @@ int scl_director_plan_json(const char *sentences_json, const char *genre, float 
   for (int i = 0; i < n; i++) {
     ss[i].text = texts[i];
     ss[i].dialogue = dlgs[i];
-    ss[i].has_speaker = dlgs[i];
+    // Upstream default (c/python/steertts_c.py _sentence, edge/steertts_edge/director.py
+    // _sentence): has_speaker=0 unless explicitly passed. Never derive it from dialogue.
+    ss[i].has_speaker = 0;
     ss[i].para_len = n;
     ss[i].para_index = i;
   }
