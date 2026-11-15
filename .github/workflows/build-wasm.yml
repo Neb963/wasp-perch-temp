@@ -24,7 +24,7 @@ jobs:
           mkdir -p dist
           set +e
           emcc -O2 -std=c11 -ffp-contract=off -fno-fast-math -Wall \
-            -Iupstream/c/include \
+            -Iupstream/c/include -Iupstream/c/src \
             upstream/c/src/*.c upstream/c/src/front/*.c \
             studio/src/wasm/scl_bridge.c \
             -o dist/steertts-wasm.js \
