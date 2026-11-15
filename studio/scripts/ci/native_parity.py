@@ -82,6 +82,10 @@ def main():
     sys.path.insert(0, f"{args.code}/edge")
     import torch
     torch.set_num_threads(max(1, torch.get_num_threads()))
+    try:
+        torch.use_deterministic_algorithms(True, warn_only=True)
+    except Exception:  # noqa: BLE001 - older torch without warn_only
+        pass
     print("torch:", torch.__version__, "threads:", torch.get_num_threads(),
           flush=True)
 
