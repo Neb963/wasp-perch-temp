@@ -37,7 +37,7 @@ jobs:
           pip install --index-url https://download.pytorch.org/whl/cpu torch torchaudio
           pip install safetensors numpy huggingface_hub
           pip install --no-deps ./upstream ./upstream/edge
-          pip install --no-deps vocos==0.1.0 g2p_en==2.1.0 nltk==3.10.3 num2words==0.5.14 soundfile==0.14.0 soxr==1.1.0 transformers==5.19.0 regex inflect distance cffi tokenizers filelock joblib defusedxml encodec einops
+          pip install --no-deps vocos==0.1.0 g2p_en==2.1.0 nltk==3.10.3 num2words==0.5.14 soundfile==0.14.0 soxr==1.1.0 transformers==5.19.0 regex inflect distance cffi tokenizers filelock joblib defusedxml encodec einops scipy requests
           python -c "import nltk; nltk.download('cmudict', quiet=True)"
           python -c "import torch, torchaudio, safetensors, numpy, huggingface_hub, steertts, steertts_edge, transformers, vocos, g2p_en, soundfile; print('imports ok', torch.__version__)"
       - name: Assemble full dir from ci-assets (exact shipped set)
