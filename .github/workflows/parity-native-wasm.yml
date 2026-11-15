@@ -37,9 +37,9 @@ jobs:
           pip install --index-url https://download.pytorch.org/whl/cpu torch torchaudio
           pip install safetensors numpy huggingface_hub
           pip install --no-deps ./upstream ./upstream/edge
-          pip install --no-deps vocos==0.1.0 g2p_en==2.1.0 nltk==3.10.3 num2words==0.5.14 soundfile==0.14.0 soxr==1.1.0 transformers==5.19.0
+          pip install --no-deps vocos==0.1.0 g2p_en==2.1.0 nltk==3.10.3 num2words==0.5.14 soundfile==0.14.0 soxr==1.1.0 transformers==5.19.0 regex inflect distance cffi tokenizers filelock joblib
           python -c "import nltk; nltk.download('cmudict', quiet=True)"
-          python -c "import torch, torchaudio, safetensors, numpy, huggingface_hub, steertts, steertts_edge, transformers; print('imports ok', torch.__version__)"
+          python -c "import torch, torchaudio, safetensors, numpy, huggingface_hub, steertts, steertts_edge, transformers, vocos, g2p_en, soundfile; print('imports ok', torch.__version__)"
       - name: Fetch Full weights from ungated mirror + assemble dirs
         run: |
           MIRROR_SHA=$(python -c "from huggingface_hub import HfApi; print(HfApi().model_info('ml-resources/steer-tts').sha)")
