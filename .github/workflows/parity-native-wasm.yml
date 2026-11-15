@@ -40,36 +40,37 @@ jobs:
           pip install --no-deps vocos==0.1.0 g2p_en==2.1.0 nltk==3.10.3 num2words==0.5.14 soundfile==0.14.0 soxr==1.1.0 transformers==5.19.0 regex inflect distance cffi tokenizers filelock joblib
           python -c "import nltk; nltk.download('cmudict', quiet=True)"
           python -c "import torch, torchaudio, safetensors, numpy, huggingface_hub, steertts, steertts_edge, transformers, vocos, g2p_en, soundfile; print('imports ok', torch.__version__)"
-      - name: Fetch Full weights from ungated mirror + assemble dirs
+      - name: Assemble full dir from ci-assets (exact shipped set)
         run: |
+          echo "ci-assets revision: $(cd ci-assets && git rev-parse --short HEAD)" | tee -a "$GITHUB_STEP_SUMMARY"
+          cp -r ci-assets/full full-asm
+          ls full-asm full-asm/int8
+      - name: Mirror drift check (non-blocking, informational)
+        run: |
+          pip install -q huggingface_hub
           MIRROR_SHA=$(python -c "from huggingface_hub import HfApi; print(HfApi().model_info('ml-resources/steer-tts').sha)")
           echo "MIRROR_SHA=$MIRROR_SHA" >> "$GITHUB_ENV"
           echo "mirror revision: $MIRROR_SHA"
-          python - "$MIRROR_SHA" <<'EOF'
-          import shutil, sys
-          from pathlib import Path
-          from huggingface_hub import snapshot_download
-          sha = sys.argv[1]
-          d = Path(snapshot_download("ml-resources/steer-tts", revision=sha,
-            allow_patterns=["config.json", "voices.json", "control_stats.json",
-              "int8/model.safetensors", "int8/flow.safetensors",
-              "int8/prompt_adapter.safetensors", "int8/speaker_vectors.safetensors",
-              "int8/pflow.safetensors"]))
-          asm = Path("full-asm"); shutil.rmtree(asm, ignore_errors=True)
-          shutil.copytree(d, asm)
-          for src in Path("ci-assets/full-private").rglob("*"):
-            if src.is_file():
-              dst = asm / src.relative_to("ci-assets/full-private")
-              dst.parent.mkdir(parents=True, exist_ok=True)
-              shutil.copy2(src, dst)
-          print("assembled:", sorted(str(p.relative_to(asm)) for p in asm.rglob("*") if p.is_file()))
-          EOF
-          ls full-asm full-asm/int8 full-asm/native/int8
+          python - <<'EOF'
+          import hashlib, json
+          from huggingface_hub import HfApi, hf_hub_download
+          sha = HfApi().model_info("ml-resources/steer-tts").sha
+          man = json.load(open("ci-assets/asset-manifest.json"))
+          want = None
+          for e in (man if isinstance(man, list) else man.get("files", [])):
+            if e.get("path", "").endswith("int8/model.safetensors") or e.get("name", "") == "int8/model.safetensors":
+              want = e.get("sha256") or e.get("hash")
+          p = hf_hub_download("ml-resources/steer-tts", "int8/model.safetensors", revision=sha)
+          h = hashlib.sha256(open(p, "rb").read()).hexdigest()
+          print("mirror int8/model.safetensors sha256:", h)
+          print("bundled manifest sha256:             ", want)
+          print("MATCH" if want and h.startswith(want) or want == h else "DRIFT: mirror differs from shipped set (known: mirror lacks tensor encoder.layers.0.n_seq.proj.weight)")
+          EOF full-asm/native/int8
       - name: Native parity run (torch CPU)
         run: |
           python studio/scripts/ci/native_parity.py --code upstream \
             --edge-dir ci-assets/edge --full-dir full-asm --out native \
-            --mirror-sha "$MIRROR_SHA"
+            --mirror-sha "ci-assets@$(cd ci-assets && git rev-parse --short HEAD)"
       - name: WASM-node parity run (same C engine)
         run: node studio/scripts/ci/wasm_node_parity.mjs dist ci-assets/edge full-asm wasmnode
       - name: Compare (tolerances recorded in compare_parity.py)
@@ -91,7 +92,7 @@ jobs:
           import json, os
           r = json.load(open('parity_report.json'))
           print('## parity verdict: ' + r['verdict'])
-          print('mirror: ' + os.environ.get('MIRROR_SHA', '?'))
+          print('weights: ' + os.environ.get('MIRROR_SHA', '?'))
           try:
               w = json.load(open('wasmnode/wasm_parity.json'))
               print('wasm bridge: ' + w.get('bridge', '?'))
