@@ -1,0 +1,17 @@
+shared:INFO: (Emscripten: Running sanity checks)
+upstream/c/src/st_kernels.c:211:13: warning: unused function 'store_tile' [-Wunused-function]
+  211 | static void store_tile(float acc[MR][NR], float* C, int ldc, int mr, int nr, int mode) {
+      |             ^~~~~~~~~~
+1 warning generated.
+studio/src/wasm/scl_bridge.c:34:3: error: call to undeclared library function 'snprintf' with type 'int (char *restrict, unsigned long, const char *restrict, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   34 |   snprintf(buf, sizeof buf, "scl-bridge-0.1.0+libsteertts-%s single-thread scalar MEMFS", v ? v : "?");
+      |   ^
+studio/src/wasm/scl_bridge.c:34:3: note: include the header <stdio.h> or explicitly provide a declaration for 'snprintf'
+studio/src/wasm/scl_bridge.c:48:41: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'const steertts_config *' [-Wint-conversion]
+   48 |   g_eng = steertts_create_ex(model_dir, 1, err, err_len);
+      |                                         ^
+upstream/c/include/steertts.h:81:96: note: passing argument to parameter 'c' here
+   81 | STEERTTS_API steertts_engine* steertts_create_ex(const char* model_dir, const steertts_config* c, char* err,
+      |                                                                                                ^
+2 errors generated.
+emcc: error: '/home/runner/work/_temp/677a140c-8128-4129-98a7-ff51a0895a9e/emsdk-main/upstream/bin/clang -target wasm32-unknown-emscripten -fignore-exceptions -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr --sysroot=/home/runner/work/_temp/677a140c-8128-4129-98a7-ff51a0895a9e/emsdk-main/upstream/emscripten/cache/sysroot -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/fakesdl -Xclang -iwithsysroot/include/compat -O2 -std=c11 -ffp-contract=off -fno-fast-math -Wall -Iupstream/c/include -Iupstream/c/src studio/src/wasm/scl_bridge.c -c -o /tmp/emscripten_temp_een4t6jo/scl_bridge_24.o' failed (returned 1)
