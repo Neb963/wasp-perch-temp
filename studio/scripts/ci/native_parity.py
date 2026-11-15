@@ -118,7 +118,13 @@ def main():
     run_renders(full, "full", {"flow": False}, "flow-off")
     run_renders(edge, "edge", {}, "default")
 
-    # resolve() on the same canonical requests the studio sends
+    # resolve() on the same canonical requests the studio sends.
+    # NOTE: the python EdgeTTS has no resolve() (normalization lives in
+    # the C engine, exercised identically by browser + wasm-node); record
+    # that honestly and let compare_parity.py check the C-normalized form.
+    edge_req = {"text": SCRIPTS[0], "voice": "voice_1688",
+                "pace": 1, "guidance": 1, "level": "auto",
+                "default_controls": True}
     rec["resolve"] = {}
     for key, req in {
         "full_flow-on": {"text": SCRIPTS[0], "voice": "voice_1688",
@@ -128,13 +134,18 @@ def main():
                           "pace": 1, "guidance": 1, "level": "auto",
                           "default_controls": True, "seed": 0,
                           "flow": False},
-        "edge": {"text": SCRIPTS[0], "voice": "voice_1688",
-                 "pace": 1, "guidance": 1, "level": "auto",
-                 "default_controls": True},
     }.items():
-        tts = full if key.startswith("full") else edge
-        rec["resolve"][key] = json.loads(json.dumps(tts.resolve(dict(req)),
-                                                    default=str))
+        rec["resolve"][key] = json.loads(json.dumps(
+            full.resolve(dict(req)), default=str))
+    try:
+        resolve_fn = getattr(edge, "resolve", None)
+        if resolve_fn is None:
+            raise AttributeError("EdgeTTS has no resolve()")
+        rec["resolve"]["edge"] = json.loads(json.dumps(
+            resolve_fn(dict(edge_req)), default=str))
+    except Exception as e:  # noqa: BLE001
+        rec["resolve"]["edge"] = {"unsupported": str(e)[:200],
+                                  "request": edge_req}
 
     # MiniLM prompt mapping (Full only; Edge must fail honestly)
     try:
