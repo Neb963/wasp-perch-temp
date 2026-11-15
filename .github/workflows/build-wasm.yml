@@ -15,6 +15,7 @@ jobs:
           git fetch --depth 1 origin 5008f8e032f69266c3f37788825cfda3112eab55
           git checkout 5008f8e032f69266c3f37788825cfda3112eab55
           git rev-parse HEAD
+          patch -p1 < ../studio/src/wasm/patches/emscripten-weights.patch && echo PATCH-OK
           pwd && ls && echo "--- C sources ---" && ls c/src/ c/src/front/ | head -60
       - name: Set up Emscripten 3.1.68
         uses: mymindstorm/setup-emsdk@v14
@@ -30,7 +31,7 @@ jobs:
             -o dist/steertts-wasm.js \
             -s WASM=1 -s MODULARIZE=1 -s EXPORT_NAME=createSteerTTS \
             -s ENVIRONMENT=node,worker -s SINGLE_FILE=0 \
-            -s ALLOW_MEMORY_GROWTH=1 -s INITIAL_MEMORY=64MB -s MAXIMUM_MEMORY=1024MB \
+            -s ALLOW_MEMORY_GROWTH=1 -s INITIAL_MEMORY=64MB -s MAXIMUM_MEMORY=1024MB -s STACK_SIZE=8MB \
             -s EXPORTED_FUNCTIONS='["_scl_version","_scl_create","_scl_destroy","_scl_synthesize_json","_scl_free_wav","_scl_has","_malloc","_free"]' \
             -s EXPORTED_RUNTIME_METHODS='["FS","HEAPU8","HEAPF32","cwrap","getValue","UTF8ToString"]' \
             -s STRICT=1 -s NODEJS_CATCH_EXIT=0 > dist-build.log 2>&1
