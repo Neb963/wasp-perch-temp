@@ -1,0 +1,37 @@
+# Build-only CI: compile the C engine to WASM. No weights, no audio, no tokens, no inference.
+name: Build SteerTTS WASM (source-only)
+on: { workflow_dispatch: {} }
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with: { path: studio }
+      - name: Pin upstream source (exact SHA, no weights needed)
+        run: |
+          git init upstream && cd upstream
+          git remote add origin https://github.com/WhissleAI/steer-tts.git
+          git fetch --depth 1 origin 5008f8e032f69266c3f37788825cfda3112eab55
+          git checkout 5008f8e032f69266c3f37788825cfda3112eab55
+          git rev-parse HEAD
+      - name: Set up Emscripten 3.1.68
+        uses: mymindstorm/setup-emsdk@v14
+        with: { version: 3.1.68 }
+      - name: Compile (single-thread scalar baseline, MEMFS, no embedded assets)
+        run: |
+          emcc -O2 -std=c11 -ffp-contract=off -fno-fast-math -Wall -Werror \
+            -Iupstream/c/include \
+            upstream/c/src/*.c upstream/c/src/front/*.c \
+            studio/src/wasm/scl_bridge.c \
+            -o dist/steertts-wasm.js \
+            -s WASM=1 -s MODULARIZE=1 -s EXPORT_NAME=createSteerTTS \
+            -s ENVIRONMENT=worker -s SINGLE_FILE=0 \
+            -s ALLOW_MEMORY_GROWTH=1 -s INITIAL_MEMORY=64MB -s MAXIMUM_MEMORY=1024MB \
+            -s EXPORTED_FUNCTIONS='["_scl_version","_scl_create","_scl_destroy","_scl_synthesize_json","_scl_free_wav","_scl_has","_malloc","_free"]' \
+            -s EXPORTED_RUNTIME_METHODS='["FS","HEAPU8","HEAPF32","cwrap","getValue","UTF8ToString"]' \
+            -s ENVIRONMENT=node,worker -s STRICT=1 -s NODEJS_CATCH_EXIT=0
+          printf '{"bridge":"scl-bridge-0.1.0","upstream":"5008f8e032f69266c3f37788825cfda3112eab55","emsdk":"3.1.68","flags":"-O2 -ffp-contract=off scalar single-thread MEMFS","simd":false,"threads":false}' > dist/BUILD-MANIFEST.json
+      - name: Smoke test (instantiate + version, no model)
+        run: node studio/src/tools/wasm-build/smoke-test.mjs dist/steertts-wasm.js
+      - uses: actions/upload-artifact@v4
+        with: { name: steertts-wasm-dist, path: dist/ }
