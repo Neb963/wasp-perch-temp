@@ -302,7 +302,7 @@ int scl_director_plan_json(const char *sentences_json, const char *genre, float 
   if (n == 0) {
     if (err && err_len > 0) snprintf(err, (size_t)err_len, "no sentences to plan");
     free(texts);
-    free(dlg);
+    free(dlgs);
     return -4;
   }
   steertts_sentence *ss = (steertts_sentence *)malloc(sizeof(steertts_sentence) * (size_t)n);
