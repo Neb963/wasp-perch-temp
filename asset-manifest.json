@@ -1,0 +1,210 @@
+{
+  "edge": [
+    {
+      "path": "scratch/steer-tts-edge/config.json",
+      "bytes": 4738,
+      "sha": "c70f12a2b047831b28f3dd41242e6bb425b890bafa50a8f63787d29a9ad85569",
+      "headerNote": ""
+    },
+    {
+      "path": "scratch/steer-tts-edge/voices.json",
+      "bytes": 19720,
+      "sha": "cf143e0133edec5207f9d2e700b3ee88b501c7040919b3c002796da096360713",
+      "headerNote": ""
+    },
+    {
+      "path": "scratch/steer-tts-edge/voices.safetensors",
+      "bytes": 30544,
+      "sha": "91fdfe0e544953928daa0c9d72bb8d39738460e8b1a291ee1f7065f3ba317cc7",
+      "headerNote": "safetensors header_len=136 head={\"s\":{\"dtype\":\"F16\",\"shape\":[200,64],\"data_offsets\":[0,25600]},\"spk_mean\":{\"dtype\":\"F16\",\"shape\":[200,12],\"data_offsets\":[25600,30400]}}"
+    },
+    {
+      "path": "scratch/steer-tts-edge/acoustic.safetensors",
+      "bytes": 6645070,
+      "sha": "aa52b729d3f54e2a0309f7f892b957e0e34598916ffd0c4ed4c888a8b6096f29",
+      "headerNote": "safetensors header_len=115576 head={\"__metadata__\":{\"steertts_quant\":\"{\\\"variant\\\":\\\"v1-edge-int4qat\\\",\\\"layout\\\":{\\\"emb.weight\\\":{\\\"s\\\":\\\"int8\\\",\\\"shape\\\":[118,192]},\\\"spk_proj.weight\\\":{\\\"s\\\":\\\"fp16\\\",\\\"dt\\\":\\\"tor"
+    },
+    {
+      "path": "scratch/steer-tts-edge/vocoder.safetensors",
+      "bytes": 3862640,
+      "sha": "9df4ed83ff1003fcdd650b64b45ee66e59e999add6af90c9f58a77645f4bafe2",
+      "headerNote": "safetensors header_len=17760 head={\"__metadata__\":{\"steertts_quant\":\"{\\\"variant\\\":\\\"int4\\\",\\\"layout\\\":{\\\"backbone.embed.weight\\\":{\\\"s\\\":\\\"int8\\\",\\\"shape\\\":[384,100,7]},\\\"backbone.embed.bias\\\":{\\\"s\\\":\\\"fp16\\\",\\\"dt\\\""
+    },
+    {
+      "path": "scratch/steer-tts-edge/events.safetensors",
+      "bytes": 138532,
+      "sha": "80abfab0687f107ede74e02a9c3d4a00a9240d1475f29895c07e3a648349d94b",
+      "headerNote": "safetensors header_len=1336 head={\"__metadata__\":{\"format\":\"steertts-events-1\",\"index\":\"[{\\\"type\\\": \\\"laugh\\\", \\\"gender\\\": \\\"female\\\", \\\"f0\\\": 305.3, \\\"start\\\": 0, \\\"n\\\": 155}, {\\\"type\\\": \\\"laugh\\\", \\\"gender\\\": \\\""
+    },
+    {
+      "path": "scratch/steer-tts-edge/director.bin",
+      "bytes": 516924,
+      "sha": "54a2abfef01ff47893cb923093a16f8fe0cd95f3c32d25b7f16cb8b223b6a630",
+      "headerNote": ""
+    },
+    {
+      "path": "scratch/steer-tts-edge/native/front/unicode.bin",
+      "bytes": 10166,
+      "sha": "11ebc8a63194e71576e7cf199d81b2d12474bbdf8c62a07b31c79cd4f6a0e48b",
+      "headerNote": ""
+    },
+    {
+      "path": "scratch/steer-tts-edge/native/front/oov.bin",
+      "bytes": 27885,
+      "sha": "3165504f8c154690b2ade69e7ff26489a95cfa7449809d826c6411b83051b317",
+      "headerNote": ""
+    },
+    {
+      "path": "scratch/steer-tts-edge/native/front/lexicon.bin",
+      "bytes": 1709144,
+      "sha": "7a493737376cfc027622cc611380762ed544a11d83eaf222924b54ffbc742d6a",
+      "headerNote": ""
+    },
+    {
+      "path": "scratch/steer-tts-edge/native/front/hetero.tsv",
+      "bytes": 69007,
+      "sha": "16ee9cd00f5c9de4fbe7d561c71f338d397f40b5973fe6116ffa16b23bcbcdc9",
+      "headerNote": ""
+    },
+    {
+      "path": "scratch/steer-tts-edge/native/front/gru.bin",
+      "bytes": 741772,
+      "sha": "0cd8b8c3baf1a5000680190e8db4d1a2d3e092377182c41876b106a85a52aa49",
+      "headerNote": ""
+    },
+    {
+      "path": "scratch/steer-tts-edge/native/front/SYMBOLS.txt",
+      "bytes": 637,
+      "sha": "3f49524bdab6adf98e51c1021d754f6e4198c853b18a982bf854a3e0bd918c31",
+      "headerNote": ""
+    },
+    {
+      "path": "scratch/steer-tts-edge/LICENSE.md",
+      "bytes": 22276,
+      "sha": "1a42a1bdac1e022e7902f21121baf8c6af9a7ad857736010dd7dab289cd8f8ab",
+      "headerNote": ""
+    },
+    {
+      "path": "scratch/steer-tts-edge/NOTICE",
+      "bytes": 2791,
+      "sha": "86db77bb79a044a70b65fbb1d020714b69cacad6bc71f7076f0ae31f1f66984b",
+      "headerNote": ""
+    }
+  ],
+  "full": [
+    {
+      "path": "scratch/steer-tts/config.json",
+      "bytes": 111274,
+      "sha": "4efba6dc16081f365e419bf25941104ee14a4cb4c8d31689bbaf1bc7c0ad63f4",
+      "headerNote": ""
+    },
+    {
+      "path": "scratch/steer-tts/voices.json",
+      "bytes": 642162,
+      "sha": "304c2600516b35069f7978e5a62d91a4a64b2cce8f5e71cce9c9495bf4ac880d",
+      "headerNote": ""
+    },
+    {
+      "path": "scratch/steer-tts/control_stats.json",
+      "bytes": 637845,
+      "sha": "9ec94af0b4f164a4f835e0643f8b362351346eed15823b4fc9ecfd8cbd4d680d",
+      "headerNote": ""
+    },
+    {
+      "path": "scratch/steer-tts/request.schema.json",
+      "bytes": 10410,
+      "sha": "05ffe1ce73c787d3266f0ed96097d7ef646806bc48c27bb170cf216f35b2ffcf",
+      "headerNote": ""
+    },
+    {
+      "path": "scratch/steer-tts/int8/model.safetensors",
+      "bytes": 9848280,
+      "sha": "67d1469b0751b6ae193894ce1612c9ec91f57f9a0b2151771eabc53a8eae714c",
+      "headerNote": "safetensors header_len=113752 head={\"__metadata__\":{\"steertts_quant\":\"{\\\"variant\\\":\\\"int8\\\",\\\"layout\\\":{\\\"emb.weight\\\":{\\\"s\\\":\\\"int8\\\",\\\"shape\\\":[118,192]},\\\"spk.weight\\\":{\\\"s\\\":\\\"int8\\\",\\\"shape\\\":[4920,64]},\\\"spk_p"
+    },
+    {
+      "path": "scratch/steer-tts/int8/flow.safetensors",
+      "bytes": 17785248,
+      "sha": "c54a362bc3de279e1209ba9ae5fab96e430ec2ae1433de91f56f9665f8494a6d",
+      "headerNote": "safetensors header_len=22528 head={\"__metadata__\":{\"steertts_quant\":\"{\\\"variant\\\": \\\"int8\\\", \\\"layout\\\": {\\\"mean\\\": {\\\"s\\\": \\\"raw\\\"}, \\\"std\\\": {\\\"s\\\": \\\"raw\\\"}, \\\"net.inp.weight\\\": {\\\"s\\\": \\\"int8\\\", \\\"shape\\\": [384"
+    },
+    {
+      "path": "scratch/steer-tts/int8/pflow.safetensors",
+      "bytes": 24878040,
+      "sha": "83c419128d9fa0e4fb03ecbc110e2caaed47fa1e51c05367dba3e0fc8b47fc71",
+      "headerNote": "safetensors header_len=31672 head={\"__metadata__\":{\"steertts_quant\":\"{\\\"variant\\\": \\\"int8\\\", \\\"layout\\\": {\\\"mean\\\": {\\\"s\\\": \\\"raw\\\"}, \\\"std\\\": {\\\"s\\\": \\\"raw\\\"}, \\\"net.inp.weight\\\": {\\\"s\\\": \\\"int8\\\", \\\"shape\\\": [384"
+    },
+    {
+      "path": "scratch/steer-tts/int8/prompt_adapter.safetensors",
+      "bytes": 503356,
+      "sha": "b09f25b15e5017925f7a4c52e241a45b753a3c34098c4b8584afe62c475b6885",
+      "headerNote": "safetensors header_len=1800 head={\"__metadata__\":{\"steertts_quant\":\"{\\\"variant\\\": \\\"int8\\\", \\\"layout\\\": {\\\"body.0.weight\\\": {\\\"s\\\": \\\"int8\\\", \\\"shape\\\": [512, 384]}, \\\"body.0.bias\\\": {\\\"s\\\": \\\"fp16\\\", \\\"dt\\\": \\\"to"
+    },
+    {
+      "path": "scratch/steer-tts/int8/speaker_vectors.safetensors",
+      "bytes": 1452330,
+      "sha": "1e5a8de163dc2b38dc392169842c2c6008f4d6d636d8a9b36df19b13ea3f8236",
+      "headerNote": "safetensors header_len=272 head={\"__metadata__\":{\"steertts_quant\":\"{\\\"variant\\\": \\\"int8\\\", \\\"layout\\\": {\\\"vec\\\": {\\\"s\\\": \\\"int8\\\", \\\"shape\\\": [2825, 512]}}}\"},\"vec::s\":{\"dtype\":\"F16\",\"shape\":[2825,1],\"data_offset"
+    },
+    {
+      "path": "scratch/steer-tts/native/int8/vocos.safetensors",
+      "bytes": 13628584,
+      "sha": "9fcdd375e866c4c40f19d24aaf2e585e6aee78eeda0452ef4733ec70a11a7d7f",
+      "headerNote": "safetensors header_len=16536 head={\"__metadata__\":{\"steertts_quant\":\"{\\\"variant\\\": \\\"int8\\\", \\\"layout\\\": {\\\"backbone.embed.weight\\\": {\\\"s\\\": \\\"int8\\\", \\\"shape\\\": [512, 100, 7]}, \\\"backbone.embed.bias\\\": {\\\"s\\\": \\\"f"
+    },
+    {
+      "path": "scratch/steer-tts/native/int8/minilm.safetensors",
+      "bytes": 22873628,
+      "sha": "66fc95f4a342caf90492f420b89dd4375bad96f2d6a96eb5fbbfb922382e3c95",
+      "headerNote": "safetensors header_len=24224 head={\"__metadata__\":{\"source\":\"sentence-transformers/all-MiniLM-L6-v2\",\"steertts_quant\":\"{\\\"variant\\\": \\\"int8\\\", \\\"layout\\\": {\\\"embeddings.word_embeddings.weight\\\": {\\\"s\\\": \\\"int8\\\", \\"
+    },
+    {
+      "path": "scratch/steer-tts/native/minilm_vocab.txt",
+      "bytes": 231508,
+      "sha": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "headerNote": ""
+    },
+    {
+      "path": "scratch/steer-tts/native/front/lexicon.bin",
+      "bytes": 1709144,
+      "sha": "7a493737376cfc027622cc611380762ed544a11d83eaf222924b54ffbc742d6a",
+      "headerNote": ""
+    },
+    {
+      "path": "scratch/steer-tts/events.safetensors",
+      "bytes": 1495008,
+      "sha": "41efbdb102c3033efbf0973b7f5fde6b2991df6e9a7dde9cad674ae549e5ad43",
+      "headerNote": "safetensors header_len=9936 head={\"__metadata__\":{\"index\":\"[{\\\"type\\\": \\\"laugh\\\", \\\"gender\\\": \\\"female\\\", \\\"f0\\\": 171.6, \\\"start\\\": 0, \\\"n\\\": 184}, {\\\"type\\\": \\\"laugh\\\", \\\"gender\\\": \\\"female\\\", \\\"f0\\\": 252.1, \\\"st"
+    },
+    {
+      "path": "scratch/steer-tts/LICENSE.md",
+      "bytes": 22276,
+      "sha": "1a42a1bdac1e022e7902f21121baf8c6af9a7ad857736010dd7dab289cd8f8ab",
+      "headerNote": ""
+    },
+    {
+      "path": "scratch/steer-tts/NOTICE",
+      "bytes": 842,
+      "sha": "ac68ca2a15b39fd2e7ccbbd7a38c40e8f7d3693b50475b665a93b197b37ed427",
+      "headerNote": ""
+    },
+    {
+      "path": "scratch/steer-tts/native/NOTICE",
+      "bytes": 1561,
+      "sha": "fa508eddab263e31bfbe36eb64a07c792479845190de65f9ad2a52bfb6b740a5",
+      "headerNote": ""
+    },
+    {
+      "path": "scratch/steer-tts/native/int8/wavlm_sv.safetensors",
+      "bytes": 114770602,
+      "sha": "DEFERRED(114MB)",
+      "headerNote": "size-only Phase0"
+    },
+    {
+      "path": "scratch/steer-tts/model.safetensors",
+      "bytes": 38395692,
+      "sha": "DEFERRED(fp32 not needed for INT8 runtime)",
+      "headerNote": "fp32 reference only"
+    }
+  ]
+}
