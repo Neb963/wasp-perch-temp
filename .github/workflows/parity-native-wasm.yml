@@ -66,7 +66,7 @@ jobs:
       - name: Verify checkouts present
         run: |
           pwd; ls
-          ls studio/scripts/ci/ upstream/steertts_edge/ ci-assets/edge/ dist/
+          ls studio/scripts/ci/ upstream/edge/steertts_edge/ ci-assets/edge/ dist/
       - name: Native parity run (torch CPU)
         run: |
           python "$GITHUB_WORKSPACE/studio/scripts/ci/native_parity.py" --code "$GITHUB_WORKSPACE/upstream" \
