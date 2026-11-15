@@ -23,3 +23,7 @@ Licence: code, weights and voices CC BY-NC 4.0 + Whissle terms
 (non-commercial use only; no commercial or hosted-inference use).
 Upstream code: https://github.com/WhissleAI/steer-tts
 (pinned 5008f8e032f69266c3f37788825cfda3112eab55).
+NOTE 2026-11-15: edge/front/cmudict.lex is a git-LFS pointer stub (131 B), not the real
+lexicon - the parity workflow rebuilds it deterministically in CI from NLTK cmudict via
+upstream steertts_edge.edge_front.lexicon.build() before the native run. Do not use the
+checked-in bytes directly; gru.npz / front.json.xz / oov_cache.lex are genuine.
