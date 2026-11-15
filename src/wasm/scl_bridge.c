@@ -19,6 +19,7 @@
 
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 #include <emscripten.h>
 #include "steertts.h"
 
@@ -43,9 +44,9 @@ int scl_create(const char *model_dir, int threads, char *err, int err_len) {
     return -1;
   }
   strncpy(g_model_dir, model_dir, sizeof g_model_dir - 1);
-  // Force single-threaded baseline: pool of 1, no pthreads linked.
+  // Single-threaded baseline: steertts_create with 1 worker (= calling thread, no pthreads).
   (void)threads;
-  g_eng = steertts_create_ex(model_dir, 1, err, err_len);
+  g_eng = steertts_create(model_dir, 1, err, (size_t)err_len);
   return g_eng ? 0 : -1;
 }
 
