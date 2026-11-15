@@ -144,6 +144,20 @@ def main():
         check("map_prompt", False, f"native={na} wasm={wa}")
 
     nd, wd = nat.get("director"), wsm.get("director")
+    def ctrl_dict(c):
+        if isinstance(c, dict):
+            return {str(k): float(v) for k, v in c.items()}
+        if isinstance(c, str):
+            d = {}
+            for kv in c.split(","):
+                if "=" in kv:
+                    k, v = kv.split("=", 1)
+                    try:
+                        d[k.strip()] = float(v)
+                    except ValueError:
+                        pass
+            return d
+        return {}
     if isinstance(nd, dict) and isinstance(wd, dict) and "dims" in nd \
             and "dims" in wd and nd.get("n") == wd.get("n"):
         dmax = 0.0
@@ -151,8 +165,17 @@ def main():
             for x, y in zip(r1, r2):
                 dmax = max(dmax, abs(float(x) - float(y)))
         check("director dims", dmax <= 1e-4, f"max abs diff {dmax:.3e}")
-        check("director ctrl0", str(nd.get("ctrl0")) == str(wd.get("ctrl0")),
-              f"native={nd.get('ctrl0')!r} wasm={wd.get('ctrl0')!r}")
+        nc, wc = ctrl_dict(nd.get("ctrl0")), ctrl_dict(wd.get("ctrl0"))
+        cmax, ckeys = 0.0, set(nc) | set(wc)
+        cok = bool(ckeys) and set(nc) == set(wc)
+        for k in ckeys:
+            if k in nc and k in wc:
+                cmax = max(cmax, abs(nc[k] - wc[k]))
+        cok = cok and cmax <= 1e-3
+        check("director ctrl", cok,
+              f"keys native={sorted(nc)} wasm={sorted(wc)} maxdiff={cmax:.6f}")
+        check("director pause_ms", nd.get("pause0") == wd.get("pause0"),
+              f"native={nd.get('pause0')!r} wasm={wd.get('pause0')!r}")
     else:
         check("director", False, f"native={nd} wasm={wd}")
 
