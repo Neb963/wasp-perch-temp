@@ -1,0 +1,92 @@
+# Parity: native upstream Python (torch CPU) vs the same C engine via WASM+Node.
+# No browser, no user machine. Trigger: Actions tab -> Run workflow.
+# Model weights: Full INT8 from the UNGATED mirror ml-resources/steer-tts
+# (revision recorded per run); Edge runtime set + Full native-only files
+# from this repo's ci-assets branch (non-commercial test fixtures, see
+# ci-assets/ATTRIBUTION.md). Nothing is committed back; results are artifacts.
+name: Parity native-vs-WASM (torch CPU vs wasm node)
+on: { workflow_dispatch: {} }
+permissions: { contents: read }
+jobs:
+  parity:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 90
+    steps:
+      - name: Checkout studio repo (scripts)
+        uses: actions/checkout@v4
+        with: { path: studio }
+      - name: Checkout upstream code at pinned SHA
+        uses: actions/checkout@v4
+        with:
+          repository: WhissleAI/steer-tts
+          ref: 5008f8e032f69266c3f37788825cfda3112eab55
+          path: upstream
+      - name: Checkout ci-assets (edge weights + full native-only files)
+        uses: actions/checkout@v4
+        with: { ref: ci-assets, path: ci-assets }
+      - name: Checkout wasm dist (bridge 0.3.0)
+        uses: actions/checkout@v4
+        with: { ref: wasm-dist, path: dist }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - name: Install native deps (CPU torch, no CUDA)
+        run: |
+          pip install --upgrade pip
+          pip install --index-url https://download.pytorch.org/whl/cpu torch
+          pip install safetensors numpy huggingface_hub
+          pip install --no-deps ./upstream/steertts ./upstream/edge
+          python -c "import torch, safetensors, numpy, huggingface_hub, steertts, steertts_edge; print('imports ok', torch.__version__)"
+      - name: Fetch Full weights from ungated mirror + assemble dirs
+        run: |
+          MIRROR_SHA=$(python -c "from huggingface_hub import HfApi; print(HfApi().model_info('ml-resources/steer-tts').sha)")
+          echo "MIRROR_SHA=$MIRROR_SHA" >> "$GITHUB_ENV"
+          echo "mirror revision: $MIRROR_SHA"
+          python - "$MIRROR_SHA" <<'EOF'
+          import shutil, sys
+          from pathlib import Path
+          from huggingface_hub import snapshot_download
+          sha = sys.argv[1]
+          d = Path(snapshot_download("ml-resources/steer-tts", revision=sha,
+            allow_patterns=["config.json", "voices.json", "control_stats.json",
+              "int8/model.safetensors", "int8/flow.safetensors",
+              "int8/prompt_adapter.safetensors", "int8/speaker_vectors.safetensors",
+              "int8/pflow.safetensors"]))
+          asm = Path("full-asm"); shutil.rmtree(asm, ignore_errors=True)
+          shutil.copytree(d, asm)
+          for src in Path("ci-assets/full-private").rglob("*"):
+            if src.is_file():
+              dst = asm / src.relative_to("ci-assets/full-private")
+              dst.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copy2(src, dst)
+          print("assembled:", sorted(str(p.relative_to(asm)) for p in asm.rglob("*") if p.is_file()))
+          EOF
+          ls full-asm full-asm/int8 full-asm/native/int8
+      - name: Native parity run (torch CPU)
+        run: |
+          python studio/scripts/ci/native_parity.py --code upstream \
+            --edge-dir ci-assets/edge --full-dir full-asm --out native \
+            --mirror-sha "$MIRROR_SHA"
+      - name: WASM-node parity run (same C engine)
+        run: node studio/scripts/ci/wasm_node_parity.mjs dist ci-assets/edge full-asm wasmnode
+      - name: Compare (tolerances recorded in compare_parity.py)
+        run: python studio/scripts/ci/compare_parity.py --native native --wasm wasmnode --report parity_report.json
+      - name: Upload parity artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: parity-${{ github.run_id }}
+          path: |
+            native/
+            wasmnode/
+            parity_report.json
+      - name: Summary
+        if: always()
+        run: |
+          echo "## parity verdict: $(python -c "import json;print(json.load(open('parity_report.json'))['verdict'])")" >> "$GITHUB_STEP_SUMMARY"
+          echo "mirror: $MIRROR_SHA | wasm: $(python -c "import json;print(json.load(open('wasmnode/wasm_parity.json'))['bridge'])")" >> "$GITHUB_STEP_SUMMARY"
+          python -c "
+          import json
+          for c in json.load(open('parity_report.json'))['checks']:
+              print(f\"- {c['verdict']} {c['name']} :: {c['detail']}\")" >> "$GITHUB_STEP_SUMMARY"
