@@ -23,34 +23,13 @@ jobs:
         with: { node-version: "20" }
       - name: Install huggingface_hub (mirror download)
         run: pip install huggingface_hub
-      - name: Assemble studio/src/models (mirror + ci-assets)
+      - name: Assemble studio/src/models (exact shipped set from ci-assets)
         run: |
-          MIRROR_SHA=$(python -c "from huggingface_hub import HfApi; print(HfApi().model_info('ml-resources/steer-tts').sha)")
-          echo "MIRROR_SHA=$MIRROR_SHA" >> "$GITHUB_ENV"
-          echo "mirror revision: $MIRROR_SHA"
-          python - "$MIRROR_SHA" <<'EOF'
-          import shutil, sys
-          from pathlib import Path
-          from huggingface_hub import snapshot_download
-          sha = sys.argv[1]
-          d = Path(snapshot_download("ml-resources/steer-tts", revision=sha,
-            allow_patterns=["config.json", "voices.json", "control_stats.json",
-              "events.safetensors", "request.schema.json",
-              "int8/model.safetensors", "int8/flow.safetensors",
-              "int8/prompt_adapter.safetensors", "int8/speaker_vectors.safetensors",
-              "int8/pflow.safetensors"]))
-          edge = Path("repo/studio/src/models/edge"); shutil.rmtree(edge, ignore_errors=True)
-          shutil.copytree(Path("ci-assets/edge"), edge)
-          full = Path("repo/studio/src/models/full"); shutil.rmtree(full, ignore_errors=True)
-          shutil.copytree(d, full)
-          for src in Path("ci-assets/full-private").rglob("*"):
-            if src.is_file():
-              dst = full / src.relative_to("ci-assets/full-private")
-              dst.parent.mkdir(parents=True, exist_ok=True)
-              shutil.copy2(src, dst)
-          print("edge files:", sum(1 for _ in edge.rglob("*") if _.is_file()),
-                "full files:", sum(1 for _ in full.rglob("*") if _.is_file()))
-          EOF
+          echo "ci-assets revision: $(cd ci-assets && git rev-parse --short HEAD)"
+          edge="repo/studio/src/models/edge"; rm -rf "$edge"; cp -r ci-assets/edge "$edge"
+          full="repo/studio/src/models/full"; rm -rf "$full"; cp -r ci-assets/full "$full"
+          echo "edge files: $(find "$edge" -type f | wc -l), full files: $(find "$full" -type f | wc -l)"
+          ls "$full" "$full/int8"
       - name: Install Playwright + Chromium
         run: |
           mkdir -p pw && cd pw && npm init -y >/dev/null && npm i playwright@1.49.1
