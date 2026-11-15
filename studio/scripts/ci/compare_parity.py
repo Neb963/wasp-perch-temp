@@ -115,7 +115,7 @@ def main():
     check("audio summary", audio_ok,
           f"worst max-abs-diff across renders: {worst_lsb} LSB (<=2 PASS)")
 
-    for key in ["full_flow-on", "full_flow-off", "edge"]:
+    for key in ["full_flow-on", "full_flow-off"]:
         a, b = nat["resolve"].get(key), wsm["resolve"].get(key)
         if a is None or b is None:
             check(f"resolve {key}", False, "missing side")
@@ -123,6 +123,20 @@ def main():
             d = dict_diff(a, b)
             check(f"resolve {key}", not d,
                   "exact match" if not d else "; ".join(d[:8]))
+    # Edge: python has no resolver (see native_parity.py); the C engine's
+    # normalization is exercised identically by browser + wasm-node, so
+    # check the wasm form echoes the canonical request.
+    a, b = nat["resolve"].get("edge"), wsm["resolve"].get("edge")
+    if isinstance(a, dict) and a.get("unsupported") and isinstance(b, dict):
+        q = a.get("request", {})
+        ok = b.get("text") == q.get("text") and b.get("voice") == q.get("voice")
+        check("resolve edge", ok,
+              "native N/A (EdgeTTS has no resolve); C-normalized echo "
+              f"text/voice match={ok}")
+    else:
+        d = dict_diff(a or {}, b or {}) if a and b else ["missing side"]
+        check("resolve edge", not d,
+              "exact match" if not d else "; ".join(d[:8]))
 
     na, wa = nat.get("map_prompt"), wsm.get("map_prompt")
     if isinstance(na, dict) and isinstance(wa, dict) and "error" not in na \
