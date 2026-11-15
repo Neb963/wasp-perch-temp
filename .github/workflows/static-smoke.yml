@@ -70,5 +70,12 @@ jobs:
       - name: Summary
         if: always()
         run: |
-          echo "## static smoke: $(python -c "import json;print(json.load(open('repo/studio/smoke-out/smoke_report.json'))['verdict'])")" >> "$GITHUB_STEP_SUMMARY"
-          echo "mirror: $MIRROR_SHA" >> "$GITHUB_STEP_SUMMARY"
+          if [ -f repo/studio/smoke-out/smoke_report.json ]; then
+            python3 - <<'PYEOF' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          r = json.load(open('repo/studio/smoke-out/smoke_report.json'))
+          print('## static smoke: ' + r['verdict'])
+          PYEOF
+          else
+            echo "## static smoke: no report produced (early step failure - see step logs)" >> "$GITHUB_STEP_SUMMARY"
+          fi
