@@ -26,6 +26,7 @@ jobs:
       - name: Assemble studio/src/models (exact shipped set from ci-assets)
         run: |
           echo "ci-assets revision: $(cd ci-assets && git rev-parse --short HEAD)"
+          mkdir -p repo/studio/src/models
           edge="repo/studio/src/models/edge"; rm -rf "$edge"; cp -r ci-assets/edge "$edge"
           full="repo/studio/src/models/full"; rm -rf "$full"; cp -r ci-assets/full "$full"
           echo "edge files: $(find "$edge" -type f | wc -l), full files: $(find "$full" -type f | wc -l)"
