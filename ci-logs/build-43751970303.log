@@ -1,0 +1,9 @@
+shared:INFO: (Emscripten: Running sanity checks)
+upstream/c/src/st_kernels.c:211:13: warning: unused function 'store_tile' [-Wunused-function]
+  211 | static void store_tile(float acc[MR][NR], float* C, int ldc, int mr, int nr, int mode) {
+      |             ^~~~~~~~~~
+1 warning generated.
+cache:INFO: generating system asset: symbol_lists/f59538b556acdb795d2407051b46c4412ec3ad3a.json... (this will be cached in "/home/runner/work/_temp/1abebd76-8b03-4df1-ab17-831d44102f41/emsdk-main/upstream/emscripten/cache/symbol_lists/f59538b556acdb795d2407051b46c4412ec3ad3a.json" for subsequent builds)
+cache:INFO:  - ok
+scl_version: scl-bridge-0.3.1+libsteertts-1.3.0 single-thread scalar MEMFS
+SMOKE OK (instantiated, no model loaded, no synthesis attempted)
