@@ -61,8 +61,8 @@ await step(page, "load page", async () => {
 await step(page, "engine boots (Generate enabled)", async () => {
   await wf(page, () => { const g = document.querySelector("#generateBtn"); return g && !g.disabled; }, 180000);
   const pill = await page.evaluate(() => document.body.textContent.slice(0, 4000));
-  if (!/scl-bridge-0\.3\.0/.test(pill)) throw new Error("bridge 0.3.0 pill not found");
-  return "scl-bridge-0.3.0 live";
+  if (!/scl-bridge-0\.3\.1/.test(pill)) throw new Error("bridge 0.3.1 pill not found");
+  return "scl-bridge-0.3.1 live";
 });
 await page.screenshot({ path: shots("boot") });
 await step(page, "RESOLVE via UI button", async () => {
