@@ -1,0 +1,19 @@
+--- a/c/src/st_weights.c
++++ b/c/src/st_weights.c
+@@ -106,7 +106,7 @@
+   if (!f) return NULL;
+   f->path = st_strdup(path);
+   if (!f->path) goto fail;
+-#ifdef _WIN32
++#if defined(_WIN32) || defined(__EMSCRIPTEN__)
+   {
+     char* d;
+     size_t n;
+@@ -237,7 +237,7 @@
+   st_free(f->t);
+   st_json_free(f->meta);
+-#ifndef _WIN32
++#if !defined(_WIN32) && !defined(__EMSCRIPTEN__)
+   if (f->mapped && f->map) munmap(f->map, f->map_len);
+   else
+ #endif
