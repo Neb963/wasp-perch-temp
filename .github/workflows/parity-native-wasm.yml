@@ -69,15 +69,19 @@ jobs:
           print("MATCH" if want and h.startswith(want) or want == h else "DRIFT: mirror differs from shipped set (known: mirror lacks tensor encoder.layers.0.n_seq.proj.weight)")
           EOF
           ls full-asm full-asm/int8
+      - name: Verify checkouts present
+        run: |
+          pwd; ls
+          ls studio/scripts/ci/ upstream/steertts_edge/ ci-assets/edge/ dist/
       - name: Native parity run (torch CPU)
         run: |
-          python studio/scripts/ci/native_parity.py --code upstream \
-            --edge-dir ci-assets/edge --full-dir full-asm --out native \
+          python "$GITHUB_WORKSPACE/studio/scripts/ci/native_parity.py" --code "$GITHUB_WORKSPACE/upstream" \
+            --edge-dir "$GITHUB_WORKSPACE/ci-assets/edge" --full-dir "$GITHUB_WORKSPACE/full-asm" --out "$GITHUB_WORKSPACE/native" \
             --mirror-sha "ci-assets@$(cd ci-assets && git rev-parse --short HEAD)"
       - name: WASM-node parity run (same C engine)
-        run: node studio/scripts/ci/wasm_node_parity.mjs dist ci-assets/edge full-asm wasmnode
+        run: node "$GITHUB_WORKSPACE/studio/scripts/ci/wasm_node_parity.mjs" "$GITHUB_WORKSPACE/dist" "$GITHUB_WORKSPACE/ci-assets/edge" "$GITHUB_WORKSPACE/full-asm" "$GITHUB_WORKSPACE/wasmnode"
       - name: Compare (tolerances recorded in compare_parity.py)
-        run: python studio/scripts/ci/compare_parity.py --native native --wasm wasmnode --report parity_report.json
+        run: python "$GITHUB_WORKSPACE/studio/scripts/ci/compare_parity.py" --native "$GITHUB_WORKSPACE/native" --wasm "$GITHUB_WORKSPACE/wasmnode" --report "$GITHUB_WORKSPACE/parity_report.json"
       - name: Upload parity artifacts
         if: always()
         uses: actions/upload-artifact@v4
