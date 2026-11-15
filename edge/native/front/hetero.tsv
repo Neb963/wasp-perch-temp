@@ -1,0 +1,3539 @@
+H	absent	AH1 B S AE1 N T	AE1 B S AH0 N T	V
+H	abstract	AE0 B S T R AE1 K T	AE1 B S T R AE2 K T	V
+H	abstracts	AE0 B S T R AE1 K T S	AE1 B S T R AE0 K T S	V
+H	abuse	AH0 B Y UW1 Z	AH0 B Y UW1 S	V
+H	abuses	AH0 B Y UW1 Z IH0 Z	AH0 B Y UW1 S IH0 Z	V
+H	accent	AH0 K S EH1 N T	AE1 K S EH2 N T	V
+H	accents	AE1 K S EH0 N T S	AE1 K S EH0 N T S	V
+H	addict	AH0 D IH1 K T	AE1 D IH2 K T	V
+H	addicts	AH0 D IH1 K T S	AE1 D IH2 K T S	V
+H	advocate	AE1 D V AH0 K EY2 T	AE1 D V AH0 K AH0 T	V
+H	advocates	AE1 D V AH0 K EY2 T S	AE1 D V AH0 K AH0 T S	V
+H	affect	AH0 F EH1 K T	AE1 F EH0 K T	V
+H	affects	AH0 F EH1 K T S	AE1 F EH0 K T S	V
+H	affix	AH0 F IH1 K S	AE1 F IH0 K S	V
+H	affixes	AH0 F IH1 K S IH0 Z	AE1 F IH0 K S IH0 Z	V
+H	agglomerate	AH0 G L AA1 M ER0 EY2 T	AH0 G L AA1 M ER0 AH0 T	V
+H	aggregate	AE1 G R AH0 G EY0 T	AE1 G R AH0 G AH0 T	V
+H	aggregates	AE1 G R AH0 G EY2 T S	AE1 G R AH0 G IH0 T S	V
+H	allies	AH0 L AY1 Z	AE1 L AY0 Z	V
+H	alloy	AH0 L OY1	AE1 L OY2	V
+H	alloys	AH0 L OY1 Z	AE1 L OY2 Z	V
+H	ally	AH0 L AY1	AE1 L AY0	V
+H	alternate	AO1 L T ER0 N EY2 T	AO0 L T ER1 N AH0 T	V
+H	analyses	AH0 N AE1 L IH0 S IY2 Z	AE1 N AH0 L AY0 Z IH2 Z	V
+H	animate	AE1 N AH0 M EY2 T	AE1 N AH0 M AH0 T	V
+H	annex	AH0 N EH1 K S	AE1 N EH2 K S	V
+H	annexes	AH0 N EH1 K S IH0 Z	AE1 N EH2 K S IH0 Z	V
+H	appropriate	AH0 P R OW1 P R IY0 EY2 T	AH0 P R OW1 P R IY0 AH0 T	V
+H	approximate	AH0 P R AA1 K S AH0 M EY2 T	AH0 P R AA1 K S AH0 M AH0 T	V
+H	articulate	AA0 R T IH1 K Y AH0 L AH0 T	AA0 R T IH1 K Y AH0 L EY2 T	V
+H	aspirate	AE1 S P ER0 EY2 T	AE1 S P ER0 AH0 T	V
+H	aspirates	AE1 S P ER0 EY2 T S	AE1 S P ER0 AH0 T S	V
+H	associate	AH0 S OW1 S IY0 EY2 T	AH0 S OW1 S IY0 AH0 T	V
+H	associates	AH0 S OW1 S IY0 EY2 T S	AH0 S OW1 S IY0 AH0 T S	V
+H	attribute	AH0 T R IH1 B Y UW2 T	AE1 T R IH0 B Y UW0 T	V
+H	attributes	AH0 T R IH1 B Y UW2 T S	AE1 T R IH0 B Y UW0 T S	V
+H	baths	B AE1 TH S	B AE1 DH Z	V
+H	blessed	B L EH1 S IH0 D	B L EH1 S T	V
+H	certificate	S ER0 T IH1 F IH0 K AH0 T	S ER0 T IH1 F IH0 K EY2 T	V
+H	certificates	S ER0 T IH1 F IH0 K EY2 T S	S ER0 T IH1 F IH0 K AH0 T S	V
+H	close	K L OW1 Z	K L OW1 S	V
+H	closer	K L OW1 Z ER0	K L OW1 S ER0	N
+H	closes	K L OW1 Z IH0 Z	K L OW1 S IH0 Z	V
+H	collect	K AH0 L EH1 K T	K AA1 L EH0 K T	V
+H	collects	K AH0 L EH1 K T S	K AA1 L EH0 K T S	V
+H	combat	K AH0 M B AE1 T	K AA1 M B AE0 T	V
+H	combats	K AH0 M B AE1 T S	K AH1 M B AE0 T S	V
+H	combine	K AH0 M B AY1 N	K AA1 M B AY0 N	V
+H	commune	K AH0 M Y UW1 N	K AA1 M Y UW0 N	V
+H	communes	K AH0 M Y UW1 N Z	K AA1 M Y UW0 N Z	V
+H	compact	K AH0 M P AE1 K T	K AA1 M P AE0 K T	V
+H	compacts	K AH0 M P AE1 K T S	K AA1 M P AE0 K T S	V
+H	complex	K AH0 M P L EH1 K S	K AA1 M P L EH0 K S	ADJ
+H	compliment	K AA1 M P L AH0 M EH0 N T	K AA1 M P L AH0 M AH0 N T	V
+H	compliments	K AA1 M P L AH0 M EH0 N T S	K AA1 M P L AH0 M AH0 N T S	V
+H	compound	K AH0 M P AW1 N D	K AA1 M P AW0 N D	V
+H	compounds	K AH0 M P AW1 N D Z	K AA1 M P AW0 N D Z	V
+H	compress	K AH0 M P R EH1 S	K AA1 M P R EH0 S	V
+H	compresses	K AH0 M P R EH1 S IH0 Z	K AA1 M P R EH0 S AH0 Z	V
+H	concert	K AH0 N S ER1 T	K AA1 N S ER0 T	V
+H	concerts	K AH0 N S ER1 T S	K AA1 N S ER0 T S	V
+H	conduct	K AA0 N D AH1 K T	K AA1 N D AH0 K T	V
+H	confederate	K AH0 N F EH1 D ER0 EY2 T	K AH0 N F EH1 D ER0 AH0 T	V
+H	confederates	K AH0 N F EH1 D ER0 EY2 T S	K AH0 N F EH1 D ER0 AH0 T S	V
+H	confines	K AH0 N F AY1 N Z	K AA1 N F AY2 N Z	V
+H	conflict	K AH0 N F L IH1 K T	K AA1 N F L IH0 K T	V
+H	conflicts	K AH0 N F L IH1 K T S	K AA1 N F L IH0 K T S	V
+H	conglomerate	K AH0 N G L AA1 M ER0 EY2 T	K AH0 N G L AA1 M ER0 AH0 T	V
+H	conglomerates	K AH0 N G L AA1 M ER0 EY2 T S	K AH0 N G L AA1 M ER0 AH0 T S	V
+H	conscript	K AH0 N S K R IH1 P T	K AA1 N S K R IH0 P T	V
+H	conscripts	K AH0 N S K R IH1 P T S	K AA1 N S K R IH0 P T S	V
+H	console	K AH0 N S OW1 L	K AA1 N S OW0 L	V
+H	consoles	K AH0 N S OW1 L Z	K AA1 N S OW0 L Z	V
+H	consort	K AH0 N S AO1 R T	K AA1 N S AO0 R T	V
+H	construct	K AH0 N S T R AH1 K T	K AA1 N S T R AH0 K T	V
+H	constructs	K AH0 N S T R AH1 K T S	K AA1 N S T R AH0 K T S	V
+H	consummate	K AA1 N S AH0 M EY2 T	K AA0 N S AH1 M AH0 T	V
+H	content	K AA1 N T EH0 N T	K AH0 N T EH1 N T	N
+H	contents	K AH0 N T EH1 N T S	K AA1 N T EH0 N T S	V
+H	contest	K AH0 N T EH1 S T	K AA1 N T EH0 S T	V
+H	contests	K AH0 N T EH1 S T S	K AA1 N T EH0 S T S	V
+H	contract	K AH0 N T R AE1 K T	K AA1 N T R AE2 K T	V
+H	contracts	K AH0 N T R AE1 K T S	K AA1 N T R AE2 K T S	V
+H	contrast	K AH0 N T R AE1 S T	K AA1 N T R AE0 S T	V
+H	contrasts	K AH0 N T R AE1 S T S	K AA1 N T R AE0 S T S	V
+H	converse	K AH0 N V ER1 S	K AA1 N V ER0 S	V
+H	convert	K AH0 N V ER1 T	K AA1 N V ER0 T	V
+H	converts	K AH0 N V ER1 T S	K AA1 N V ER0 T S	V
+H	convict	K AH0 N V IH1 K T	K AA1 N V IH0 K T	V
+H	convicts	K AH0 N V IH1 K T S	K AA1 N V IH0 K T S	V
+H	coordinate	K OW0 AO1 R D AH0 N EY2 T	K OW0 AO1 R D AH0 N AH0 T	V
+H	coordinates	K OW0 AO1 R D AH0 N EY2 T S	K OW0 AO1 R D AH0 N AH0 T S	V
+H	counterbalance	K AW1 N T ER0 B AE2 L AH0 N S	K AW2 N T ER0 B AE1 L AH0 N S	V
+H	counterbalances	K AW2 N T ER0 B AE1 L AH0 N S IH0 Z	K AW1 N T ER0 B AE2 L AH0 N S IH0 Z	V
+H	crabbed	K R AE1 B D	K R AE1 B IH0 D	V
+H	crooked	K R UH1 K T	K R UH1 K AH0 D	V
+H	curate	K Y UH0 R AH1 T	K Y UH1 R AH0 T	V
+H	cursed	K ER1 S T	K ER1 S IH0 D	V
+H	decoy	D IY0 K OY1	D IY1 K OY0	V
+H	decoys	D IY0 K OY1 Z	D IY1 K OY0 Z	V
+H	decrease	D IH0 K R IY1 S	D IY1 K R IY2 S	V
+H	decreases	D IH0 K R IY1 S IH0 Z	D IY1 K R IY2 S IH0 Z	V
+H	defect	D IH0 F EH1 K T	D IY1 F EH0 K T	V
+H	defects	D IH0 F EH1 K T S	D IY1 F EH0 K T S	V
+H	degenerate	D IH0 JH EH1 N ER0 EY2 T	D IH0 JH EH1 N ER0 AH0 T	V
+H	degenerates	D IH0 JH EH1 N ER0 EY2 T S	D IH0 JH EH1 N ER0 AH0 T S	V
+H	delegate	D EH1 L AH0 G EY2 T	D EH1 L AH0 G AH0 T	V
+H	delegates	D EH1 L AH0 G EY2 T S	D EH1 L AH0 G AH0 T S	V
+H	deliberate	D IH0 L IH1 B ER0 EY2 T	D IH0 L IH1 B ER0 AH0 T	V
+H	desert	D IH0 Z ER1 T	D EH1 Z ER0 T	V
+H	deserts	D IH0 Z ER1 T S	D EH1 Z ER0 T S	V
+H	desolate	D EH1 S AH0 L EY2 T	D EH1 S AH0 L AH0 T	V
+H	diagnoses	D AY1 AH0 G N OW2 Z IY0 Z	D AY2 AH0 G N OW1 S IY0 Z	V
+H	dictate	D IH0 K T EY1 T	D IH1 K T EY2 T	V
+H	dictates	D IH0 K T EY1 T S	D IH1 K T EY2 T S	V
+H	diffuse	D IH0 F Y UW1 Z	D IH0 F Y UW1 S	V
+H	digest	D AY0 JH EH1 S T	D AY1 JH EH0 S T	V
+H	digests	D AY2 JH EH1 S T S	D AY1 JH EH0 S T S	V
+H	discard	D IH0 S K AA1 R D	D IH1 S K AA0 R D	V
+H	discards	D IH0 S K AA1 R D Z	D IH1 S K AA0 R D Z	V
+H	discharge	D IH0 S CH AA1 R JH	D IH1 S CH AA2 R JH	V
+H	discharges	D IH0 S CH AA1 R JH AH0 Z	D IH1 S CH AA2 R JH AH0 Z	V
+H	discount	D IH0 S K AW1 N T	D IH1 S K AW0 N T	V
+H	discounts	D IH0 S K AW1 N T S	D IH1 S K AW2 N T S	V
+H	discourse	D IH0 S K AO1 R S	D IH1 S K AO0 R S	V
+H	discourses	D IH0 S K AO1 R S IH0 Z	D IH1 S K AO0 R S IH0 Z	V
+H	document	D AA1 K Y UW0 M EH0 N T	D AA1 K Y AH0 M AH0 N T	V
+H	documents	D AA1 K Y UW0 M EH0 N T S	D AA1 K Y AH0 M AH0 N T S	V
+H	dogged	D AO1 G IH0 D	D AO1 G D	V
+H	duplicate	D UW1 P L AH0 K EY2 T	D UW1 P L AH0 K AH0 T	V
+H	duplicates	D UW1 P L AH0 K EY2 T S	D UW1 P L AH0 K AH0 T S	V
+H	ejaculate	IH0 JH AE1 K Y UW0 L EY2 T	IH0 JH AE1 K Y UW0 L AH0 T	V
+H	ejaculates	IH0 JH AE1 K Y UW0 L EY2 T S	IH0 JH AE1 K Y UW0 L AH0 T S	V
+H	elaborate	IH0 L AE1 B ER0 EY2 T	IH0 L AE1 B R AH0 T	V
+H	entrance	IH0 N T R AH1 N S	EH1 N T R AH0 N S	V
+H	entrances	IH0 N T R AH1 N S AH0 Z	EH1 N T R AH0 N S AH0 Z	V
+H	envelope	IH0 N V EH1 L AH0 P	EH1 N V AH0 L OW2 P	V
+H	envelopes	IH0 N V EH1 L AH0 P S	EH1 N V AH0 L OW2 P S	V
+H	escort	EH0 S K AO1 R T	EH1 S K AO0 R T	V
+H	escorts	EH0 S K AO1 R T S	EH1 S K AO0 R T S	V
+H	essay	EH0 S EY1	EH1 S EY2	V
+H	essays	EH0 S EY1 Z	EH1 S EY2 Z	V
+H	estimate	EH1 S T AH0 M EY2 T	EH1 S T AH0 M AH0 T	V
+H	estimates	EH1 S T AH0 M EY2 T S	EH1 S T AH0 M AH0 T S	V
+H	excess	IH0 K S EH1 S	EH1 K S EH2 S	V
+H	excise	EH0 K S AY1 S	EH1 K S AY0 Z	V
+H	excuse	IH0 K S K Y UW1 Z	IH0 K S K Y UW1 S	V
+H	excuses	IH0 K S K Y UW1 Z IH0 Z	IH0 K S K Y UW1 S IH0 Z	V
+H	expatriate	EH0 K S P EY1 T R IY0 EY2 T	EH0 K S P EY1 T R IY0 AH0 T	V
+H	expatriates	EH0 K S P EY1 T R IY0 EY2 T S	EH0 K S P EY1 T R IY0 AH0 T S	V
+H	exploit	EH1 K S P L OY2 T	EH2 K S P L OY1 T	V
+H	exploits	EH1 K S P L OY2 T S	EH2 K S P L OY1 T S	V
+H	export	IH0 K S P AO1 R T	EH1 K S P AO0 R T	V
+H	exports	IH0 K S P AO1 R T S	EH1 K S P AO0 R T S	V
+H	extract	IH0 K S T R AE1 K T	EH1 K S T R AE2 K T	V
+H	extracts	IH0 K S T R AE1 K T S	EH1 K S T R AE2 K T S	V
+H	ferment	F ER0 M EH1 N T	F ER1 M EH0 N T	V
+H	ferments	F ER0 M EH1 N T S	F ER1 M EH0 N T S	V
+H	fragment	F R AE1 G M AH0 N T	F R AE0 G M EH1 N T	V
+H	fragments	F R AE0 G M EH1 N T S	F R AE1 G M AH0 N T S	V
+H	frequent	F R IY1 K W EH2 N T	F R IY1 K W AH0 N T	V
+H	graduate	G R AE1 JH AH0 W EY2 T	G R AE1 JH AH0 W AH0 T	V
+H	graduates	G R AE1 JH AH0 W EY2 T S	G R AE1 JH AH0 W AH0 T S	V
+H	house	HH AW1 Z	HH AW1 S	V
+H	impact	IH2 M P AE1 K T	IH1 M P AE0 K T	V
+H	impacts	IH2 M P AE1 K T S	IH1 M P AE0 K T S	V
+H	implant	IH2 M P L AE1 N T	IH1 M P L AE2 N T	V
+H	implants	IH2 M P L AE1 N T S	IH1 M P L AE2 N T S	V
+H	implement	IH1 M P L AH0 M EH0 N T	IH1 M P L AH0 M AH0 N T	V
+H	implements	IH1 M P L AH0 M EH0 N T S	IH1 M P L AH0 M AH0 N T S	V
+H	import	IH2 M P AO1 R T	IH1 M P AO2 R T	V
+H	imports	IH2 M P AO1 R T S	IH1 M P AO2 R T S	V
+H	impress	IH0 M P R EH1 S	IH1 M P R EH0 S	V
+H	imprint	IH1 M P R IH0 N T	IH2 M P R IH1 N T	V
+H	imprints	IH2 M P R IH1 N T S	IH1 M P R IH0 N T S	V
+H	incense	IH2 N S EH1 N S	IH1 N S EH2 N S	V
+H	incline	IH2 N K L AY1 N	IH1 N K L AY0 N	V
+H	inclines	IH2 N K L AY1 N Z	IH1 N K L AY0 N Z	V
+H	incorporate	IH2 N K AO1 R P ER0 EY2 T	IH2 N K AO1 R P ER0 AH0 T	V
+H	increase	IH2 N K R IY1 S	IH1 N K R IY2 S	V
+H	increases	IH2 N K R IY1 S IH0 Z	IH1 N K R IY2 S IH0 Z	V
+H	indent	IH2 N D EH1 N T	IH1 N D EH0 N T	V
+H	indents	IH2 N D EH1 N T S	IH1 N D EH0 N T S	V
+H	inebriate	IH2 N EH1 B R IY0 EY2 T	IH2 N EH1 B R IY0 AH0 T	V
+H	inebriates	IH2 N EH1 B R IY0 EY2 T S	IH2 N EH1 B R IY0 AH0 T S	V
+H	initiate	IH2 N IH1 SH IY0 EY2 T	IH2 N IH1 SH IY0 AH0 T	V
+H	initiates	IH2 N IH1 SH IY0 EY2 T S	IH2 N IH1 SH IY0 AH0 T S	V
+H	inlay	IH2 N L EY1	IH1 N L EY2	V
+H	inlays	IH2 N L EY1 Z	IH1 N L EY2 Z	V
+H	insert	IH2 N S ER1 T	IH1 N S ER2 T	V
+H	inserts	IH2 N S ER1 T S	IH1 N S ER2 T S	V
+H	inset	IH2 N S EH1 T	IH1 N S EH2 T	V
+H	insets	IH2 N S EH1 T S	IH1 N S EH2 T S	V
+H	instinct	IH2 N S T IH1 NG K T	IH1 N S T IH0 NG K T	V
+H	insult	IH2 N S AH1 L T	IH1 N S AH2 L T	V
+H	insults	IH2 N S AH1 L T S	IH1 N S AH2 L T S	V
+H	interchange	IH2 T ER0 CH EY1 N JH	IH1 N T ER0 CH EY2 N JH	V
+H	interchanges	IH2 T ER0 CH EY1 N JH IH0 Z	IH1 N T ER0 CH EY2 N JH IH0 Z	V
+H	interdict	IH2 N T ER0 D IH1 K T	IH1 N T ER0 D IH2 K T	V
+H	interdicts	IH2 N T ER0 D IH1 K T S	IH1 N T ER0 D IH2 K T S	V
+H	intern	IH0 N T ER1 N	IH1 N T ER0 N	V
+H	interns	IH0 N T ER1 N Z	IH1 N T ER0 N Z	V
+H	intimate	IH1 N T IH0 M EY2 T	IH1 N T AH0 M AH0 T	V
+H	intimates	IH1 N T IH0 M EY2 T S	IH1 N T AH0 M AH0 T S	V
+H	introvert	IH2 N T R AO0 V ER1 T	IH1 N T R AO0 V ER2 T	V
+H	introverts	IH2 N T R AO0 V ER1 T S	IH1 N T R AO0 V ER2 T S	V
+H	inverse	IH1 N V ER0 S	IH2 N V ER1 S	V
+H	invite	IH2 N V AY1 T	IH1 N V AY0 T	V
+H	invites	IH2 N V AY1 T S	IH1 N V AY0 T S	V
+H	jagged	JH AE1 G D	JH AE1 G IH0 D	V
+H	learned	L ER1 N IH0 D	L ER1 N D	V
+H	legitimate	L AH0 JH IH1 T AH0 M EY2 T	L AH0 JH IH1 T AH0 M AH0 T	V
+H	mandate	M AE1 N D EY2 T	M AE2 N D EY1 T	V
+H	misconduct	M IH2 S K AA1 N D AH0 K T	M IH2 S K AA0 N D AH1 K T	V
+H	misprint	M IH2 S P R IH1 N T	M IH1 S P R IH0 N T	V
+H	misprints	M IH2 S P R IH1 N T S	M IH1 S P R IH0 N T S	V
+H	misuse	M IH0 S Y UW1 S	M IH0 S Y UW1 Z	V
+H	misuses	M IH0 S Y UW1 Z IH0 Z	M IH0 S Y UW1 S IH0 Z	V
+H	moderate	M AA1 D ER0 EY2 T	M AA1 D ER0 AH0 T	V
+H	moderates	M AA1 D ER0 EY2 T S	M AA1 D ER0 AH0 T S	V
+H	mouth	M AW1 TH	M AW1 DH	V
+H	mouths	M AW1 DH Z	M AW1 TH S	V
+H	object	AA1 B JH EH0 K T	AH0 B JH EH1 K T	V
+H	objects	AH0 B JH EH1 K T S	AA1 B JH EH0 K T S	V
+H	ornament	AO1 R N AH0 M EH0 N T	AO1 R N AH0 M AH0 N T	V
+H	ornaments	AO1 R N AH0 M EH0 N T S	AO1 R N AH0 M AH0 N T S	V
+H	overcharge	OW2 V ER0 CH AA1 R JH	OW1 V ER0 CH AA2 R JH	V
+H	overcharges	OW2 V ER0 CH AA1 R JH IH0 Z	OW1 V ER0 CH AA2 R JH IH0 Z	V
+H	overflow	OW2 V ER0 F L OW1	OW1 V ER0 F L OW2	V
+H	overflows	OW2 V ER0 F L OW1 Z	OW1 V ER0 F L OW2 Z	V
+H	overhang	OW2 V ER0 HH AE1 NG	OW1 V ER0 HH AE2 NG	V
+H	overhangs	OW2 V ER0 HH AE1 NG Z	OW1 V ER0 HH AE2 NG Z	V
+H	overhaul	OW2 V ER0 HH AO1 L	OW1 V ER0 HH AO2 L	V
+H	overhauls	OW2 V ER0 HH AO1 L Z	OW1 V ER0 HH AO2 L Z	V
+H	overlap	OW2 V ER0 L AE1 P	OW1 V ER0 L AE2 P	V
+H	overlaps	OW2 V ER0 L AE1 P S	OW1 V ER0 L AE2 P S	V
+H	overlay	OW2 V ER0 L EY1	OW1 V ER0 L EY2	V
+H	overlays	OW2 V ER0 L EY1 Z	OW1 V ER0 L EY2 Z	V
+H	overwork	OW2 V ER0 W ER1 K	OW1 V ER0 W ER2 K	V
+H	perfect	P ER0 F EH1 K T	P ER1 F IH2 K T	V
+H	perfume	P ER0 F Y UW1 M	P ER1 F Y UW0 M	V
+H	perfumes	P ER0 F Y UW1 M Z	P ER1 F Y UW0 M Z	V
+H	permit	P ER0 M IH1 T	P ER1 M IH2 T	V
+H	permits	P ER0 M IH1 T S	P ER1 M IH2 T S	V
+H	pervert	P ER0 V ER1 T	P ER1 V ER0 T	V
+H	perverts	P ER0 V ER1 T S	P ER1 V ER0 T S	V
+H	pontificate	P AA0 N T IH1 F AH0 K AH0 T	P AA0 N T IH1 F AH0 K EY2 T	V
+H	pontificates	P AA0 N T IH1 F AH0 K EY2 T S	P AA0 N T IH1 F AH0 K AH0 T S	V
+H	precipitate	P R IH0 S IH1 P IH0 T AH0 T	P R IH0 S IH1 P IH0 T EY2 T	V
+H	predicate	P R EH1 D IH0 K AH0 T	P R EH1 D AH0 K EY2 T	V
+H	predicates	P R EH1 D AH0 K EY2 T S	P R EH1 D IH0 K AH0 T S	V
+H	prefix	P R IY2 F IH1 K S	P R IY1 F IH0 K S	V
+H	prefixes	P R IY2 F IH1 K S IH0 JH	P R IY1 F IH0 K S IH0 JH	V
+H	presage	P R EH2 S IH1 JH	P R EH1 S IH0 JH	V
+H	presages	P R EH2 S IH1 JH IH0 JH	P R EH1 S IH0 JH IH0 JH	V
+H	present	P R IY0 Z EH1 N T	P R EH1 Z AH0 N T	V
+H	presents	P R IY0 Z EH1 N T S	P R EH1 Z AH0 N T S	V
+H	proceeds	P R AH0 S IY1 D Z	P R OW1 S IY0 D Z	V
+H	process	P R AO2 S EH1 S	P R AA1 S EH2 S	V
+H	processes	P R AA1 S EH0 S AH0 Z	P R AO2 S EH1 S AH0 Z	V
+H	processing	P R AA0 S EH1 S IH0 NG	P R AA1 S EH0 S IH0 NG	V
+H	produce	P R AH0 D UW1 S	P R OW1 D UW0 S	V
+H	progress	P R AH0 G R EH1 S	P R AA1 G R EH2 S	V
+H	progresses	P R OW0 G R EH1 S AH0 Z	P R AA1 G R EH2 S AH0 Z	V
+H	project	P R AA0 JH EH1 K T	P R AA1 JH EH0 K T	V
+H	projects	P R AA0 JH EH1 K T S	P R AA1 JH EH0 K T S	V
+H	prospect	P R AH2 S P EH1 K T	P R AA1 S P EH0 K T	V
+H	prospects	P R AH2 S P EH1 K T S	P R AA1 S P EH0 K T S	V
+H	prostrate	P R AA0 S T R EY1 T	P R AA1 S T R EY0 T	V
+H	protest	P R AH0 T EH1 S T	P R OW1 T EH2 S T	V
+H	protests	P R AH0 T EH1 S T S	P R OW1 T EH2 S T S	V
+H	purport	P ER0 P AO1 R T	P ER1 P AO2 R T	V
+H	quadruple	K W AA1 D R UW0 P AH0 L	K W AA0 D R UW1 P AH0 L	V
+H	quadruples	K W AA0 D R UW1 P AH0 L Z	K W AA1 D R UW0 P AH0 L Z	V
+H	ragged	R AE1 G D	R AE1 G AH0 D	V
+H	rampage	R AE2 M P EY1 JH	R AE1 M P EY2 JH	V
+H	rampages	R AE2 M P EY1 JH IH0 Z	R AE1 M P EY2 JH IH0 Z	V
+H	read	R IY1 D	R EH1 D	VBD
+H	rebel	R EH1 B AH0 L	R IH0 B EH1 L	V
+H	rebels	R IH0 B EH1 L Z	R EH1 B AH0 L Z	V
+H	rebound	R IY0 B AW1 N D	R IY1 B AW0 N D	V
+H	rebounds	R IY0 B AW1 N D Z	R IY1 B AW0 N D Z	V
+H	recall	R IH0 K AO1 L	R IY1 K AO2 L	V
+H	recalls	R IH0 K AO1 L Z	R IY1 K AO2 L Z	V
+H	recap	R IH0 K AE1 P	R IY1 K AE2 P	V
+H	recapped	R IH0 K AE1 P T	R IY1 K AE2 P T	V
+H	recapping	R IH0 K AE1 P IH0 NG	R IY1 K AE2 P IH0 NG	V
+H	recaps	R IH0 K AE1 P S	R IY1 K AE2 P S	V
+H	recount	R IY2 K AW1 N T	R IH1 K AW0 N T	V
+H	recounts	R IY2 K AW1 N T S	R IH1 K AW0 N T S	V
+H	record	R IH0 K AO1 R D	R EH1 K ER0 D	V
+H	records	R IH0 K AO1 R D Z	R EH1 K ER0 D Z	V
+H	refill	R IY0 F IH1 L	R IY1 F IH0 L	V
+H	refills	R IY0 F IH1 L Z	R IY1 F IH0 L Z	V
+H	refit	R IY0 F IH1 T	R IY1 F IH0 T	V
+H	refits	R IY0 F IH1 T S	R IY1 F IH0 T S	V
+H	refresh	R IH0 F R EH1 SH	R IH1 F R EH0 SH	V
+H	refund	R IH0 F AH1 N D	R IY1 F AH2 N D	V
+H	refunds	R IH0 F AH1 N D Z	R IY1 F AH2 N D Z	V
+H	refuse	R IH0 F Y UW1 Z	R EH1 F Y UW2 Z	V
+H	regenerate	R IY0 JH EH1 N ER0 EY2 T	R IY0 JH EH1 N ER0 AH0 T	V
+H	rehash	R IY0 HH AE1 SH	R IY1 HH AE0 SH	V
+H	rehashes	R IY0 HH AE1 SH IH0 Z	R IY1 HH AE0 SH IH0 Z	V
+H	reincarnate	R IY2 IH0 N K AA1 R N EY2 T	R IY2 IH0 N K AA1 R N AH0 T	V
+H	reject	R IH0 JH EH1 K T	R IY1 JH EH0 K T	V
+H	rejects	R IH0 JH EH1 K T S	R IY1 JH EH0 K T S	V
+H	relay	R IY2 L EY1	R IY1 L EY2	V
+H	relaying	R IY2 L EY1 IH0 NG	R IY1 L EY2 IH0 NG	V
+H	relays	R IY2 L EY1 Z	R IY1 L EY2 Z	V
+H	remake	R IY2 M EY1 K	R IY1 M EY0 K	V
+H	remakes	R IY2 M EY1 K S	R IY1 M EY0 K S	V
+H	replay	R IY0 P L EY1	R IY1 P L EY0	V
+H	replays	R IY0 P L EY1 Z	R IY1 P L EY0 Z	V
+H	reprint	R IY0 P R IH1 N T	R IY1 P R IH0 N T	V
+H	reprints	R IY0 P R IH1 N T S	R IY1 P R IH0 N T S	V
+H	rerun	R IY2 R AH1 N	R IY1 R AH0 N	V
+H	reruns	R IY2 R AH1 N Z	R IY1 R AH0 N Z	V
+H	resume	R IY0 Z UW1 M	R EH1 Z AH0 M EY2	V
+H	retake	R IY0 T EY1 K	R IY1 T EY0 K	V
+H	retakes	R IY0 T EY1 K S	R IY1 T EY0 K S	V
+H	rethink	R IY2 TH IH1 NG K	R IY1 TH IH0 NG K	V
+H	rethinks	R IY2 TH IH1 NG K S	R IY1 TH IH0 NG K S	V
+H	retread	R IY2 T R EH1 D	R IY1 T R EH0 D	V
+H	retreads	R IY2 T R EH1 D Z	R IY1 T R EH0 D Z	V
+H	rewrite	R IY0 R AY1 T	R IY1 R AY2 T	V
+H	rewrites	R IY0 R AY1 T S	R IY1 R AY2 T S	V
+H	segment	S EH1 G M AH0 N T	S EH2 G M EH1 N T	V
+H	segments	S EH2 G M EH1 N T S	S EH1 G M AH0 N T S	V
+H	separate	S EH1 P ER0 EY2 T	S EH1 P ER0 IH0 T	V
+H	separates	S EH1 P ER0 EY2 T S	S EH1 P ER0 IH0 T S	V
+H	subcontract	S AH0 B K AA1 N T R AE2 K T	S AH2 B K AA0 N T R AE1 K T	V
+H	subcontracts	S AH2 B K AA0 N T R AE1 K T S	S AH0 B K AA1 N T R AE2 K T S	V
+H	subject	S AH0 B JH EH1 K T	S AH1 B JH IH0 K T	V
+H	subjects	S AH0 B JH EH1 K T S	S AH1 B JH IH0 K T S	V
+H	subordinate	S AH0 B AO1 R D AH0 N EY2 T	S AH0 B AO1 R D AH0 N AH0 T	V
+H	subordinates	S AH0 B AO1 R D AH0 N EY2 T S	S AH0 B AO1 R D AH0 N AH0 T S	V
+H	supplement	S AH1 P L AH0 M EH0 N T	S AH1 P L AH0 M AH0 N T	V
+H	supplements	S AH1 P L AH0 M EH0 N T S	S AH1 P L AH0 M AH0 N T S	V
+H	surmise	S ER0 M AY1 Z	S ER1 M AY0 Z	V
+H	surmises	S ER0 M AY1 Z IH0 Z	S ER1 M AY0 Z IH0 Z	V
+H	survey	S ER0 V EY1	S ER1 V EY2	V
+H	surveys	S ER0 V EY1 Z	S ER1 V EY2 Z	V
+H	suspect	S AH0 S P EH1 K T	S AH1 S P EH2 K T	V
+H	suspects	S AH0 S P EH1 K T S	S AH1 S P EH2 K T S	V
+H	syndicate	S IH1 N D AH0 K EY2 T	S IH1 N D IH0 K AH0 T	V
+H	syndicates	S IH1 N D IH0 K EY2 T S	S IH1 N D IH0 K AH0 T S	V
+H	torment	T AO1 R M EH2 N T	T AO0 R M EH1 N T	V
+H	transfer	T R AE0 N S F ER1	T R AE1 N S F ER0	V
+H	transfers	T R AE0 N S F ER1 Z	T R AE1 N S F ER0 Z	V
+H	transplant	T R AE0 N S P L AE1 N T	T R AE1 N S P L AE0 N T	V
+H	transplants	T R AE0 N S P L AE1 N T S	T R AE1 N S P L AE0 N T S	V
+H	transport	T R AE0 N S P AO1 R T	T R AE1 N S P AO0 R T	V
+H	transports	T R AE0 N S P AO1 R T S	T R AE1 N S P AO0 R T S	V
+H	triplicate	T R IH1 P L IH0 K EY2 T	T R IH1 P L IH0 K AH0 T	V
+H	triplicates	T R IH1 P L IH0 K EY2 T S	T R IH1 P L IH0 K AH0 T S	V
+H	undercut	AH2 N D ER0 K AH1 T	AH1 N D ER0 K AH2 T	V
+H	underestimate	AH1 N D ER0 EH1 S T AH0 M EY2 T	AH1 N D ER0 EH1 S T AH0 M AH0 T	V
+H	underestimates	AH1 N D ER0 EH1 S T AH0 M EY2 T S	AH1 N D ER0 EH1 S T AH0 M AH0 T S	V
+H	underline	AH2 N D ER0 L AY1 N	AH1 N D ER0 L AY2 N	V
+H	underlines	AH2 N D ER0 L AY1 N Z	AH1 N D ER0 L AY2 N Z	V
+H	undertaking	AH2 N D ER0 T EY1 K IH0 NG	AH1 N D ER0 T EY2 K IH0 NG	V
+H	undertakings	AH2 N D ER0 T EY1 K IH0 NG Z	AH1 N D ER0 T EY2 K IH0 NG Z	V
+H	unused	AH0 N Y UW1 Z D	AH0 N Y UW1 S T	V
+H	upgrade	AH0 P G R EY1 D	AH1 P G R EY0 D	V
+H	upgrades	AH0 P G R EY1 D Z	AH1 P G R EY0 D Z	V
+H	uplift	AH2 P L IH1 F T	AH1 P L IH0 F T	V
+H	upset	AH0 P S EH1 T	AH1 P S EH2 T	V
+H	upsets	AH0 P S EH1 T S	AH1 P S EH2 T S	V
+H	use	Y UW1 Z	Y UW1 S	V
+H	used	Y UW1 Z D	Y UW1 S T	VBN
+H	uses	Y UW1 Z IH0 Z	Y UW1 S IH0 Z	V
+W	w:project|b	-13
+W	g:V|b	-23
+W	g:V|p1=the	-15
+W	g:V|n1=,	-4
+W	g:V|p2s=nd	-4
+W	g:V|p1t=DT	-24
+W	g:V|n1t=P	-14
+W	g:V|p2t=VB	-6
+W	g:V|p1tn1t=DT_P	5
+W	g:V|p2tp1t=VB_DT	-11
+W	w:upset|b	3
+W	g:V|p1=so	-27
+W	w:upset|n1=by	3
+W	w:upset|n1s=by	7
+W	g:V|n2s=he	-2
+W	w:upset|p1t=RB	-4
+W	g:V|p1t=RB	17
+W	w:upset|n1t=IN	8
+W	g:V|n1t=IN	-2
+W	w:upset|p2t=VB	20
+W	g:V|p1tn1t=RB_IN	14
+W	g:V|p2tp1t=VB_RB	-15
+W	g:V|p1n1t=so_IN	-22
+W	w:used|b	12
+W	g:VBN|b	11
+W	w:used|n1=to	1
+W	g:VBN|n1s=to	2
+W	w:used|p2s=he	-5
+W	g:VBN|p2s=he	-3
+W	w:used|n1t=TO	1
+W	g:VBN|n1t=TO	1
+W	w:increases|b	14
+W	g:V|p1s=nd	-3
+W	g:V|p2s=ed	-2
+W	w:increases|p1t=NN	-1
+W	g:V|p1t=NN	2
+W	w:increases|n1t=IN	-2
+W	g:V|p2t=Ued	-1
+W	g:V|p1tn1t=NN_IN	8
+W	g:V|p1tn1=NN_as	5
+W	w:increases|p2=the	4
+W	g:V|n1s=.	-1
+W	g:V|p1t=Ups	10
+W	w:read|b	-13
+W	g:VBD|b	-12
+W	w:read|p1=i	-3
+W	g:VBD|p1=i	-5
+W	w:read|n1=the	4
+W	g:VBD|n1=the	6
+W	w:read|p1s=i	-4
+W	g:VBD|p1s=i	-4
+W	w:read|n1s=he	3
+W	g:VBD|n1s=he	5
+W	w:read|p1t=NN	3
+W	g:VBD|p1t=NN	2
+W	g:VBD|p2t=IN	-7
+W	w:read|n2t=JJ	-5
+W	g:VBD|n2t=JJ	-1
+W	g:VBD|p1tn1t=NN_DT	1
+W	w:read|p2tp1t=IN_NN	-10
+W	g:VBD|p2tp1t=IN_NN	-1
+W	w:close|b	-21
+W	g:V|p1=a	-7
+W	g:V|p2=was	-5
+W	g:V|p1s=a	-33
+W	g:V|n1t=VB	-15
+W	w:close|p2t=VB	-2
+W	w:close|n2t=NN	-6
+W	g:V|n2t=NN	-2
+W	g:V|n1tn2t=VB_NN	1
+W	w:use|b	10
+W	g:V|n1=and	-5
+W	g:V|n2=for	1
+W	g:V|p1s=ed	-16
+W	g:V|n1s=nd	-11
+W	g:V|p2s=ry	-1
+W	g:V|n1t=CC	-7
+W	g:V|p2t=RB	-3
+W	w:use|n2t=IN	1
+W	g:V|p1s=of	-29
+W	g:V|n1s=ld	-2
+W	g:V|p1t=IN	-25
+W	g:V|n1t=MD	-10
+W	g:V|p2t=NN	1
+W	g:V|n2t=PR	3
+W	g:V|p2=so	-1
+W	g:V|n2s=ld	5
+W	g:V|n2t=MD	-8
+W	g:V|n2s=en	2
+W	g:V|p1t=VB	-1
+W	g:V|p2tp1t=RB_VB	-2
+W	g:V|p2=that	13
+W	w:close|p1t=VB	-11
+W	w:close|p2t=IN	6
+W	g:V|p2t=IN	-6
+W	g:V|p2tp1t=IN_VB	2
+W	g:V|n1tn2t=P_NN	-2
+W	w:uses|b	31
+W	g:V|n2s=rs	-3
+W	w:concert|b	-14
+W	g:V|n1s=or	-8
+W	g:V|n1=he	-26
+W	g:V|p1t=JJ	-12
+W	g:V|n1t=PR	20
+W	g:V|p2tp1t=RB_JJ	2
+W	g:V|n1t=DT	24
+W	g:V|p2t=MD	14
+W	g:V|n1tn2t=DT_NN	-1
+W	g:V|n1=of	-19
+W	g:V|n2=that	-7
+W	g:V|n1s=of	-14
+W	g:V|p2s=ll	3
+W	g:V|n2s=at	3
+W	g:V|p1tn1t=VB_IN	-7
+W	g:V|n1tn2t=IN_IN	5
+W	g:V|p1=have	4
+W	g:V|n2=in	-5
+W	g:V|p1tn1t=VB_VB	6
+W	w:read|p1=to	-14
+W	g:VBD|p1=to	-1
+W	w:read|p1s=to	-10
+W	g:VBD|p1s=to	-9
+W	w:read|p1t=TO	-1
+W	g:VBD|p1t=TO	-11
+W	g:V|n2s=as	-2
+W	w:close|p1t=RB	-8
+W	g:V|n2t=VB	-5
+W	g:V|p1tn1t=RB_NN	-5
+W	g:V|n1tn2t=NN_VB	-8
+W	w:house|b	-108
+W	g:V|p2tp1t=DT_NN	9
+W	w:content|b	20
+W	w:content|p1=be	-10
+W	g:N|p1=be	-12
+W	g:N|n1=with	-2
+W	g:N|p2=to	-1
+W	w:content|p1s=be	-2
+W	g:N|p1s=be	-8
+W	g:N|n1s=th	-3
+W	g:N|p2s=to	-3
+W	g:N|p1t=VB	-25
+W	w:content|n1t=IN	3
+W	g:N|p2t=TO	-2
+W	g:V|p1=,	8
+W	g:V|p1s=,	8
+W	g:V|p2tp1t=VB_NN	-10
+W	g:V|p1=in	-5
+W	g:V|p2=in	-9
+W	g:V|p1s=in	-5
+W	g:V|p1tn1t=IN_IN	5
+W	g:V|p2tp1t=IN_IN	-7
+W	g:V|p1=like	12
+W	g:V|p2tp1t=VB_IN	-6
+W	g:V|p2s=on	1
+W	g:V|p2s=ve	2
+W	g:V|p2=is	-13
+W	g:V|p2t=PR	2
+W	w:use|n1=your	4
+W	g:V|n1=your	11
+W	g:V|p2=you	11
+W	g:V|p1s=an	5
+W	g:V|n1s=ur	12
+W	g:V|p2s=ou	9
+W	g:V|p1t=MD	89
+W	w:mouth|b	-9
+W	g:V|p1=your	-4
+W	g:V|p1s=ur	-64
+W	g:V|p1t=PR	27
+W	g:V|n1tn2t=CC_VB	10
+W	g:V|p1tn1=PR_and	-2
+W	w:used|p2s=ld	8
+W	g:VBN|p2s=ld	1
+W	w:used|n2s=he	1
+W	w:used|p1t=VB	29
+W	g:VBN|p1t=VB	17
+W	w:used|n1t=IN	10
+W	g:VBN|n1t=IN	6
+W	w:used|n1tn2t=IN_DT	1
+W	g:VBN|n1tn2t=IN_DT	2
+W	w:used|p1=i	-4
+W	g:VBN|p1=i	-2
+W	w:used|p1s=i	-4
+W	g:VBN|p1s=i	-2
+W	w:used|n2s=st	-1
+W	g:VBN|n2s=st	-2
+W	w:used|p2t=IN	2
+W	w:used|p1tn1t=NN_TO	8
+W	w:used|p2tp1t=IN_NN	5
+W	g:VBN|p2tp1t=IN_NN	3
+W	g:V|p1s=ty	-2
+W	g:V|n1s=in	-4
+W	g:V|p2tp1t=DT_RB	-19
+W	g:V|p1=my	-54
+W	g:V|n1s=ut	2
+W	g:V|p2tp1t=PR_JJ	-15
+W	w:perfect|b	-4
+W	g:V|p2=like	6
+W	g:V|n2s=me	-4
+W	g:V|p1tn1=DT_and	3
+W	g:VBD|n1=it	2
+W	w:read|n1s=it	1
+W	w:read|n1t=PR	4
+W	g:VBD|n1t=PR	6
+W	w:read|p1tn1t=NN_PR	3
+W	g:VBD|p1tn1t=NN_PR	1
+W	w:read|n1tn2t=PR_IN	2
+W	g:VBD|n1tn2t=PR_IN	7
+W	g:VBD|p1tn1=NN_it	1
+W	g:V|p1s=te	-12
+W	g:V|p1tn1t=JJ_P	-2
+W	g:V|p2tp1t=DT_JJ	-7
+W	w:learned|b	57
+W	g:V|p1=i	17
+W	g:V|n1=a	12
+W	w:learned|p2=and	3
+W	g:V|p1s=i	11
+W	g:V|n1s=a	2
+W	g:V|p2p1=and_i	16
+W	w:learned|p2s=nd	8
+W	g:V|n2s=ot	2
+W	g:V|p2t=CC	-2
+W	w:learned|n2t=NN	-7
+W	g:V|p1tn1=NN_a	-1
+W	w:learned|n1=to	5
+W	g:V|p2=<s>	1
+W	w:learned|n1s=to	6
+W	g:V|p2s=<s>	1
+W	w:learned|n1t=TO	5
+W	g:V|p2t=<s>	2
+W	g:V|p1tn1t=NN_TO	1
+W	g:V|p1n1t=i_TO	8
+W	g:V|p1tn1=NN_to	1
+W	w:use|p1s=i	9
+W	w:use|p2s=es	14
+W	g:V|p2s=es	8
+W	w:use|p1t=NN	-5
+W	g:V|p2p1=,_i	8
+W	w:learned|p2t=P	9
+W	g:V|p2t=P	-1
+W	g:V|n1=every	-2
+W	g:V|p2=i	-1
+W	g:V|n1s=ry	-3
+W	w:use|n1t=DT	-7
+W	g:V|n2t=Ule	2
+W	g:V|n1t=Uon	-1
+W	w:read|n1=a	2
+W	g:VBD|n1=a	5
+W	w:read|n1s=a	2
+W	g:VBD|n1s=a	2
+W	w:read|p2p1=<s>_i	1
+W	g:VBD|p2p1=<s>_i	1
+W	g:VBD|n2s=ok	2
+W	g:VBD|p2tp1t=<s>_NN	3
+W	g:V|p1s=ee	-6
+W	g:V|p1tn1t=NN_CC	3
+W	g:V|p2tp1t=NN_NN	3
+W	g:V|p1=we	29
+W	g:V|n1=is	-11
+W	w:use|p1t=PR	1
+W	w:use|n1t=VB	-3
+W	w:use|p1=to	8
+W	g:V|p1=to	38
+W	g:V|p1s=to	2
+W	g:V|p1t=TO	36
+W	g:V|n1t=CD	7
+W	g:V|p2tp1t=VB_TO	5
+W	g:V|n2=and	1
+W	g:V|n2s=nd	-2
+W	g:V|n2=</s>	-1
+W	g:V|n2s=</s>	-2
+W	g:V|n2t=</s>	-3
+W	g:V|n2s=ly	1
+W	g:V|p2t=JJ	-5
+W	w:use|n1=the	-5
+W	g:V|n1=the	16
+W	w:use|n1s=he	-8
+W	g:V|n1s=an	-3
+W	g:V|n1t=Uan	-2
+W	w:use|p1=people	8
+W	g:V|p1=people	46
+W	g:V|p1s=le	-13
+W	w:use|p2t=DT	-3
+W	w:use|n1s=ic	9
+W	g:V|n1s=ic	7
+W	g:V|p1=very	-20
+W	g:V|p2=a	-6
+W	g:V|p2s=a	-6
+W	w:perfect|p1t=RB	-4
+W	g:V|p1=don't	8
+W	g:V|p1s=don't	3
+W	g:V|n1s=es	-6
+W	g:V|n2t=WR	-2
+W	g:V|p2=.	-1
+W	w:use|n2=.	-1
+W	g:V|n2=.	-4
+W	w:use|n2s=.	-7
+W	w:use|n2t=P	-1
+W	g:V|n2t=P	-3
+W	g:V|n2t=Ury	-5
+W	w:use|n2t=JJ	3
+W	g:V|n1=that	3
+W	g:V|n2=much	17
+W	g:V|p2s=nt	-2
+W	w:use|n1t=IN	-2
+W	w:use|n1=to	-3
+W	w:use|n1s=to	-2
+W	w:use|n1t=TO	-2
+W	g:V|p2t=WP	11
+W	g:V|p2p1=then_i	-13
+W	g:V|p1=not	15
+W	g:V|n2=or	-7
+W	w:use|p2t=MD	-1
+W	g:V|p2tp1t=MD_RB	36
+W	w:process|b	-25
+W	g:V|p1=just	9
+W	g:V|p2=they	16
+W	g:V|p1s=st	-3
+W	g:V|n1s=it	7
+W	g:V|p2tp1t=PR_RB	3
+W	w:perfect|p1t=VB	-5
+W	w:perfect|n1t=IN	2
+W	g:V|p2tp1t=NN_VB	1
+W	g:V|n1tn2t=IN_PR	-1
+W	w:perfect|n2t=P	-5
+W	w:read|p2t=VB	-17
+W	g:VBD|p2t=VB	-3
+W	g:V|p2=of	-1
+W	g:V|p2s=of	-4
+W	g:V|n1tn2t=VB_DT	-1
+W	w:used|p1s=he	-2
+W	g:VBN|p1s=he	-5
+W	w:used|p1t=PR	-44
+W	g:VBN|p1t=PR	-35
+W	w:used|p2t=P	-1
+W	g:VBN|p2t=P	-2
+W	w:used|p1tn1t=PR_TO	-1
+W	w:used|n1tn2t=TO_JJ	5
+W	g:VBN|n1tn2t=TO_JJ	1
+W	g:V|n1s=ng	1
+W	g:V|n1tn2t=P_CC	3
+W	g:V|n2=into	2
+W	g:V|p2s=de	-5
+W	g:V|n1t=RP	23
+W	g:V|p2t=Ude	-2
+W	g:V|n1tn2t=RP_IN	1
+W	g:V|p1s=re	-4
+W	g:V|n2s=ad	-2
+W	g:V|p1tn1t=JJ_IN	-2
+W	w:closer|b	-15
+W	g:N|p1s=re	-28
+W	g:N|p1tn1t=VB_TO	-1
+W	g:N|p1tn1=VB_to	-4
+W	g:V|p1s=<s>	-2
+W	g:V|p2tp1t=<s>_<s>	-2
+W	g:V|p1tn1=PR_.	15
+W	g:V|n2s=so	-6
+W	g:V|p1t=Uus	-4
+W	g:V|p1s=ng	-2
+W	g:V|n2s=re	1
+W	g:V|p1t=Ung	-7
+W	g:V|n1=them	17
+W	w:use|p2=<s>	-3
+W	w:use|p2s=<s>	-4
+W	w:use|p2t=<s>	-2
+W	w:use|n2=of	1
+W	w:use|n2s=of	2
+W	g:V|n2s=of	-10
+W	g:V|n1tn2t=Ues_IN	-2
+W	w:used|n2t=NN	-2
+W	g:VBN|n2t=NN	-2
+W	w:subject|b	-29
+W	g:V|n1s=er	4
+W	g:V|n1t=RB	4
+W	g:V|n1tn2t=RB_P	-8
+W	g:V|p2=by	-11
+W	w:content|n1s=,	4
+W	w:content|p1t=JJ	4
+W	g:N|n1t=P	10
+W	g:N|p1s=ut	19
+W	w:perfect|n1=.	-3
+W	w:perfect|n1s=.	-2
+W	w:used|p1t=RB	-7
+W	g:VBN|p1t=RB	-8
+W	w:used|p2t=VB	10
+W	g:VBN|p2t=VB	11
+W	w:used|p2tp1t=VB_RB	1
+W	g:VBN|p2tp1t=VB_RB	9
+W	w:used|p1s=ho	-4
+W	w:used|p1t=WP	-33
+W	g:VBN|p1t=WP	-25
+W	w:cursed|b	60
+W	w:used|p2s=nd	6
+W	g:VBN|p2s=nd	1
+W	g:V|p1s=al	-29
+W	w:deserts|b	2
+W	w:close|n2=the	-4
+W	w:close|n1s=to	-5
+W	g:V|p2p1=that_i	-1
+W	g:V|n2t=Uic	6
+W	w:use|p1tn1t=NN_DT	-3
+W	g:V|p1tn1=NN_the	1
+W	g:V|p2s=le	3
+W	g:V|p1t=CD	-7
+W	w:use|n1s=re	-9
+W	g:V|n1=from	2
+W	g:V|n2=my	-14
+W	w:learned|n1t=IN	21
+W	g:V|n1s=en	1
+W	w:separate|b	-11
+W	g:V|n2s=st	3
+W	g:V|p1=you	28
+W	g:V|p1tn1t=PR_PR	2
+W	w:combine|b	6
+W	g:V|p2s=er	-2
+W	g:V|n1tn2t=PR_P	6
+W	g:V|p1s=ce	-4
+W	g:VBD|p2s=i	-1
+W	w:read|p1t=MD	-24
+W	g:VBD|p1t=MD	-12
+W	g:V|n1tn2t=PR_VB	-6
+W	g:V|p1=uh	8
+W	w:use|n1=it	-9
+W	g:V|p1s=uh	8
+W	w:use|n1s=it	-3
+W	g:V|p2s=st	-8
+W	g:V|n2s=ke	2
+W	w:use|p1t=JJ	-3
+W	g:V|p1tn1=JJ_it	4
+W	w:use|p2tp1t=NN_RB	4
+W	g:N|n1t=CC	9
+W	g:N|p2t=IN	7
+W	w:content|n2t=NN	2
+W	w:produce|b	30
+W	g:V|n2=from	3
+W	g:V|p1s=ly	9
+W	g:V|p1t=Uly	14
+W	g:V|n1t=Uer	1
+W	w:produce|n2t=IN	15
+W	g:V|n1tn2t=Uer_IN	-6
+W	g:VBD|p1=have	-3
+W	g:VBD|p1s=ve	-1
+W	w:read|p1t=VB	-13
+W	g:VBD|p1t=VB	-12
+W	w:read|p2t=MD	-28
+W	g:VBD|p2t=MD	-15
+W	w:read|p1tn1t=VB_DT	1
+W	g:VBD|p1tn1t=VB_DT	12
+W	w:read|p1t=CC	-9
+W	g:VBD|p1t=CC	-1
+W	w:read|n2t=CC	-2
+W	g:VBD|n2t=CC	-2
+W	w:read|p1n1t=and_PR	-5
+W	g:VBD|p1n1t=and_PR	-7
+W	w:read|n1s=se	-8
+W	w:read|p2s=rd	2
+W	g:VBD|p2s=rd	3
+W	g:VBD|n1t=IN	-4
+W	g:VBD|n1tn2t=IN_DT	-3
+W	w:read|n1tn2t=NN_IN	-4
+W	g:VBD|n1tn2t=NN_IN	-5
+W	w:read|p1t=RB	-5
+W	g:VBD|p1t=RB	-5
+W	g:V|p2s=te	-3
+W	g:V|p2s=ct	-1
+W	g:V|n2s=th	-6
+W	g:V|p1tn1t=PR_TO	3
+W	g:V|p1tn1=PR_to	1
+W	g:V|n1=their	19
+W	g:V|p1=some	8
+W	g:V|n1s=ts	-1
+W	g:V|n2s=on	-2
+W	g:V|n1t=Uts	-8
+W	g:V|p2t=Ung	-4
+W	w:collect|b	27
+W	w:close|p1s=it	-21
+W	w:close|p1t=NN	-6
+W	w:learned|n1s=an	-13
+W	g:V|p1=know	-2
+W	g:V|p2p1=you_know	-9
+W	g:V|n1tn2t=DT_JJ	1
+W	g:V|n1=they	-9
+W	g:V|p2s=or	-14
+W	w:close|n1t=PR	14
+W	g:V|p2=we	3
+W	g:V|p2s=we	5
+W	w:close|p2t=PR	-4
+W	g:V|p1tn1=VB_to	-8
+W	g:V|n2s=ow	4
+W	w:upset|n1t=P	9
+W	g:V|p2tp1t=RB_RB	-4
+W	w:projects|b	-24
+W	g:V|p1s=nt	-8
+W	g:V|n1tn2t=P_JJ	-17
+W	g:V|p1=never	7
+W	w:excess|b	-10
+W	w:mouths|b	-7
+W	g:V|p1=and	3
+W	g:V|p1t=CC	8
+W	g:V|p1tn1t=CC_P	-2
+W	g:V|p1=.	13
+W	g:V|p1s=.	15
+W	w:use|p1t=P	1
+W	g:V|n2t=Uer	-2
+W	g:V|p2=his	-4
+W	g:V|p2tp1t=TO_DT	7
+W	w:read|p1=ever	-3
+W	w:read|p2tp1t=NN_RB	8
+W	g:VBD|p2tp1t=NN_RB	6
+W	w:read|p1tn1=RB_the	-3
+W	g:VBD|p1tn1=RB_the	-2
+W	w:read|n1n2=it_,	1
+W	g:VBD|n1n2=it_,	5
+W	w:concerts|b	-17
+W	g:V|p1=at	-3
+W	g:V|n1=my	-6
+W	g:V|n1tn2t=PR_NN	2
+W	g:V|p1tn1t=PR_IN	1
+W	g:V|n1=his	18
+W	g:V|p2=this	7
+W	g:V|n2s=is	-3
+W	w:present|b	-22
+W	g:V|p2=as	7
+W	g:V|n2s=ew	-13
+W	w:present|n1t=PR	2
+W	g:V|p2s=re	-10
+W	g:V|p2p1=to_the	1
+W	g:V|n1=was	-7
+W	g:V|n2=they	5
+W	w:read|p1=who	1
+W	g:VBD|p1=who	1
+W	w:read|p2s=le	1
+W	g:VBD|p2s=le	2
+W	w:read|p1t=WP	1
+W	w:used|p2t=NN	1
+W	g:VBN|p2t=NN	1
+W	w:essay|b	10
+W	g:V|n1s=pe	3
+W	w:affects|b	16
+W	g:V|p1=that	37
+W	g:V|p2s=ow	-3
+W	g:V|p2t=WR	16
+W	g:N|p2=the	21
+W	g:N|p2t=DT	3
+W	g:V|n1tn2t=VB_JJ	-2
+W	g:V|p1tn1=NN_.	4
+W	w:used|n2=go	-7
+W	g:VBN|n2=go	-6
+W	g:VBN|n1n2=to_go	-9
+W	w:used|p2p1=._i	-10
+W	w:used|p2tp1t=P_NN	-19
+W	g:VBN|p2tp1t=P_NN	-3
+W	g:V|p1=their	-55
+W	w:read|n1=,	-1
+W	w:read|n1s=,	-3
+W	w:read|n1t=P	-1
+W	g:V|p2=if	5
+W	g:V|p2s=if	4
+W	g:V|p1tn1=IN_the	18
+W	g:V|p1s=ll	2
+W	g:V|p1=even	-3
+W	g:V|p1s=en	15
+W	g:V|n1tn2t=TO_PR	2
+W	g:V|p2tp1t=P_PR	8
+W	w:close|p2t=P	-15
+W	w:object|b	1
+W	g:V|p1=an	-15
+W	w:object|p1t=DT	-3
+W	w:object|n1t=IN	-8
+W	g:V|n2=,	-5
+W	g:V|n2s=,	-5
+W	w:perfect|p1t=PR	11
+W	w:read|p2t=RB	-7
+W	g:VBD|p2t=RB	-8
+W	g:V|p1=i'll	-10
+W	w:close|n1=my	1
+W	w:close|n1s=my	5
+W	g:V|n2s=es	-1
+W	g:V|p1tn1t=NN_PR	-1
+W	w:increase|b	5
+W	g:V|p2tp1t=VB_P	9
+W	w:record|b	-22
+W	g:V|n2=he	-10
+W	g:V|p1s=ck	2
+W	g:V|n1=?	3
+W	g:V|n1s=?	2
+W	w:excuse|b	1
+W	w:use|p1=i'll	-2
+W	g:VBD|p2p1=,_i	-6
+W	w:read|p2s=,	1
+W	g:VBD|p2s=,	6
+W	g:VBN|p1=more	-1
+W	w:used|p1n1=more_to	-3
+W	w:used|n2t=IN	-3
+W	g:VBN|n2t=IN	-3
+W	w:used|p1tn1t=RB_TO	-2
+W	w:used|p1n1t=more_TO	-17
+W	g:VBN|p1tn1=RB_to	-1
+W	w:read|p1tn1t=NN_NN	1
+W	g:VBD|p1tn1t=NN_NN	3
+W	w:read|n1s=is	2
+W	g:VBD|n1s=is	2
+W	g:VBD|p2=you	-4
+W	g:VBD|p2s=ou	-9
+W	w:close|p2t=NN	-14
+W	w:closer|p1t=DT	6
+W	g:N|p2t=VB	-1
+W	g:N|p1tn1t=DT_P	8
+W	g:V|p2tp1t=TO_VB	-12
+W	w:suspect|b	7
+W	w:suspect|n1t=P	7
+W	g:V|n1s=ns	-13
+W	g:V|n1t=Uns	-6
+W	g:V|p2tp1t=IN_RB	-7
+W	w:read|p2s=nt	3
+W	g:VBD|p2s=nt	2
+W	w:read|n1tn2t=PR_RB	2
+W	g:VBD|n1tn2t=PR_RB	1
+W	w:desert|b	-5
+W	g:V|n1=on	2
+W	g:V|p1=her	-45
+W	g:V|n2=one	-8
+W	w:read|p2s=nd	-4
+W	g:VBD|p2s=nd	-2
+W	w:read|p1n1t=i_IN	-1
+W	g:VBD|p1n1t=i_IN	-1
+W	g:V|p2tp1t=NN_P	-1
+W	g:V|p2s=it's	-5
+W	w:ornaments|b	-15
+W	w:read|p2s=er	5
+W	g:VBD|p2s=er	5
+W	g:VBD|p1t=P	-1
+W	w:used|p1=they	-2
+W	w:used|n2=have	4
+W	w:used|n1n2=to_have	3
+W	w:used|n2s=ve	7
+W	g:VBN|n2s=ve	3
+W	w:used|p1s=er	2
+W	g:VBN|p1s=er	1
+W	w:affect|b	12
+W	g:V|n1s=ny	2
+W	g:V|n1tn2t=DT_IN	2
+W	w:read|n2t=PR	-2
+W	g:VBD|n2t=PR	-1
+W	w:content|n2=</s>	4
+W	g:N|p1s=ly	-16
+W	w:content|n2s=</s>	3
+W	g:N|p1t=RB	-30
+W	w:content|n2t=</s>	3
+W	w:record|n1t=P	-14
+W	g:V|n2=is	-8
+W	g:V|n2=has	-12
+W	g:V|p1t=Uts	26
+W	w:read|n2t=VB	1
+W	g:VBD|n2t=VB	5
+W	w:read|n1s=at	3
+W	g:VBD|n1s=at	5
+W	w:read|p2p1=i_haven't	9
+W	g:VBD|p2p1=i_haven't	4
+W	w:read|p1=<s>	-2
+W	g:VBD|p1=<s>	-1
+W	w:read|p2p1=<s>_<s>	-1
+W	g:VBD|p2p1=<s>_<s>	-14
+W	w:read|p1t=<s>	-10
+W	g:VBD|p1t=<s>	-1
+W	w:read|p2tp1t=<s>_<s>	-2
+W	w:read|p1n1t=never_DT	-4
+W	g:VBD|p1n1t=never_DT	-1
+W	g:VBN|n2s=ch	1
+W	g:V|p1=do	3
+W	g:V|p1s=do	11
+W	w:use|p2t=CC	8
+W	w:used|n1s=he	-5
+W	w:used|n1t=DT	-8
+W	g:VBN|n1t=DT	-15
+W	w:used|p2tp1t=<s>_<s>	2
+W	w:used|p2tp1t=RB_NN	-8
+W	g:VBN|p2tp1t=RB_NN	-2
+W	g:VBN|p2t=JJ	2
+W	w:presents|p1t=NN	-15
+W	w:presents|n1t=IN	-2
+W	g:V|p2t=Ume	5
+W	w:compliments|b	-24
+W	g:V|n1t=WR	3
+W	g:V|n1s=ne	10
+W	w:used|n2s=it	4
+W	g:VBN|n2s=it	6
+W	w:close|p2s=re	24
+W	w:close|p1t=CC	16
+W	g:V|p1n1t=and_PR	9
+W	g:V|p1tn1=RB_me	8
+W	w:use|p1tn1t=VB_IN	-11
+W	g:VBN|n1=by	10
+W	w:contract|b	-89
+W	g:V|p2p1=<s>_the	-9
+W	g:V|p2s=ck	-11
+W	w:content|n1=to	-1
+W	w:content|n1s=to	-1
+W	w:content|n1t=TO	-1
+W	w:content|p2t=VB	-9
+W	g:N|n1tn2t=TO_VB	-4
+W	g:V|p2=any	-3
+W	g:V|n1s=ce	-5
+W	w:used|n1s=ar	-18
+W	g:VBN|n1s=ar	-13
+W	g:VBN|n2s=do	2
+W	g:V|n2s=la	-1
+W	g:V|n1t=Ued	-10
+W	g:V|n2t=Ula	-6
+W	g:V|n1tn2t=RP_DT	20
+W	g:V|p2s=rs	-4
+W	w:use|p2t=Urs	2
+W	w:used|n2s=ng	3
+W	w:used|p1s=en	-2
+W	g:VBN|p1s=en	-4
+W	w:learned|p1t=VB	21
+W	w:complex|b	-26
+W	g:ADJ|b	-32
+W	w:processing|b	14
+W	w:separate|n1t=IN	8
+W	w:content|p1s=am	5
+W	g:N|p1s=am	7
+W	w:used|p2=so	-3
+W	g:VBN|p2=so	-9
+W	g:V|p1=who	19
+W	g:V|p1s=ho	15
+W	g:V|p1t=WP	13
+W	g:V|n1t=Ual	5
+W	g:V|p2tp1t=MD_NN	-44
+W	w:used|p1s=ly	-4
+W	g:VBN|p1s=ly	-1
+W	g:VBD|p1n1t=haven't_DT	1
+W	w:learned|n2t=IN	-8
+W	g:V|p1n1t=i_PR	3
+W	w:used|p2=when	-9
+W	g:VBN|p2=when	-11
+W	w:used|n2s=ow	-1
+W	g:VBN|n2s=ow	-5
+W	w:use|n1t=P	-5
+W	g:V|p2s=et	9
+W	w:incense|b	-3
+W	g:V|n1=thing	-8
+W	w:excuse|n1=me	-6
+W	w:excuse|n1s=me	-12
+W	g:V|p1n1=<s>_me	-11
+W	g:V|p1tn1=<s>_me	-3
+W	w:used|n1=it	-7
+W	g:VBN|n1=it	-3
+W	w:used|p1t=Uly	-1
+W	g:VBN|p1t=Uly	-3
+W	w:used|n1t=PR	-7
+W	g:VBN|n1t=PR	-12
+W	g:V|p2s=rk	9
+W	w:close|p2s=he	-8
+W	w:close|p2=does	15
+W	g:V|p2=does	19
+W	g:V|n2t=Uen	4
+W	w:used|n2s=ss	-2
+W	g:VBN|n2s=ss	-1
+W	w:used|p2t=CD	-2
+W	g:VBN|p2t=CD	-1
+W	w:progress|b	-12
+W	g:V|n1tn2t=VB_VB	-7
+W	w:use|p1t=CC	10
+W	g:V|p2tp1t=Ury_CC	-8
+W	g:V|p1n1t=and_IN	-6
+W	g:V|p1=they	44
+W	w:use|n1tn2t=DT_NN	4
+W	g:N|p2s=ly	-2
+W	w:content|p2t=RB	1
+W	w:console|b	3
+W	w:close|p2tp1t=CC_NN	5
+W	w:learned|p1t=RB	-2
+W	w:learned|p2t=PR	1
+W	w:processes|b	7
+W	g:V|p1s=ic	-1
+W	g:V|p1t=Uic	-5
+W	g:V|n1=you	-4
+W	g:V|p2=your	-1
+W	g:V|p1t=Uve	-19
+W	w:closer|n1n2=to_him	3
+W	g:N|n1n2=to_him	2
+W	w:upset|n1s=im	2
+W	g:V|n1s=im	1
+W	w:used|p2tp1t=NN_PR	1
+W	g:VBN|p2tp1t=NN_PR	4
+W	w:close|n1=by	-14
+W	w:close|n1s=by	-2
+W	w:used|p1s=rs	-5
+W	g:VBN|p1s=rs	-6
+W	w:used|p1t=Urs	-6
+W	g:VBN|p1t=Urs	-1
+W	g:VBN|p2tp1t=DT_Urs	-3
+W	g:V|p1s=ms	24
+W	w:used|p2p1=,_i	5
+W	g:VBN|p2p1=,_i	2
+W	w:read|p1t=PR	-1
+W	g:VBD|p1t=PR	-2
+W	w:read|p1tn1t=PR_DT	-2
+W	g:VBD|p1tn1t=PR_DT	-2
+W	w:read|p2tp1t=VB_PR	-2
+W	g:VBD|p2tp1t=VB_PR	-12
+W	g:V|p1=his	-67
+W	g:V|p2t=WD	13
+W	w:excuse|p1=.	4
+W	w:excuse|p2t=RB	4
+W	w:excuse|p1n1t=._PR	1
+W	g:V|p1tn1=P_me	4
+W	w:refuse|b	7
+W	w:refuse|p1t=PR	4
+W	w:frequent|b	-19
+W	g:V|p1s=th	-2
+W	g:V|p2tp1t=P_RB	-1
+W	w:entrance|b	-25
+W	g:V|p1=which	43
+W	w:close|p1s=es	-2
+W	g:V|p1s=es	7
+W	g:V|p1n1t=,_DT	3
+W	w:used|n1=that	-4
+W	g:VBN|n1=that	-6
+W	w:used|n1tn2t=IN_IN	-17
+W	g:VBN|n1tn2t=IN_IN	-21
+W	w:perfect|p1s=ly	-6
+W	w:perfect|p2s=is	-2
+W	g:V|n2s=ve	-3
+W	g:V|n1tn2t=Ung_IN	6
+W	g:V|p1=then	9
+W	g:V|n2=there	3
+W	g:V|n2t=EX	12
+W	g:V|p2t=CD	-4
+W	g:V|p1n1t=i_P	-4
+W	w:close|n1t=RB	-4
+W	w:used|n1s=in	6
+W	g:VBN|n1s=in	1
+W	g:V|p2t=Ull	2
+W	w:closer|p2t=DT	9
+W	g:V|p1=other	-4
+W	w:used|p1=that	-5
+W	g:VBN|p1=that	-6
+W	w:used|p1s=at	-20
+W	g:VBN|p1s=at	-9
+W	g:VBN|p1n1=that_to	-7
+W	w:used|p1n1t=that_TO	-5
+W	g:VBN|p1n1t=that_TO	-4
+W	w:coordinates|b	21
+W	g:V|p2=their	-6
+W	w:baths|b	-4
+W	w:used|p1s=ot	5
+W	g:VBN|p1s=ot	7
+W	g:V|p1s=de	-3
+W	w:learned|p1s=he	5
+W	w:accent|b	-5
+W	g:N|p2=and	3
+W	g:N|p2s=nd	2
+W	g:N|p2t=CC	3
+W	w:content|p2tp1t=CC_VB	1
+W	g:V|p1tn1=NN_me	-5
+W	g:V|n2=on	-3
+W	g:V|p1=its	-49
+W	w:used|n2=give	-2
+W	g:VBN|n2=give	-1
+W	w:used|n1n2=to_give	-1
+W	g:VBN|n1n2=to_give	-1
+W	g:V|n1tn2t=VB_PR	5
+W	w:used|n2s=ay	3
+W	g:VBN|n2s=ay	2
+W	w:blessed|b	66
+W	w:blessed|n1t=IN	9
+W	g:V|n2s=rt	-1
+W	g:VBN|n2=love	2
+W	w:used|n1tn2t=TO_NN	-5
+W	g:VBN|n1tn2t=TO_NN	-3
+W	w:present|p1t=VB	-10
+W	w:perfect|p2t=JJ	6
+W	g:V|p2tp1t=DT_VB	-6
+W	w:close|p1=it	-5
+W	g:V|p1=it	21
+W	w:close|p1t=PR	7
+W	w:close|p2tp1t=VB_PR	-1
+W	w:exploit|b	13
+W	g:V|p1s=rs	55
+W	g:V|n2s=wo	4
+W	w:rejects|b	21
+W	g:V|p2=he	6
+W	w:used|p2tp1t=VB_PR	5
+W	g:VBN|p2tp1t=VB_PR	2
+W	g:V|p1n1t=and_DT	2
+W	g:V|p2=an	-19
+W	w:read|p1n1=and_the	5
+W	w:read|p2tp1t=VB_CC	13
+W	g:VBD|p2tp1t=VB_CC	6
+W	w:upset|p1t=NN	-4
+W	w:upset|p2t=DT	-4
+W	g:V|n1s=ht	-8
+W	w:used|p2s=at	-4
+W	g:VBN|p2s=at	-6
+W	w:used|p1n1t=i_RB	-1
+W	g:VBN|p1n1t=i_RB	-3
+W	w:use|p1tn1t=VB_DT	3
+W	g:V|n2=her	-6
+W	w:read|p1t=JJ	-5
+W	w:used|n1=them	10
+W	w:used|n1s=em	1
+W	g:VBN|n1s=em	1
+W	g:V|n2t=Unt	-1
+W	w:used|p1=,	-21
+W	g:VBN|p1=,	-6
+W	w:used|p1s=,	-9
+W	g:VBN|p1s=,	-6
+W	g:VBN|p1n1=,_to	-3
+W	g:VBN|p1n1t=,_TO	-2
+W	w:used|n2=a	-3
+W	g:VBN|n2=a	-1
+W	w:read|p1=i've	-2
+W	w:read|p1s=i've	-1
+W	g:VBD|p1s=i've	-1
+W	w:records|b	-24
+W	w:closer|p2s=ng	1
+W	g:N|n2t=IN	-13
+W	w:use|n2t=PR	-8
+W	w:crooked|b	37
+W	w:crooked|n2t=NN	3
+W	w:crooked|n1t=P	20
+W	g:V|p1s=ns	38
+W	w:use|p2=,	2
+W	g:V|p2tp1t=MD_DT	13
+W	g:V|p1tn1=DT_the	15
+W	g:V|p2p1=did_not	45
+W	w:read|p2tp1t=NN_NN	-1
+W	g:V|p1=also	22
+W	w:used|n1n2=to_like	-10
+W	g:VBN|n1n2=to_like	-3
+W	w:used|p2tp1t=WP_NN	-1
+W	g:VBN|p2tp1t=WP_NN	-1
+W	w:read|p2tp1t=PR_RB	5
+W	g:VBD|p2tp1t=PR_RB	8
+W	w:abuse|b	-11
+W	g:V|p1=first	16
+W	g:V|p1t=Ull	-2
+W	w:intimate|b	-3
+W	w:affect|p2t=RB	-11
+W	g:V|p1n1t=didn't_PR	-2
+W	w:perfect|p1=that	4
+W	g:V|p1=he	26
+W	w:uses|n2t=P	22
+W	w:used|n2s=ry	-5
+W	g:VBN|n2s=ry	-6
+W	w:used|n1t=P	5
+W	g:VBN|n1t=P	7
+W	w:appropriate|b	-1
+W	g:V|p1tn1t=Uly_P	8
+W	w:appropriate|p1t=VB	-1
+W	g:V|p2=do	25
+W	g:V|p2s=do	3
+W	w:used|p1=so	-32
+W	g:VBN|p1=so	-18
+W	g:VBN|p1s=so	-3
+W	w:perfect|n2s=ut	24
+W	w:used|p1s=le	-1
+W	g:VBN|p1s=le	-1
+W	g:V|p1tn1=NN_in	2
+W	g:N|n1t=VB	17
+W	g:N|p2s=<s>	2
+W	g:N|p2t=<s>	1
+W	w:read|p2tp1t=NN_CC	-8
+W	g:VBD|p2tp1t=NN_CC	-6
+W	w:dictates|b	12
+W	g:V|p1n1t=,_RB	13
+W	g:V|p1s=pe	11
+W	w:processes|p1t=NN	8
+W	w:progress|p2t=NN	-3
+W	w:read|p1=always	7
+W	g:VBD|p1=always	1
+W	g:V|p1tn1t=TO_P	2
+W	w:resume|b	19
+W	w:read|p2=we	1
+W	g:VBD|p2=we	6
+W	w:read|p2s=we	2
+W	g:V|p1=them	9
+W	g:V|p1s=em	5
+W	w:excuse|n1=,	3
+W	w:invite|b	2
+W	w:invite|n1t=PR	1
+W	g:V|p1tn1=VB_me	21
+W	g:VBN|n2s=in	-2
+W	w:read|n2=she	4
+W	g:VBD|n2=she	2
+W	w:closer|p1s=ed	-20
+W	g:N|p2tp1t=VB_RB	-15
+W	g:V|p2s=ar	-5
+W	w:read|p1s=re	1
+W	g:VBD|p1s=re	1
+W	w:read|p1=also	8
+W	g:VBD|p1=also	5
+W	g:V|n1s=de	-4
+W	w:upset|n1=with	-1
+W	w:upset|p1tn1=RB_with	-4
+W	w:documents|b	-3
+W	w:close|n2s=or	-1
+W	w:invites|b	28
+W	g:V|p1s=dy	-4
+W	w:elaborate|b	-4
+W	w:closes|b	31
+W	g:V|n2=them	1
+W	g:V|p2p1=work_and	15
+W	g:V|p2tp1t=NN_CC	-5
+W	w:close|p1=to	10
+W	w:close|p1s=to	2
+W	w:close|p1t=TO	9
+W	g:V|n1=into	18
+W	g:V|p1=day	15
+W	g:VBD|n2s=me	-10
+W	w:abstract|b	-1
+W	g:V|p1=still	26
+W	w:blessed|p1t=RB	-3
+W	w:contracts|b	-39
+W	g:V|p2s=ce	9
+W	g:V|n1=no	-13
+W	g:V|p1=more	-53
+W	g:V|p1tn1t=CC_TO	-3
+W	g:V|p1tn1=CC_to	-5
+W	w:used|p1s=or	4
+W	g:VBN|p1s=or	5
+W	g:N|p2s=at	7
+W	g:N|n2t=P	-8
+W	w:closes|p2=the	3
+W	w:closes|p2s=he	6
+W	w:closes|p2t=DT	7
+W	g:V|p1tn1=NN_at	4
+W	g:V|n2=man	-16
+W	w:content|p1t=NN	10
+W	w:uses|p1t=NN	2
+W	w:upsets|n2t=P	-1
+W	g:V|p2tp1t=Ues_CC	-1
+W	w:presents|p1t=PR	-7
+W	w:separate|n1t=P	12
+W	g:V|n1=whatever	3
+W	w:blessed|p2s=ng	4
+W	w:blessed|n2s=he	3
+W	g:V|p1tn1t=<s>_DT	-4
+W	g:V|p1n1t=<s>_DT	-3
+W	g:V|p2t=Uen	8
+W	g:V|p2tp1t=PR_P	19
+W	w:close|p2s=in	22
+W	g:V|p1t=Ues	29
+W	w:closer|p2s=ed	3
+W	w:excuse|p1t=VB	23
+W	g:V|p2t=Uts	5
+W	w:converse|b	11
+W	g:VBD|p1=you	-1
+W	w:read|p1tn1t=PR_PR	-8
+W	g:VBD|p1tn1t=PR_PR	-5
+W	w:perfect|p1t=P	-6
+W	g:V|p1tn1t=P_P	-7
+W	w:used|p2tp1t=DT_Uls	-15
+W	g:VBN|p2tp1t=DT_Uls	-12
+W	w:used|n1tn2t=IN_P	-5
+W	g:VBN|n1tn2t=IN_P	-2
+W	w:conflict|b	-4
+W	w:recall|b	19
+W	w:used|p1n1=you_to	4
+W	g:VBN|p1n1=you_to	6
+W	w:used|p1n1t=you_TO	7
+W	g:VBN|p1n1t=you_TO	6
+W	g:V|p1tn1=NN_it	-8
+W	w:compliment|b	-15
+W	g:V|p1n1=so_a	-1
+W	g:VBN|n1t=VB	2
+W	w:used|p2tp1t=DT_NN	2
+W	g:VBN|p2tp1t=DT_NN	4
+W	g:V|p1n1=,_to	-3
+W	g:V|p1n1t=,_TO	-1
+W	w:protest|n1tn2t=IN_DT	-4
+W	w:read|n1s=ur	-9
+W	g:VBD|n1s=ur	-7
+W	g:VBD|p1tn1t=VB_PR	-2
+W	w:contrast|b	-3
+W	g:V|p2tp1t=VB_CC	15
+W	w:used|p2=got	4
+W	g:VBN|p2=got	1
+W	w:used|p2p1=got_so	3
+W	g:VBN|p2p1=got_so	1
+W	w:used|p2s=ot	1
+W	g:VBN|p2s=ot	3
+W	w:close|n1=up	6
+W	w:close|n1s=up	15
+W	g:V|p2s=ic	-2
+W	w:used|p1s=ay	-3
+W	g:VBN|p1s=ay	-5
+W	w:present|p2=the	10
+W	w:present|n2t=NN	1
+W	w:used|n1=a	-3
+W	g:VBN|n1s=a	-1
+W	g:V|n1tn2t=PR_DT	2
+W	g:V|p2=let	8
+W	w:used|n2s=ep	-1
+W	g:VBN|n2s=ep	-2
+W	w:close|n1s=ur	-30
+W	w:upset|n1tn2t=P_</s>	23
+W	w:upset|p1s=ng	11
+W	w:upset|n2s=at	-1
+W	w:upset|p2t=PR	-9
+W	w:recount|b	3
+W	w:close|n1=your	-2
+W	w:ally|b	-15
+W	w:close|n1n2=the_door	-1
+W	w:close|n1t=DT	-2
+W	w:close|n1tn2t=DT_NN	-4
+W	g:V|p2s=ss	1
+W	w:closer|p1s=ng	-10
+W	g:V|n1tn2t=CC_Ued	12
+W	w:instinct|b	-1
+W	w:instinct|n2t=PR	-3
+W	g:V|n1tn2t=JJ_Uns	-3
+W	g:V|n1=money	2
+W	w:ragged|b	41
+W	w:ragged|p1=and	6
+W	w:ragged|n2s=he	3
+W	g:V|p2tp1t=Uly_CC	1
+W	w:used|p2=we	-7
+W	g:VBN|p2=we	-3
+W	w:used|p2s=we	-2
+W	g:VBN|p2s=we	-1
+W	w:upset|p1=be	10
+W	w:upset|p1s=be	3
+W	w:upset|p1t=VB	24
+W	g:V|p1=all	17
+W	g:V|p1n1t=all_IN	8
+W	w:used|n1t=JJ	-1
+W	g:VBN|n1t=JJ	-2
+W	w:invite|n1tn2t=PR_TO	3
+W	g:V|n1=what	12
+W	g:N|p2tp1t=JJ_P	-1
+W	w:close|n2=them	11
+W	w:read|n1tn2t=IN_PR	-3
+W	g:VBD|n1tn2t=IN_PR	-1
+W	w:subjects|b	-14
+W	w:present|n1t=NN	-7
+W	w:read|n1=as	6
+W	g:VBD|n1=as	8
+W	w:close|n1tn2t=IN_PR	1
+W	g:V|p2tp1t=JJ_P	-2
+W	g:V|p2tp1t=Ues_P	-2
+W	g:V|p1tn1=P_,	-3
+W	w:used|p2tp1t=PR_RB	-6
+W	g:VBN|p2tp1t=PR_RB	-31
+W	g:VBN|p1tn1=RB_.	-1
+W	w:read|n2s=ed	5
+W	g:VBD|n2s=ed	1
+W	w:jagged|b	22
+W	w:jagged|n1tn2t=P_CC	11
+W	g:N|p1=was	-16
+W	w:associate|b	3
+W	w:read|n1=these	-3
+W	g:VBD|n1=these	-8
+W	w:present|n2=,	-4
+W	w:present|p1s=to	2
+W	w:present|p1t=TO	4
+W	g:V|p2tp1t=IN_CC	2
+W	g:V|p1='	-3
+W	g:V|p1s='	-5
+W	g:V|p1=most	-35
+W	g:V|p2p1=the_most	-1
+W	w:read|n1t=RP	4
+W	g:VBD|n1t=RP	6
+W	w:used|n2s=al	-12
+W	g:VBN|n2s=al	-1
+W	w:read|p2=did	-4
+W	g:VBD|p2=did	-3
+W	w:refuse|n2t=NN	3
+W	w:moderate|b	-4
+W	g:V|n2t=U's	-10
+W	w:upset|p1tn1t=VB_IN	3
+W	w:suspects|b	21
+W	w:suspects|p2t=DT	6
+W	g:N|n2t=Ung	-7
+W	w:deserts|p1t=RB	6
+W	g:V|n2t=Uin	10
+W	w:read|n2=with	8
+W	g:VBD|n2=with	9
+W	w:read|p2tp1t=PR_VB	-3
+W	g:VBD|p2tp1t=PR_VB	-8
+W	w:learned|n1t=P	31
+W	w:processes|n2t=NN	7
+W	w:read|p2tp1t=IN_PR	3
+W	g:V|p2tp1t=PR_Uly	2
+W	w:suspect|n1t=IN	16
+W	w:suspect|n2t=VB	-1
+W	w:separate|n1=this	19
+W	g:V|p2s=ks	8
+W	g:N|n1=you	1
+W	g:N|n1s=ou	6
+W	w:closer|n2t=VB	2
+W	w:closer|n1tn2t=PR_VB	5
+W	g:N|n1tn2t=PR_VB	1
+W	w:confederate|b	4
+W	g:V|n1n2=._then	13
+W	w:survey|b	-127
+W	w:prospects|b	-13
+W	g:V|p1s=ar	-6
+W	g:V|p2tp1t=DT_Uly	-19
+W	g:V|p1tn1=Uly_?	2
+W	w:graduate|p2=did	-12
+W	w:graduate|p2s=id	-8
+W	w:advocates|b	6
+W	g:V|p1tn1t=Uts_P	4
+W	g:V|p2p1=<s>_this	1
+W	g:V|n2t=Uve	-3
+W	g:V|n1=are	-4
+W	w:conduct|b	-7
+W	g:V|p1t=Ust	-9
+W	w:used|p1s=nd	-15
+W	g:VBN|p1s=nd	-11
+W	g:N|p2t=P	-1
+W	w:fragments|b	-19
+W	w:graduates|b	-2
+W	g:V|p2p1=does_not	7
+W	w:used|n2s=et	1
+W	g:V|n2=his	-11
+W	g:V|p1n1=cannot_the	-4
+W	g:V|p1n1t=cannot_DT	-4
+W	w:increase|p2t=DT	-10
+W	w:used|p2tp1t=RB_Uly	8
+W	g:VBN|p2tp1t=RB_Uly	10
+W	g:N|p1s=nd	1
+W	g:N|p1t=PR	-8
+W	w:use|p2t=Uns	9
+W	g:V|p1tn1=PR_in	2
+W	w:used|p2tp1t=RB_RB	13
+W	g:VBN|p2tp1t=RB_RB	7
+W	w:used|n1=an	-2
+W	g:VBN|n1=an	-2
+W	w:use|p1s=es	11
+W	w:use|p1t=Ues	2
+W	g:V|p2tp1t=Uow_CC	23
+W	w:advocate|b	3
+W	w:read|p1=had	-7
+W	g:VBD|p1=had	-2
+W	w:object|n2t=VB	10
+W	g:V|p1=long	1
+W	w:permit|b	-2
+W	w:permit|p1t=VB	-6
+W	w:used|p2tp1t=<s>_RB	3
+W	g:VBN|p2tp1t=<s>_RB	3
+W	w:attributes|b	20
+W	w:attributes|p2t=DT	10
+W	g:V|p2tp1t=DT_CD	-9
+W	g:V|p1=did	6
+W	w:proceeds|b	-2
+W	w:object|p1t=JJ	4
+W	w:used|p2tp1t=DT_RB	3
+W	g:VBN|p2tp1t=DT_RB	3
+W	w:used|n2=of	-2
+W	g:VBN|n2s=of	-8
+W	w:used|p1s=es	-2
+W	g:VBN|p1s=es	-1
+W	w:read|n2s=ce	1
+W	g:VBD|n2s=ce	1
+W	w:associates|b	3
+W	g:V|n1=become	25
+W	g:V|n2=during	-8
+W	g:V|p1t=Ums	4
+W	w:reject|b	14
+W	g:V|p2=its	-14
+W	w:use|p1t=WP	-8
+W	g:V|p2tp1t=P_CC	9
+W	w:increases|n2t=P	13
+W	g:VBN|n1s=ly	1
+W	w:read|p1n1=i_only	3
+W	g:VBD|p1n1=i_only	5
+W	w:read|p1tn1=NN_only	14
+W	g:VBD|p1tn1=NN_only	8
+W	g:N|p2t=Ung	2
+W	g:VBD|p2t=Ued	-1
+W	g:V|n1s=us	2
+W	g:V|p2t=Uas	-4
+W	g:V|n1tn2t=Unt_P	-1
+W	w:used|n1n2=for_the	1
+W	w:used|p2s=ls	-3
+W	g:VBN|p2s=ls	-1
+W	g:V|p1t=Urd	2
+W	g:V|n1tn2t=CC_Uve	-3
+W	w:used|n1s=th	2
+W	g:VBN|n1s=th	5
+W	w:present|p1t=IN	-5
+W	w:refresh|b	1
+W	g:V|p2tp1t=NN_Uer	13
+W	g:V|p1n1t=been_IN	14
+W	w:unused|p1t=VB	18
+W	w:processes|p1s=on	22
+W	w:processes|p1t=Uon	11
+W	w:essays|b	3
+W	g:V|p2p1=do_not	22
+W	g:V|p2=no	3
+W	g:V|p2s=no	7
+W	g:V|p2=many	17
+W	w:use|p1=no	-1
+W	w:use|p1s=no	-1
+W	w:uses|p2t=DT	13
+W	w:used|n2t=Ude	1
+W	g:VBN|n2t=Ude	1
+W	w:present|n1n2=at_the	4
+W	g:V|n1n2=them_to	1
+W	g:V|p1=now	3
+W	g:V|p1=further	4
+W	g:V|p1tn1t=TO_Uns	-1
+W	g:V|p1n1t=to_Uns	-1
+W	g:N|p1s=in	2
+W	g:V|n2=traditional	-8
+W	w:proceeds|n1t=IN	-3
+W	g:V|p1t=Uls	-3
+W	w:present|p2s=re	-3
+W	g:V|p2tp1t=PR_CC	7
+W	w:refuse|n2t=IN	3
+W	w:frequent|n2t=DT	8
+W	g:VBN|n1s=ce	-1
+W	w:content|p1t=IN	5
+W	w:object|n1=to	7
+W	g:V|p2tp1t=Uan_CC	-1
+W	w:permit|p2t=NN	-1
+W	w:refuse|p1t=RB	9
+W	g:V|p1tn1=NN_you	-15
+W	w:presents|p2t=DT	19
+W	g:V|p1tn1t=Uly_IN	1
+W	w:permits|b	9
+W	w:produce|p2t=NN	2
+W	w:animate|p2t=VB	7
+W	w:present|p1s=rs	-1
+W	w:use|p1t=Uts	11
+W	w:compact|b	-11
+W	w:attribute|b	4
+W	w:used|n1s=is	-1
+W	g:VBN|n1s=is	-1
+W	w:absent|b	-31
+W	g:V|p2=him	6
+W	g:V|p1=nor	-1
+W	g:V|p1tn1t=CC_VB	6
+W	w:separate|p1t=NN	8
+W	g:V|n1=only	7
+W	g:V|n1=not	-2
+W	g:V|p1s=ks	30
+W	w:uses|p1t=JJ	-3
+W	w:read|p2s=en	2
+W	g:VBD|p2s=en	5
+W	g:V|p1=than	6
+W	g:V|n1n2=to_us	9
+W	g:V|p1tn1=CC_,	-10
+W	w:progresses|b	40
+W	w:read|n2=through	-1
+W	w:read|p1s=he	27
+W	g:VBD|p1s=he	22
+W	g:VBD|p2p1=<s>_he	12
+W	w:prostrate|n1=in	6
+W	g:V|p1tn1=CC_in	10
+W	w:used|p1s=ll	4
+W	g:VBN|p1s=ll	3
+W	g:V|p1n1=<s>_the	-2
+W	w:use|p1tn1=<s>_the	-1
+W	g:V|p1tn1=<s>_the	-1
+W	g:V|p1s=hy	21
+W	g:V|p1=wouldn't	5
+W	g:V|p1s=wouldn't	10
+W	w:increases|p1t=RB	1
+W	w:presents|n2t=IN	7
+W	w:recalls|b	26
+W	g:V|p2tp1t=DT_Uks	7
+W	w:use|p2t=Uts	1
+W	g:V|p2tp1t=P_WP	-2
+W	w:blessed|n1t=P	15
+W	w:read|n2=in	-2
+W	g:VBD|n2=in	-2
+W	w:used|p2tp1t=PR_Uly	-4
+W	g:VBN|p2tp1t=PR_Uly	-8
+W	w:read|p2=the	10
+W	g:VBD|p2=the	4
+W	w:protest|p1t=NN	-2
+W	w:separates|b	4
+W	w:rebel|n2t=VB	7
+W	w:increases|n2s=es	15
+W	w:blessed|p1s=he	2
+W	w:blessed|p2t=IN	4
+W	g:V|n1n2=in_this	4
+W	w:objects|n2t=DT	5
+W	g:VBD|n1=his	7
+W	w:incline|n1n2=to_the	4
+W	w:used|p2tp1t=NN_P	-1
+W	w:read|p1=she	6
+W	g:VBD|p1=she	12
+W	w:used|p2p1=,_and	-2
+W	g:VBN|p2p1=,_and	-16
+W	w:imprints|b	-1
+W	g:V|p1=man	14
+W	w:increase|p1s=es	-3
+W	w:increase|p1t=Ues	-6
+W	w:absent|n2=the	30
+W	w:absent|p2tp1t=VB_VB	14
+W	w:absent|p1n1t=been_IN	19
+W	w:present|p1tn1t=RB_IN	2
+W	w:read|p2p1=,_and	7
+W	g:VBD|p2p1=,_and	5
+W	w:collects|b	30
+W	w:rethink|b	5
+W	w:produce|p2t=DT	-1
+W	w:deliberate|n2t=VB	16
+W	g:V|n1=upon	8
+W	g:V|p2t=Uwd	-1
+W	w:used|p2tp1t=NN_Urs	-1
+W	w:excuse|n1=my	4
+W	g:V|n2=while	-3
+W	g:V|p2tp1t=Ule_CC	10
+W	g:V|p1=always	6
+W	g:V|p1s=ys	11
+W	w:used|n2=first	-1
+W	w:used|p1tn1t=NN_WR	-6
+W	w:used|p1tn1=NN_when	-2
+W	g:VBN|p1tn1=NN_when	-6
+W	w:precipitate|b	8
+W	g:V|n1tn2t=RB_Uly	4
+W	w:crooked|p2t=IN	16
+W	w:increase|p1=and	1
+W	w:increase|p1s=nd	10
+W	g:V|p2s=cy	-5
+W	g:V|p2t=Ucy	-10
+W	w:permit|n1t=PR	-7
+W	w:blessed|p2s=<s>	8
+W	w:used|n2s=ox	-3
+W	w:dogged|b	55
+W	w:excuse|p1t=CC	-1
+W	w:used|p2=grew	-4
+W	w:undertaking|b	22
+W	g:N|p1t=Uly	-17
+W	w:read|p1n1=,_the	12
+W	g:VBD|p1n1=,_the	10
+W	w:content|p2s=rt	-1
+W	g:N|p2s=rt	-1
+W	g:N|p1=to	-11
+W	g:N|n2=with	-4
+W	g:N|p1s=to	-8
+W	g:N|p1t=TO	-13
+W	w:content|n1t=PR	-8
+W	g:V|n1tn2t=P_P	3
+W	w:read|p1t=Unt	2
+W	g:VBD|p1t=Unt	3
+W	w:intimates|b	5
+W	g:VBD|p1s=le	-1
+W	g:V|p2=saw	3
+W	w:read|p2p1=,_who	4
+W	w:alternate|n1=with	8
+W	w:alternate|n1s=th	4
+W	w:alternate|n1t=IN	5
+W	w:recall|p1t=RB	7
+W	w:used|n2=think	-1
+W	g:VBN|n2=think	-8
+W	g:VBN|n1n2=to_think	-7
+W	w:used|n2s=nk	-3
+W	g:VBN|n2s=nk	-5
+W	w:blessed|p1tn1t=DT_NN	1
+W	w:blessed|p2tp1t=VB_DT	14
+W	w:ragged|n1t=NN	-10
+W	w:excuse|n1s=lf	1
+W	w:discount|n1t=P	-23
+W	w:excuse|p2t=MD	3
+W	g:VBN|n1s=pt	-6
+W	w:used|p1n1=and_to	-5
+W	g:VBN|p1n1=and_to	-1
+W	w:used|p1n1t=and_TO	-4
+W	g:VBN|p1n1t=and_TO	-1
+W	w:intimate|n1t=IN	-5
+W	w:suspect|p1=i	4
+W	w:suspect|p1s=i	9
+W	g:V|p1n1=its_the	19
+W	w:close|p2tp1t=TO_PR	5
+W	g:V|p2=shall	1
+W	w:instinct|n1t=IN	-5
+W	w:cursed|n2t=P	-5
+W	w:cursed|p1t=PR	-7
+W	w:closer|n2s=me	2
+W	g:N|n2s=me	5
+W	g:V|p2p1=and_so	34
+W	w:content|p1t=MD	-1
+W	g:N|p1t=MD	-17
+W	w:content|p1tn1t=MD_PR	-5
+W	g:N|p1tn1t=MD_PR	-1
+W	g:VBD|p1n1t=he_P	13
+W	w:jagged|p1t=P	1
+W	g:N|n1tn2t=P_IN	7
+W	w:affect|n2t=P	4
+W	w:excuses|n1=.	-1
+W	w:excuses|n1n2=._</s>	-3
+W	w:read|n2=letter	5
+W	g:VBD|n2=letter	4
+W	w:used|n1tn2t=RB_TO	-1
+W	g:VBN|n1tn2t=RB_TO	-1
+W	g:V|p2tp1t=MD_Uly	7
+W	g:V|p1=him	8
+W	w:suspect|p2p1=i_shrewdly	-3
+W	g:V|p1=men	5
+W	w:used|p1n1=i_up	-1
+W	g:VBN|p1n1=i_up	-15
+W	w:used|p1tn1t=NN_RP	-1
+W	g:VBN|p1tn1t=NN_RP	-1
+W	g:VBN|p1tn1=NN_up	-1
+W	w:refuse|p2t=PR	9
+W	w:read|n1=aloud	6
+W	g:VBD|n1=aloud	1
+W	w:read|n1s=ud	6
+W	g:VBD|n1s=ud	3
+W	w:crooked|n1=,	5
+W	g:V|p1n1t=me_TO	1
+W	g:V|p1tn1=VB_her	12
+W	w:read|p1t=Ury	1
+W	g:VBD|p1t=Ury	1
+W	w:read|p1tn1t=Ury_PR	2
+W	w:refuse|p1tn1t=CC_TO	-3
+W	w:desolate|n1t=P	7
+W	w:ragged|p1=,	4
+W	w:ragged|p1s=,	2
+W	w:ragged|p2t=NN	1
+W	g:N|n1tn2t=IN_NN	5
+W	g:V|p1n1=and_me	10
+W	g:N|p2=her	3
+W	w:closer|n2=his	6
+W	g:V|p2tp1t=DT_Uss	9
+W	w:advocate|p1s=ly	2
+W	w:blessed|n2=!	-4
+W	w:blessed|n2s=!	-3
+W	w:increase|p1s=ly	9
+W	w:degenerates|b	1
+W	w:degenerates|n1s=to	3
+W	w:degenerates|n1t=IN	1
+W	g:V|p1=us	7
+W	w:intimate|n1=with	-1
+W	w:intimate|n1s=th	-2
+W	w:read|p2=it	9
+W	g:VBD|p2=it	5
+W	w:console|n1=you	-2
+W	w:console|n1s=ou	-4
+W	w:cursed|p1t=VB	1
+W	w:presents|n1t=PR	3
+W	w:crooked|p2t=VB	-2
+W	w:crooked|n1t=IN	10
+W	w:closer|p1=her	21
+W	g:N|p1=her	7
+W	w:excuse|p1='	-3
+W	w:excuse|n1=the	-6
+W	w:excuse|p1s='	-4
+W	w:excuse|n1s=he	-16
+W	w:excuse|n1t=DT	-5
+W	w:surmise|b	5
+W	w:excuse|p2tp1t=<s>_Uay	-1
+W	w:read|p1s=ne	5
+W	g:VBD|p1s=ne	2
+W	w:learned|p1=and	-6
+W	w:learned|p1s=nd	-5
+W	w:intimate|n2s=en	15
+W	w:ragged|n2t=IN	-1
+W	w:cursed|n2t=IN	-12
+W	w:used|p1=which	-2
+W	g:VBN|p1=which	-2
+W	w:used|p1n1=which_to	-2
+W	w:used|p1t=WD	-1
+W	g:VBN|p1t=WD	-2
+W	w:used|p1tn1t=WD_TO	-4
+W	g:VBN|p1tn1t=WD_TO	-1
+W	w:used|p2tp1t=NN_WD	-2
+W	g:VBN|p2tp1t=NN_WD	-1
+W	w:used|p1n1t=which_TO	-7
+W	g:VBN|p1n1t=which_TO	-4
+W	w:used|p1tn1=WD_to	-1
+W	g:VBN|p1tn1=WD_to	-3
+W	g:V|p2=road	-1
+W	w:used|n1=my	6
+W	g:VBN|n1=my	9
+W	w:used|n1s=my	1
+W	g:VBN|n1s=my	5
+W	w:permit|n1=of	-1
+W	w:permit|n1t=IN	-17
+W	w:permit|p1tn1t=TO_IN	-6
+W	w:blessed|n2t=IN	-1
+W	w:crooked|n2t=IN	-1
+W	g:V|p2tp1t=RB_CC	11
+W	w:crooked|p1s=ow	-18
+W	w:separate|p2tp1t=IN_NN	3
+W	w:blessed|p1t=PR	-14
+W	w:read|n2t=Uss	6
+W	g:VBD|n2t=Uss	10
+W	w:used|p2tp1t=CC_RB	-8
+W	g:VBN|p2tp1t=CC_RB	-5
+W	g:V|p1tn1=CC_him	-7
+W	w:closer|p2s=is	-5
+W	g:V|p2=dare	-22
+W	w:closer|n1s=on	-8
+W	w:objects|p2tp1t=PR_VB	16
+W	w:blessed|n1t=Ues	-7
+W	w:read|p2=this	-8
+W	g:VBD|p2=this	-1
+W	w:read|n1n2=-_</s>	5
+W	g:VBD|n1n2=-_</s>	14
+W	g:V|p1s=lf	-5
+W	w:object|p2=you	2
+W	w:object|p2s=ou	4
+W	w:refuse|p1tn1t=NN_P	-4
+W	w:absent|p1=still	4
+W	w:cursed|p2t=VB	-2
+W	w:read|p1s=ts	-5
+W	g:VBD|p1s=ts	-1
+W	w:read|p2tp1t=DT_Uts	-4
+W	g:VBD|p2tp1t=DT_Uts	-1
+W	g:VBD|n1s=im	1
+W	w:desolate|p2=lonely	18
+W	w:desolate|p2p1=lonely_and	4
+W	w:desolate|p2s=ly	7
+W	w:increases|n1=my	-1
+W	w:increases|n1s=my	-3
+W	w:content|p1=not	-9
+W	g:N|p1=not	-3
+W	w:appropriate|p2s=of	11
+W	w:upset|p2s=ed	9
+W	w:increases|n1=his	3
+W	w:increases|n1s=is	4
+W	w:used|p2tp1t=RB_Uom	-1
+W	g:VBN|p2tp1t=RB_Uom	-2
+W	g:V|n1=discourse	-3
+W	w:undertaking|p1t=IN	46
+W	g:VBD|p1tn1=NN_aloud	3
+W	w:excuse|n1tn2t=PR_Uss	2
+W	w:excuse|p1tn1t=CC_DT	-2
+W	w:excuse|p1tn1=CC_the	-1
+W	w:discount|p1tn1t=TO_P	-5
+W	w:discount|p1n1t=to_P	-6
+W	w:blessed|n1s=ng	-21
+W	w:read|p2=miss	2
+W	g:VBD|p2=miss	5
+W	w:reject|n1t=P	9
+W	g:V|p1tn1t=P_Uks	1
+W	g:V|p1n1t=,_Uks	4
+W	w:object|n1tn2t=NN_VB	20
+W	w:read|n1tn2t=IN_Uws	3
+W	w:overflows|b	15
+W	g:V|n1n2=it_up	-10
+W	w:ragged|n1s=es	-1
+W	w:presents|n1s=lf	7
+W	g:VBD|p1n1=and_what	1
+W	w:read|p1tn1t=CC_WP	4
+W	g:VBD|p1tn1t=CC_WP	4
+W	g:VBD|p1tn1=CC_what	1
+W	w:read|n1n2=the_words	3
+W	w:read|p2=first	-4
+W	g:VBD|p2=first	-3
+W	g:V|p1=himself	-6
+W	w:cursed|p1=that	-1
+W	w:refuse|p1=alone	-3
+W	w:refuse|p1s=ne	-1
+W	w:refuse|p1n1=alone_to	-1
+W	g:V|p1n1=alone_to	-2
+W	g:V|p2p1=i_alone	-1
+W	w:refuse|p1n1t=alone_TO	-2
+W	w:read|p1s=rt	8
+W	w:cursed|n1t=VB	8
+W	w:blessed|p2tp1t=P_DT	-4
+W	g:V|n1n2=me_!	7
+W	g:V|p2tp1t=CC_WP	10
+W	w:upset|p1s=lf	-12
+W	w:inset|b	11
+W	g:N|p2=him	13
+W	g:N|p2s=im	1
+W	w:abuse|n1t=DT	-22
+W	w:excuse|p2=but	1
+W	g:V|p2p1=but_what	7
+W	w:read|p2=point	4
+W	g:VBD|p2=point	14
+W	g:V|p2p1=you_don't	1
+W	g:V|p1n1=him_to	-1
+W	g:V|p1n1t=him_TO	-1
+W	w:upset|p1s=er	8
+W	w:learned|p2s=te	-6
+T	the	DT
+T	and	CC
+T	of	IN
+T	to	TO
+T	a	DT
+T	in	IN
+T	i	NN
+T	that	IN
+T	it	PR
+T	was	VB
+T	he	PR
+T	his	PR
+T	is	VB
+T	for	IN
+T	as	IN
+T	with	IN
+T	you	PR
+T	had	VB
+T	but	CC
+T	be	VB
+T	on	IN
+T	at	IN
+T	her	PR
+T	house	NN
+T	not	RB
+T	this	DT
+T	which	WD
+T	they	PR
+T	have	VB
+T	by	IN
+T	she	PR
+T	so	RB
+T	my	PR
+T	from	IN
+T	all	DT
+T	him	PR
+T	we	PR
+T	were	VB
+T	or	CC
+T	one	CD
+T	are	VB
+T	an	DT
+T	used	VB
+T	when	WR
+T	like	IN
+T	me	PR
+T	their	PR
+T	there	EX
+T	would	MD
+T	if	IN
+T	them	PR
+T	use	NN
+T	no	DT
+T	been	VB
+T	who	WP
+T	will	MD
+T	out	RP
+T	read	VB
+T	up	RP
+T	what	WP
+T	into	IN
+T	some	DT
+T	close	RB
+T	present	JJ
+T	then	RB
+T	more	RB
+T	could	MD
+T	said	VB
+T	your	PR
+T	just	RB
+T	do	VB
+T	can	MD
+T	about	IN
+T	its	PR
+T	know	VB
+T	time	NN
+T	very	RB
+T	has	VB
+T	now	RB
+T	little	JJ
+T	any	DT
+T	other	JJ
+T	these	DT
+T	our	PR
+T	only	RB
+T	such	JJ
+T	upon	IN
+T	than	IN
+T	two	CD
+T	man	NN
+T	it's	NN
+T	did	VB
+T	after	IN
+T	made	VB
+T	before	IN
+T	great	JJ
+T	much	JJ
+T	subject	NN
+T	go	VB
+T	should	MD
+T	well	RB
+T	may	MD
+T	over	IN
+T	first	JJ
+T	mouth	NN
+T	day	NN
+T	good	JJ
+T	make	VB
+T	old	JJ
+T	how	WR
+T	where	WR
+T	must	MD
+T	see	VB
+T	every	DT
+T	perfect	JJ
+T	down	RP
+T	those	DT
+T	most	RB
+T	because	IN
+T	think	VB
+T	get	VB
+T	us	PR
+T	own	JJ
+T	even	RB
+T	also	RB
+T	many	JJ
+T	don't	VB
+T	might	MD
+T	object	NN
+T	way	NN
+T	never	RB
+T	came	VB
+T	people	NN
+T	back	RB
+T	being	VB
+T	through	IN
+T	mr	NN
+T	come	VB
+T	i'm	NN
+T	went	VB
+T	long	JJ
+T	without	IN
+T	here	RB
+T	himself	PR
+T	learned	VB
+T	life	NN
+T	going	VB
+T	too	RB
+T	while	IN
+T	still	RB
+T	new	JJ
+T	say	VB
+T	same	JJ
+T	take	VB
+T	men	NN
+T	things	NN
+T	again	RB
+T	really	RB
+T	thought	VB
+T	right	NN
+T	put	VB
+T	once	RB
+T	place	NN
+T	got	VB
+T	am	VB
+T	found	VB
+T	each	DT
+T	last	JJ
+T	yet	RB
+T	off	RP
+T	another	DT
+T	eyes	NN
+T	away	RB
+T	three	CD
+T	under	IN
+T	work	NN
+T	took	VB
+T	always	RB
+T	room	NN
+T	though	IN
+T	something	NN
+T	nothing	NN
+T	night	NN
+T	however	RB
+T	hand	NN
+T	part	NN
+T	kind	NN
+T	shall	MD
+T	let	VB
+T	years	NN
+T	seemed	VB
+T	left	VB
+T	having	VB
+T	that's	VB
+T	whole	JJ
+T	thing	NN
+T	look	VB
+T	ever	RB
+T	against	IN
+T	between	IN
+T	mrs	NN
+T	um	JJ
+T	give	VB
+T	want	VB
+T	mind	NN
+T	process	NN
+T	both	DT
+T	few	JJ
+T	find	VB
+T	love	NN
+T	world	NN
+T	water	NN
+T	called	VB
+T	young	JJ
+T	oh	UH
+T	far	RB
+T	home	NN
+T	saw	VB
+T	together	RB
+T	quite	RB
+T	excuse	NN
+T	conduct	NN
+T	better	JJ
+T	face	NN
+T	door	NN
+T	tell	VB
+T	moment	NN
+T	content	NN
+T	side	NN
+T	soon	RB
+T	book	NN
+T	small	JJ
+T	began	VB
+T	almost	RB
+T	progress	NN
+T	you're	NN
+T	head	NN
+T	told	VB
+T	gave	VB
+T	large	JJ
+T	different	JJ
+T	around	IN
+T	myself	PR
+T	seen	VB
+T	set	VB
+T	until	IN
+T	does	VB
+T	open	JJ
+T	words	NN
+T	enough	RB
+T	why	WR
+T	often	RB
+T	yeah	UH
+T	half	NN
+T	looked	VB
+T	power	NN
+T	uh	JJ
+T	among	IN
+T	course	NN
+T	certain	JJ
+T	heard	VB
+T	desert	NN
+T	objects	NN
+T	since	IN
+T	during	IN
+T	entrance	NN
+T	i've	NN
+T	father	NN
+T	country	NN
+T	woman	NN
+T	days	NN
+T	record	NN
+T	light	NN
+T	separate	JJ
+T	lady	NN
+T	whom	WP
+T	knew	VB
+T	five	CD
+T	itself	PR
+T	mother	NN
+T	name	NN
+T	thus	RB
+T	word	NN
+T	cannot	VB
+T	done	VB
+T	keep	VB
+T	therefore	RB
+T	produce	VB
+T	end	NN
+T	full	JJ
+T	making	VB
+T	four	CD
+T	white	JJ
+T	high	JJ
+T	nor	CC
+T	nature	NN
+T	heart	NN
+T	herself	PR
+T	themselves	PR
+T	refuse	VB
+T	miss	JJ
+T	morning	NN
+T	anything	NN
+T	sir	NN
+T	money	NN
+T	god	NN
+T	lot	NN
+T	mean	VB
+T	everything	NN
+T	brought	VB
+T	less	RB
+T	fact	NN
+T	hundred	CD
+T	several	JJ
+T	gonna	NN
+T	state	NN
+T	rather	RB
+T	sometimes	RB
+T	best	JJ
+T	asked	VB
+T	stood	VB
+T	next	JJ
+T	friend	NN
+T	taken	VB
+T	there's	VB
+T	means	NN
+T	form	NN
+T	year	NN
+T	hands	NN
+T	increase	VB
+T	felt	VB
+T	order	NN
+T	possible	JJ
+T	near	IN
+T	need	VB
+T	king	NN
+T	perhaps	RB
+T	letter	NN
+T	feel	VB
+T	children	NN
+T	others	NN
+T	turned	VB
+T	matter	NN
+T	friends	NN
+T	point	NN
+T	air	NN
+T	looking	VB
+T	closer	JJ
+T	person	NN
+T	family	NN
+T	given	VB
+T	able	JJ
+T	general	JJ
+T	already	RB
+T	whose	WP
+T	behind	IN
+T	big	JJ
+T	became	VB
+T	till	NN
+T	can't	VB
+T	times	NN
+T	past	JJ
+T	poor	JJ
+T	didn't	VB
+T	leave	VB
+T	reason	NN
+T	indeed	RB
+T	kept	VB
+T	passed	VB
+T	project	NN
+T	live	VB
+T	sure	JJ
+T	twenty	NN
+T	alone	RB
+T	within	IN
+T	show	VB
+T	help	VB
+T	books	NN
+T	case	NN
+T	feet	NN
+T	school	NN
+T	round	NN
+T	least	JJ
+T	pretty	RB
+T	along	IN
+T	interest	NN
+T	known	VB
+T	black	JJ
+T	front	NN
+T	subjects	NN
+T	believe	VB
+T	whether	IN
+T	body	NN
+T	okay	NN
+T	become	VB
+T	second	JJ
+T	they're	NN
+T	either	DT
+T	voice	NN
+T	i'll	NN
+T	lay	VB
+T	we're	NN
+T	idea	NN
+T	ground	NN
+T	rest	NN
+T	sent	VB
+T	town	NN
+T	towards	IN
+T	blessed	VB
+T	above	IN
+T	sort	NN
+T	call	VB
+T	coming	VB
+T	beautiful	JJ
+T	bring	VB
+T	instinct	NN
+T	fire	NN
+T	true	JJ
+T	purpose	NN
+T	care	NN
+T	else	RB
+T	human	JJ
+T	thousand	CD
+T	boy	NN
+T	business	NN
+T	public	JJ
+T	later	RB
+T	evening	NN
+T	girl	NN
+T	held	VB
+T	number	NN
+T	street	NN
+T	permit	VB
+T	six	CD
+T	sense	NN
+T	hour	NN
+T	paper	NN
+T	wife	NN
+T	taking	VB
+T	war	NN
+T	actually	RB
+T	complex	JJ
+T	women	NN
+T	cause	NN
+T	master	NN
+T	bit	NN
+T	law	NN
+T	yes	UH
+T	contents	NN
+T	he's	NN
+T	suspect	VB
+T	remember	VB
+T	fine	JJ
+T	probably	RB
+T	records	NN
+T	hope	VB
+T	story	NN
+T	wish	VB
+T	hear	VB
+T	city	NN
+T	gone	VB
+T	manner	NN
+T	ten	JJ
+T	return	NN
+T	although	IN
+T	ready	JJ
+T	table	NN
+T	whatever	WD
+T	sat	VB
+T	red	JJ
+T	government	NN
+T	prospect	NN
+T	question	NN
+T	presents	NN
+T	land	NN
+T	uses	VB
+T	getting	VB
+T	further	JJ
+T	child	NN
+T	frequent	JJ
+T	states	NN
+T	necessary	JJ
+T	opened	VB
+T	strange	JJ
+T	early	JJ
+T	bed	NN
+T	makes	VB
+T	across	IN
+T	arms	NN
+T	play	VB
+T	lord	NN
+T	talk	VB
+T	future	NN
+T	food	NN
+T	dark	JJ
+T	river	NN
+T	soul	NN
+T	short	JJ
+T	absent	JJ
+T	speak	VB
+T	earth	NN
+T	intimate	JJ
+T	watch	VB
+T	contract	NN
+T	entered	VB
+T	hard	JJ
+T	returned	VB
+T	dear	JJ
+T	knowledge	NN
+T	turn	VB
+T	thinking	VB
+T	instead	RB
+T	recall	VB
+T	natural	JJ
+T	outside	IN
+T	longer	RB
+T	strong	JJ
+T	son	NN
+T	eye	NN
+T	lived	VB
+T	except	IN
+T	run	VB
+T	act	NN
+T	force	NN
+T	death	NN
+T	company	NN
+T	line	NN
+T	church	NN
+T	replied	VB
+T	concert	NN
+T	real	JJ
+T	road	NN
+T	dog	NN
+T	single	JJ
+T	doing	VB
+T	living	NN
+T	followed	VB
+T	understand	VB
+T	view	NN
+T	doubt	NN
+T	common	JJ
+T	music	NN
+T	seem	VB
+T	carried	VB
+T	appeared	VB
+T	continued	VB
+T	change	NN
+T	write	VB
+T	conflict	NN
+T	received	VB
+T	effect	NN
+T	english	JJ
+T	garden	NN
+T	free	JJ
+T	party	NN
+T	attention	NN
+T	window	NN
+T	ought	MD
+T	simple	JJ
+T	trying	VB
+T	reached	VB
+T	started	VB
+T	cut	VB
+T	ask	VB
+T	sea	NN
+T	eighteen	JJ
+T	top	NN
+T	sound	NN
+T	says	VB
+T	character	NN
+T	contrast	NN
+T	ago	RB
+T	fell	VB
+T	happy	JJ
+T	lost	VB
+T	following	VB
+T	moderate	JJ
+T	sight	NN
+T	walk	VB
+T	brother	NN
+T	toward	IN
+T	upset	VB
+T	particular	JJ
+T	hours	NN
+T	led	VB
+T	feeling	NN
+T	neither	DT
+T	various	JJ
+T	fear	NN
+T	wanted	VB
+T	truth	NN
+T	maybe	RB
+T	yourself	PR
+T	daughter	NN
+T	standing	VB
+T	ran	VB
+T	step	NN
+T	court	NN
+T	suddenly	RB
+T	captain	NN
+T	tried	VB
+T	language	NN
+T	hold	VB
+T	important	JJ
+T	trees	NN
+T	try	VB
+T	immediately	RB
+T	seeing	VB
+T	stay	VB
+T	england	NN
+T	secret	JJ
+T	seven	CD
+T	eight	CD
+T	fifty	JJ
+T	low	JJ
+T	history	NN
+T	saying	VB
+T	position	NN
+T	third	JJ
+T	conversation	NN
+T	letters	NN
+T	happened	VB
+T	walked	VB
+T	sitting	VB
+T	months	NN
+T	horse	NN
+T	distance	NN
+T	protest	NN
+T	thoughts	NN
+T	answered	VB
+T	self	NN
+T	dinner	NN
+T	sun	NN
+T	pay	VB
+T	tree	NN
+T	bad	JJ
+T	account	NN
+T	gentleman	NN
+T	stuff	NN
+T	minutes	NN
+T	forth	NN
+T	seems	VB
+T	nice	JJ
+T	society	NN
+T	stone	NN
+T	pleasure	NN
+T	remained	VB
+T	places	NN
+T	gold	NN
+T	certainly	RB
+T	contest	NN
+T	appearance	NN
+T	especially	RB
+T	foot	NN
+T	deal	NN
+T	late	JJ
+T	condition	NN
+T	answer	NN
+T	london	NN
+T	beyond	IN
+T	system	NN
+T	ship	NN
+T	ideas	NN
+T	dead	JJ
+T	circumstances	NN
+T	opinion	NN
+T	written	VB
+T	built	VB
+T	met	VB
+T	hardly	RB
+T	age	NN
+T	talking	VB
+T	stand	VB
+T	doctor	NN
+T	length	NN
+T	placed	VB
+T	spoke	VB
+T	envelope	NN
+T	ill	JJ
+T	interesting	JJ
+T	action	NN
+T	direction	NN
+T	experience	NN
+T	desire	NN
+T	clear	JJ
+T	game	NN
+T	art	NN
+T	easy	JJ
+T	building	NN
+T	comes	VB
+T	doesn't	VB
+T	inside	IN
+T	supposed	VB
+T	green	JJ
+T	giving	VB
+T	fall	VB
+T	drew	VB
+T	cold	JJ
+T	tone	NN
+T	car	NN
+T	sit	VB
+T	hot	JJ
+T	suppose	VB
+T	deep	JJ
+T	arrived	VB
+T	miles	NN
+T	occasion	NN
+T	prince	NN
+T	ragged	JJ
+T	service	NN
+T	value	NN
+T	wide	JJ
+T	according	VB
+T	nearly	RB
+T	start	VB
+T	meet	VB
+T	john	NN
+T	entirely	RB
+T	rose	VB
+T	duty	NN
+T	french	JJ
+T	affect	VB
+T	forward	RB
+T	usually	RB
+T	week	NN
+T	beginning	NN
+T	pass	VB
+T	wood	NN
+T	former	JJ
+T	filled	VB
+T	follow	VB
+T	appropriate	JJ
+T	hall	NN
+T	united	JJ
+T	proper	JJ
+T	heavy	JJ
+T	sister	NN
+T	powers	NN
+T	discourse	NN
+T	persons	NN
+T	cried	VB
+T	regard	NN
+T	strength	NN
+T	fellow	NN
+T	considered	VB
+T	stopped	VB
+T	fragments	NN
+T	office	NN
+T	terms	NN
+T	visit	NN
+T	special	JJ
+T	station	NN
+T	added	VB
+T	insult	NN
+T	spirit	NN
+T	presence	NN
+T	expression	NN
+T	moved	VB
+T	husband	NN
+T	allowed	VB
+T	grew	VB
+T	easily	RB
+T	none	NN
+T	impossible	JJ
+T	nine	CD
+T	finally	RB
+T	result	NN
+T	space	NN
+T	existence	NN
+T	influence	NN
+T	study	NN
+T	won't	VB
+T	hair	NN
+T	straight	RB
+T	working	VB
+T	teeth	NN
+T	union	NN
+T	stop	VB
+T	broken	VB
+T	summer	NN
+T	unless	IN
+T	combat	NN
+T	dollars	NN
+T	private	JJ
+T	accent	NN
+T	blue	JJ
+T	ancient	JJ
+T	note	NN
+T	merely	RB
+T	goes	VB
+T	rich	JJ
+T	collect	VB
+T	besides	IN
+T	american	JJ
+T	drawing	VB
+T	piece	NN
+T	corner	NN
+T	arm	NN
+T	shut	VB
+T	greater	JJ
+T	wait	VB
+T	sleep	VB
+T	boys	NN
+T	beside	IN
+T	chief	NN
+T	mine	NN
+T	couldn't	VB
+T	windows	NN
+T	eat	VB
+T	thirty	NN
+T	floor	NN
+T	silence	NN
+T	invite	VB
+T	rock	NN
+T	village	NN
+T	lives	NN
+T	generally	RB
+T	evil	JJ
+T	field	NN
+T	running	VB
+T	what's	VB
+T	class	NN
+T	changed	VB
+T	social	JJ
+T	quickly	RB
+T	girls	NN
+T	personal	JJ
+T	figure	NN
+T	cursed	VB
+T	higher	JJ
+T	prepared	VB
+T	peace	NN
+T	laid	VB
+T	usual	JJ
+T	similar	JJ
+T	ladies	NN
+T	reading	VB
+T	waiting	VB
+T	fresh	JJ
+T	blood	NN
+T	smile	NN
+T	man's	NN
+T	discharge	NN
+T	mary	JJ
+T	takes	VB
+T	main	JJ
+T	transport	NN
+T	wall	NN
+T	carry	VB
+T	quiet	JJ
+T	expected	VB
+T	scene	NN
+T	lips	NN
+T	understood	VB
+T	we'll	NN
+T	o	JJ
+T	cool	JJ
+T	difficult	JJ
+T	wrong	JJ
+T	she's	NN
+T	drawn	VB
+T	keeping	VB
+T	south	JJ
+T	chair	NN
+T	notice	NN
+T	remembered	VB
+T	works	NN
+T	excess	NN
+T	marriage	NN
+T	north	JJ
+T	everybody	NN
+T	weather	NN
+T	trouble	NN
+T	writing	VB
+T	chance	NN
+T	covered	VB
+T	entire	JJ
+T	situation	NN
+T	health	NN
+T	walls	NN
+T	animals	NN
+T	ourselves	PR
+T	forty	JJ
+T	steps	NN
+T	box	NN
+T	flowers	NN
+T	enter	VB
+T	formed	VB
+T	beauty	NN
+T	opening	NN
+T	serious	JJ
+T	projects	NN
+T	mouths	NN
+T	walking	VB
+T	wonderful	JJ
+T	ornaments	NN
+T	discovered	VB
+T	forms	NN
+T	knowing	VB
+T	modern	JJ
+T	scarcely	RB
+T	science	NN
+T	nose	NN
+T	offer	VB
+T	turning	VB
+T	picture	NN
+T	afraid	JJ
+T	somewhat	RB
+T	speaking	VB
+T	uncle	NN
+T	confederate	NN
+T	laws	NN
+T	appear	VB
+T	torment	NN
+T	struck	VB
+T	mere	JJ
+T	wasn't	VB
+T	glass	NN
+T	example	NN
+T	reach	VB
+T	square	NN
+T	movie	NN
+T	closed	VB
+T	compliments	NN
+T	please	VB
+T	conditions	NN
+T	palace	NN
+T	compliment	NN
+T	lead	VB
+T	latter	JJ
+T	offered	VB
+T	servants	NN
+T	guess	NN
+T	clean	JJ
+T	save	VB
+T	success	NN
+T	knows	VB
+T	showed	VB
+T	degree	NN
+T	surface	NN
+T	afterwards	NN
+T	pocket	NN
+T	wished	VB
+T	below	IN
+T	size	NN
+T	buy	VB
+T	de	FW
+T	sweet	JJ
+T	absolutely	RB
+T	respect	NN
+T	spent	VB
+T	spring	NN
+T	instance	NN
+T	yellow	JJ
+T	escape	VB
+T	send	VB
+T	bright	JJ
+T	army	NN
+T	i'd	NN
+T	terrible	JJ
+T	wind	NN
+T	remain	VB
+T	particularly	RB
+T	amount	NN
+T	processes	NN
+T	begin	VB
+T	wonder	NN
+T	memory	NN
+T	political	JJ
+T	presented	VB
+T	princess	NN
+T	queen	NN
+T	obliged	VB
+T	physical	JJ
+T	today	NN
+T	fit	NN
+T	learn	VB
+T	period	NN
+T	afternoon	NN
+T	putting	VB
+T	bear	VB
+T	iron	NN
+T	wealth	NN
+T	cases	NN
+T	danger	NN
+T	sufficient	JJ
+T	worked	VB
+T	group	NN
+T	taught	VB
+T	parts	NN
+T	gate	NN
+T	count	NN
+T	determined	VB
+T	opposite	JJ
+T	carefully	RB
+T	observed	VB
+T	christmas	NN
+T	leaves	NN
+T	clothes	NN
+T	original	JJ
+T	material	NN
+T	search	NN
+T	caused	VB
+T	silent	JJ
+T	glad	JJ
+T	ways	NN
+T	park	NN
+T	coffee	NN
+T	sudden	JJ
+T	local	JJ
+T	enemy	NN
+T	property	NN
+T	difficulty	NN
+T	likely	JJ
+T	houses	NN
+T	imagine	VB
+T	rain	NN
+T	you'll	NN
+T	post	NN
+T	fully	RB
+T	middle	NN
+T	term	NN
+T	paid	VB
+T	plain	NN
+T	caught	VB
+T	wild	JJ
+T	due	JJ
+T	fair	JJ
+T	goods	NN
+T	compact	NN
+T	pleased	JJ
+T	passing	VB
+T	move	VB
+T	island	NN
+T	college	NN
+T	warm	JJ
+T	winter	NN
+T	events	NN
+T	abuse	NN
+T	tea	NN
+T	upper	JJ
+T	required	VB
+T	prospects	NN
+T	happiness	NN
+T	attempt	NN
+T	authority	NN
+T	joy	NN
+T	father's	NN
+T	information	NN
+T	boat	NN
+T	type	NN
+T	legs	NN
+T	moving	VB
+T	opportunity	NN
+T	lines	NN
+T	hill	NN
+T	members	NN
+T	margaret	NN
+T	matters	NN
+T	directly	RB
+T	you've	NN
+T	greatest	JJ
+T	married	VB
+T	safe	JJ
+T	graduate	NN
+T	evidence	NN
+T	passion	NN
+T	feelings	NN
+T	survey	NN
+T	method	NN
+T	century	NN
+T	beneath	IN
+T	habit	NN
+T	desired	VB
+T	couple	NN
+T	journey	NN
+T	wrote	VB
+T	needed	VB
+T	aunt	NN
+T	shore	NN
+T	finished	VB
+T	touch	NN
+T	edge	NN
+T	points	NN
+T	path	NN
+T	documents	NN
+T	affairs	NN
+T	tom	NN
+T	spot	NN
+T	seat	NN
+T	frequently	RB
+T	principle	NN
+T	curate	NN
+T	ordinary	JJ
+T	fortune	NN
+T	sorry	NN
+T	twelve	NN
+T	cat	NN
+T	telling	VB
+T	stories	NN
+T	consider	VB
+T	connected	VB
+T	crooked	JJ
+T	stranger	NN
+T	narrow	JJ
+T	passage	NN
+T	sign	NN
+T	wouldn't	VB
+T	aware	JJ
+T	altogether	RB
+T	decided	VB
+T	surely	RB
+T	dry	JJ
+T	thick	JJ
+T	dream	NN
+T	sides	NN
+T	complete	JJ
+T	carrying	VB
+T	spread	VB
+T	wise	NN
+T	board	NN
+T	leaving	VB
+T	noticed	VB
+T	pleasant	JJ
+T	forced	VB
+T	command	NN
+T	escort	NN
+T	desolate	NN
+T	tears	NN
+T	listen	VB
+T	watched	VB
+T	job	NN
+T	expect	VB
+T	york	NN
+T	dogs	NN
+T	ones	NN
+T	possession	NN
+T	elaborate	JJ
+T	horses	NN
+T	surprise	NN
+T	dress	NN
+T	fashion	NN
+T	darkness	NN
+T	trade	NN
+T	cross	NN
+T	silver	NN
+T	officers	NN
+T	president	NN
+T	undertaking	NN
+T	series	NN
+T	papers	NN
+T	bread	NN
+T	taste	NN
+T	loved	VB
+T	brown	JJ
+T	huge	JJ
+T	let's	NN
+T	fish	NN
+T	police	NN
+T	snow	NN
+T	mass	NN
+T	otherwise	RB
+T	meaning	NN
+T	perfectly	RB
+T	motion	NN
+T	receive	VB
+T	race	NN
+T	document	NN
+T	simply	RB
+T	gentlemen	NN
+T	increases	VB
+T	actual	JJ
+T	drive	VB
+T	favorite	JJ
+T	bottom	NN
+T	store	NN
+T	news	NN
+T	brain	NN
+T	finding	VB
+T	m	NN
+T	supply	NN
+T	add	VB
+T	control	NN
+T	speech	NN
+T	fast	RB
+T	playing	VB
+T	fixed	VB
+T	lower	JJ
+T	animal	NN
+T	effort	NN
+T	mark	NN
+T	meeting	NN
+T	produced	VB
+T	connection	NN
+T	relation	NN
+T	explain	VB
+T	draw	VB
+T	heaven	NN
+T	german	JJ
+T	guard	NN
+T	fields	NN
+T	break	VB
+T	individual	JJ
+T	plan	NN
+T	ear	NN
+T	talked	VB
+T	roof	NN
+T	george	NN
+T	associate	VB
+T	engaged	VB
+T	bound	VB
+T	education	NN
+T	rule	NN
+T	equal	JJ
+T	liberty	NN
+T	shot	NN
+T	liked	VB
+T	train	NN
+T	fun	NN
+T	throughout	IN
+T	died	VB
+T	gives	VB
+T	dr	NN
+T	worth	JJ
+T	rate	NN
+T	key	NN
+T	weeks	NN
+T	advantage	NN
+T	west	NN
+T	wine	NN
+T	excellent	JJ
+T	abstract	JJ
+T	worse	JJ
+T	estimate	NN
+T	support	NN
+T	considerable	JJ
+T	henry	NN
+T	deliberate	NN
+T	exactly	RB
+T	transfer	NN
+T	looks	VB
+T	grand	JJ
+T	lying	VB
+T	sharp	JJ
+T	kinds	NN
+T	mental	JJ
+T	curious	JJ
+T	converse	VB
+T	heads	NN
+T	battle	NN
+T	raised	VB
+T	shape	NN
+T	o'clock	NN
+T	forgotten	VB
+T	remains	VB
+T	comfort	NN
+T	evidently	RB
+T	practice	NN
+T	excited	JJ
+T	shows	VB
+T	lake	NN
+T	completely	RB
+T	happen	VB
+T	growing	VB
+T	share	NN
+T	thank	NN
+T	nobody	NN
+T	level	NN
+T	youth	NN
+T	questions	NN
+T	slowly	RB
+T	castle	NN
+T	military	JJ
+T	rise	NN
+T	perfume	NN
+T	king's	NN
+T	faith	NN
+T	worthy	JJ
+T	using	VB
+T	community	NN
+T	month	NN
+T	empty	JJ
+T	names	NN
+T	milk	NN
+T	we've	NN
+T	stage	NN
+T	whenever	WR
+T	fancy	NN
+T	doors	NN
+T	larger	JJ
+T	mother's	NN
+T	coat	NN
+T	occupied	VB
+T	ears	NN
+T	anxious	JJ
+T	freedom	NN
+T	serve	VB
+T	proceeds	NN
+T	chamber	NN
+T	rooms	NN
+T	allow	VB
+T	failed	VB
+T	aloud	NN
+T	isn't	VB
+T	daily	JJ
+T	becomes	VB
+T	soft	JJ
+T	born	VB
+T	area	NN
+T	played	VB
+T	forest	NN
+T	forget	VB
+T	lie	VB
+T	style	NN
+T	importance	NN
+T	throw	VB
+T	constantly	RB
+T	neck	NN
+T	tongue	NN
+T	council	NN
+T	spoken	VB
+T	extreme	JJ
+T	previous	JJ
+T	possessed	VB
+T	stream	NN
+T	difference	NN
+T	bought	VB
+T	breath	NN
+T	mountain	NN
+T	somebody	NN
+T	slow	JJ
+T	song	NN
+T	features	NN
+T	understanding	NN
+T	learning	VB
+T	thrown	VB
+T	labor	NN
+T	intended	VB
+T	bringing	VB
+T	heat	NN
+T	stairs	NN
+T	waited	VB
+T	charge	NN
+T	avoid	VB
+T	france	NN
+T	legitimate	JJ
+T	greatly	RB
+T	results	NN
+T	proved	VB
+T	violent	JJ
+T	affair	NN
+T	declared	VB
+T	thou	NN
+T	instant	NN
+T	broad	JJ
+T	madame	NN
+T	band	NN
+T	season	NN
+T	pieces	NN
+T	cost	NN
+T	lose	VB
+T	mountains	NN
+T	promise	NN
+T	farm	NN
+T	species	NN
+T	drink	VB
+T	tired	VB
+T	cast	VB
+T	press	NN
+T	direct	JJ
+T	extent	NN
+T	pain	NN
+T	breakfast	NN
+T	double	JJ
+T	fight	NN
+T	coast	NN
+T	accustomed	VB
+T	clearly	RB
+T	sky	NN
+T	movement	NN
+T	hung	VB
+T	rebels	NN
+T	necessity	NN
+T	james	NN
+T	highest	JJ
+T	attributes	NN
+T	associates	NN
+T	allies	NN
+T	pure	NN
+T	express	VB
+T	prostrate	NN
+T	grace	NN
+T	pride	NN
+T	intellect	NN
+T	prove	VB
+T	speed	NN
+T	interested	JJ
+T	won	VB
+T	spend	VB
+T	quick	JJ
+T	thin	JJ
+T	cup	NN
+T	powerful	JJ
+T	skin	NN
+T	concerts	NN
+T	holding	VB
+T	ball	NN
+T	design	NN
+T	grey	NN
+T	kitchen	NN
+T	club	NN
+T	continue	VB
+T	hidden	VB
+T	immediate	JJ
+T	twice	RB
+T	resume	VB
+T	named	VB
+T	useful	JJ
+T	killed	VB
+T	sixty	NN
+T	one's	JJ
+T	america	NN
+T	die	VB
+T	europe	NN
+T	birds	NN
+T	east	NN
+T	seated	VB
+T	dressed	VB
+T	regarded	VB
+T	foreign	JJ
+T	operation	NN
+T	bent	NN
+T	consciousness	NN
+T	colour	NN
+T	travel	VB
+T	possibly	RB
+T	stick	NN
+T	yard	NN
+T	changes	NN
+T	purposes	NN
+T	bill	NN
+T	saint	NN
+T	vast	JJ
+T	pointed	VB
+T	yours	NN
+T	tall	JJ
+T	william	NN
+T	laugh	NN
+T	distant	JJ
+T	commonly	RB
+T	increased	VB
+T	active	JJ
+T	servant	NN
+T	provided	VB
+T	discussion	NN
+T	closely	RB
+T	bell	NN
+T	gets	VB
+T	watching	VB
+T	color	NN
+T	oil	NN
+T	based	VB
+T	current	JJ
+T	library	NN
+T	wants	VB
+T	meant	VB
+T	characters	NN
+T	principles	NN
+T	trust	VB
+T	catch	VB
+T	console	VB
+T	prevent	VB
+T	event	NN
+T	fourth	JJ
+T	beat	VB
+T	bag	NN
+T	leading	VB
+T	ordered	VB
+T	constant	JJ
+T	surprised	VB
+T	served	VB
+T	marked	VB
+T	custom	NN
+T	peter	NN
+T	intelligence	NN
+T	duties	NN
+T	threw	VB
+T	curiosity	NN
+T	everywhere	RB
+T	haven't	VB
+T	honest	JJ
+T	joined	VB
+T	ended	VB
