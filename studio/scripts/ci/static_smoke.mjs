@@ -119,10 +119,13 @@ await step(page, "offline runtime (network cut, resolve+synth)", async () => {
   } finally { await ctx.setOffline(false); }
 });
 await step(page, "no unexpected console/page/HTTP errors", async () => {
-  const real = consoleErrors.filter((s) => !isOptional404(s));
+  // Bare "Failed to load resource ... 404" console texts carry no URL, so judge
+  // by the recorded response URLs: every 404 must be a known-optional probe,
+  // and anything that is not a 404-resource message must be clean.
   const realResp = badResponses.filter((s) => !isOptional404(s));
-  if (real.length || realResp.length) throw new Error([...real, ...realResp].slice(0, 5).join(" | "));
-  return "clean (only known-optional 404 probes)";
+  const non404 = consoleErrors.filter((s) => !/Failed to load resource|404/.test(s));
+  if (realResp.length || non404.length) throw new Error([...non404, ...realResp].slice(0, 5).join(" | "));
+  return `clean (${badResponses.length} known-optional 404 probes)`;
 });
 const verdict = steps.every((s) => s.verdict === "PASS") ? "PASS" : "FAIL";
 let fullLog = "";
