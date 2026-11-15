@@ -14,19 +14,13 @@ jobs:
     steps:
       - name: Checkout studio repo (scripts)
         uses: actions/checkout@v4
-        with: { path: studio }
-      - name: Checkout upstream code at pinned SHA
-        uses: actions/checkout@v4
-        with:
-          repository: WhissleAI/steer-tts
-          ref: 5008f8e032f69266c3f37788825cfda3112eab55
-          path: upstream
-      - name: Checkout ci-assets (edge weights + full native-only files)
-        uses: actions/checkout@v4
-        with: { ref: ci-assets, path: ci-assets }
-      - name: Checkout wasm dist (bridge 0.3.0)
-        uses: actions/checkout@v4
-        with: { ref: wasm-dist, path: dist }
+      - name: Clone upstream code + ci-assets + wasm dist (shell, no interference)
+        run: |
+          git clone --depth 1 https://github.com/WhissleAI/steer-tts.git upstream
+          (cd upstream && git fetch --depth 1 origin 5008f8e032f69266c3f37788825cfda3112eab55 && git checkout 5008f8e032f69266c3f37788825cfda3112eab55)
+          git clone --depth 1 --branch ci-assets https://github.com/Neb963/wasp-perch-temp.git ci-assets
+          git clone --depth 1 --branch wasm-dist https://github.com/Neb963/wasp-perch-temp.git dist
+          ls studio/scripts/ci/ upstream/edge/steertts_edge/ ci-assets/edge/ dist/
       - uses: actions/setup-python@v5
         with: { python-version: "3.11" }
       - uses: actions/setup-node@v4
