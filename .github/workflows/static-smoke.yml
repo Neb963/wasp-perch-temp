@@ -1,0 +1,74 @@
+# Static-host smoke: serve studio/ over plain HTTP (no Perchance framing) and
+# drive it with headless Chromium (Playwright): boot, RESOLVE, Edge synth,
+# Full synth, MAP_PROMPT, Director plan, offline runtime with network cut.
+# Models: Full INT8 from the ungated ml-resources/steer-tts mirror (recorded
+# revision) + Edge runtime set and Full native-only files from ci-assets.
+name: Static-host smoke (playwright, no Perchance)
+on: { workflow_dispatch: {} }
+permissions: { contents: read }
+jobs:
+  smoke:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 45
+    steps:
+      - name: Checkout studio repo
+        uses: actions/checkout@v4
+        with: { path: repo }
+      - name: Checkout ci-assets
+        uses: actions/checkout@v4
+        with: { ref: ci-assets, path: ci-assets }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - name: Install huggingface_hub (mirror download)
+        run: pip install huggingface_hub
+      - name: Assemble studio/src/models (mirror + ci-assets)
+        run: |
+          MIRROR_SHA=$(python -c "from huggingface_hub import HfApi; print(HfApi().model_info('ml-resources/steer-tts').sha)")
+          echo "MIRROR_SHA=$MIRROR_SHA" >> "$GITHUB_ENV"
+          echo "mirror revision: $MIRROR_SHA"
+          python - "$MIRROR_SHA" <<'EOF'
+          import shutil, sys
+          from pathlib import Path
+          from huggingface_hub import snapshot_download
+          sha = sys.argv[1]
+          d = Path(snapshot_download("ml-resources/steer-tts", revision=sha,
+            allow_patterns=["config.json", "voices.json", "control_stats.json",
+              "events.safetensors", "request.schema.json",
+              "int8/model.safetensors", "int8/flow.safetensors",
+              "int8/prompt_adapter.safetensors", "int8/speaker_vectors.safetensors",
+              "int8/pflow.safetensors"]))
+          edge = Path("repo/studio/src/models/edge"); shutil.rmtree(edge, ignore_errors=True)
+          shutil.copytree(Path("ci-assets/edge"), edge)
+          full = Path("repo/studio/src/models/full"); shutil.rmtree(full, ignore_errors=True)
+          shutil.copytree(d, full)
+          for src in Path("ci-assets/full-private").rglob("*"):
+            if src.is_file():
+              dst = full / src.relative_to("ci-assets/full-private")
+              dst.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copy2(src, dst)
+          print("edge files:", sum(1 for _ in edge.rglob("*") if _.is_file()),
+                "full files:", sum(1 for _ in full.rglob("*") if _.is_file()))
+          EOF
+      - name: Install Playwright + Chromium
+        run: |
+          mkdir -p pw && cd pw && npm init -y >/dev/null && npm i playwright@1.49.1
+          npx playwright install chromium --with-deps
+      - name: Serve statically + run smoke
+        run: |
+          cd repo/studio && (python3 -m http.server 8123 >/tmp/http.log 2>&1 &) && sleep 2
+          curl -s -o /dev/null -w "index %{http_code}, wasm %{http_code}\n" http://localhost:8123/index.html || true
+          curl -s -o /dev/null -w "%{http_code}\n" http://localhost:8123/src/wasm-dist/steertts-wasm.wasm
+          PW_DIR=$GITHUB_WORKSPACE/pw node scripts/ci/static_smoke.mjs . smoke-out
+      - name: Upload smoke artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: static-smoke-${{ github.run_id }}
+          path: repo/studio/smoke-out/
+      - name: Summary
+        if: always()
+        run: |
+          echo "## static smoke: $(python -c "import json;print(json.load(open('repo/studio/smoke-out/smoke_report.json'))['verdict'])")" >> "$GITHUB_STEP_SUMMARY"
+          echo "mirror: $MIRROR_SHA" >> "$GITHUB_STEP_SUMMARY"
