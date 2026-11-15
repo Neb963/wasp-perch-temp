@@ -3,7 +3,9 @@
 import { readFile } from "node:fs/promises";
 const jsPath = process.argv[2];
 if (!jsPath) { console.error("usage: node smoke-test.mjs <steertts-wasm.js>"); process.exit(2); }
-const factory = (await import(jsPath)).default;
+const { pathToFileURL } = await import("node:url");
+const { resolve } = await import("node:path");
+const factory = (await import(pathToFileURL(resolve(jsPath)).href)).default;
 const mod = await factory();
 const ptr = mod._scl_version();
 const ver = mod.UTF8ToString ? mod.UTF8ToString(ptr) : mod.AsciiToString(ptr);
