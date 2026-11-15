@@ -1,0 +1,1 @@
+{"bridge":"scl-bridge-0.3.1","upstream":"5008f8e032f69266c3f37788825cfda3112eab55","emsdk":"3.1.68","flags":"-O2 -ffp-contract=off scalar single-thread MEMFS","simd":false,"threads":false}
