@@ -67,7 +67,8 @@ jobs:
           print("mirror int8/model.safetensors sha256:", h)
           print("bundled manifest sha256:             ", want)
           print("MATCH" if want and h.startswith(want) or want == h else "DRIFT: mirror differs from shipped set (known: mirror lacks tensor encoder.layers.0.n_seq.proj.weight)")
-          EOF full-asm/native/int8
+          EOF
+          ls full-asm full-asm/int8
       - name: Native parity run (torch CPU)
         run: |
           python studio/scripts/ci/native_parity.py --code upstream \
