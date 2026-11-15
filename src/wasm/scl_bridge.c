@@ -32,7 +32,7 @@ const char *scl_version(void) {
   // steertts_version() is upstream's own version string; suffix ours.
   static char buf[256];
   const char *v = steertts_version();
-  snprintf(buf, sizeof buf, "scl-bridge-0.1.0+libsteertts-%s single-thread scalar MEMFS", v ? v : "?");
+  snprintf(buf, sizeof buf, "scl-bridge-0.2.0+libsteertts-%s single-thread scalar MEMFS", v ? v : "?");
   return buf;
 }
 
@@ -44,8 +44,26 @@ int scl_create(const char *model_dir, int threads, char *err, int err_len) {
     return -1;
   }
   strncpy(g_model_dir, model_dir, sizeof g_model_dir - 1);
-  // Single-threaded baseline: steertts_create with 1 worker (= calling thread, no pthreads).
+  // Single-threaded baseline: 1 worker (= calling thread, no pthreads).
   (void)threads;
+  // Precision auto-detect: v1 Full ships packed INT8 under <model_dir>/int8/
+  // (config precisions.int8.dir, default "int8"). steertts_create() defaults to
+  // fp32, so probe for the INT8 acoustic and use create_ex with precision=int8.
+  // Edge ignores precision (always its int4/int8 weights).
+  {
+    char probe[1152];
+    snprintf(probe, sizeof probe, "%s/int8/model.safetensors", model_dir);
+    FILE *pf = fopen(probe, "rb");
+    if (pf) {
+      fclose(pf);
+      steertts_config c;
+      steertts_default_config(&c);
+      c.threads = 1;
+      c.precision = "int8";
+      g_eng = steertts_create_ex(model_dir, &c, err, (size_t)err_len);
+      return g_eng ? 0 : -1;
+    }
+  }
   g_eng = steertts_create(model_dir, 1, err, (size_t)err_len);
   return g_eng ? 0 : -1;
 }
