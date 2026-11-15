@@ -33,11 +33,13 @@ jobs:
         with: { node-version: "20" }
       - name: Install native deps (CPU torch, no CUDA)
         run: |
-          pip install --upgrade pip
-          pip install --index-url https://download.pytorch.org/whl/cpu torch
+          pip install --upgrade pip "setuptools>=68"
+          pip install --index-url https://download.pytorch.org/whl/cpu torch torchaudio
           pip install safetensors numpy huggingface_hub
-          pip install --no-deps ./upstream/steertts ./upstream/edge
-          python -c "import torch, safetensors, numpy, huggingface_hub, steertts, steertts_edge; print('imports ok', torch.__version__)"
+          pip install --no-deps ./upstream ./upstream/edge
+          pip install --no-deps vocos==0.1.0 g2p_en==2.1.0 nltk==3.10.3 num2words==0.5.14 soundfile==0.14.0 soxr==1.1.0 transformers==5.19.0
+          python -c "import nltk; nltk.download('cmudict', quiet=True)"
+          python -c "import torch, torchaudio, safetensors, numpy, huggingface_hub, steertts, steertts_edge, transformers; print('imports ok', torch.__version__)"
       - name: Fetch Full weights from ungated mirror + assemble dirs
         run: |
           MIRROR_SHA=$(python -c "from huggingface_hub import HfApi; print(HfApi().model_info('ml-resources/steer-tts').sha)")
@@ -84,9 +86,20 @@ jobs:
       - name: Summary
         if: always()
         run: |
-          echo "## parity verdict: $(python -c "import json;print(json.load(open('parity_report.json'))['verdict'])")" >> "$GITHUB_STEP_SUMMARY"
-          echo "mirror: $MIRROR_SHA | wasm: $(python -c "import json;print(json.load(open('wasmnode/wasm_parity.json'))['bridge'])")" >> "$GITHUB_STEP_SUMMARY"
-          python -c "
-          import json
-          for c in json.load(open('parity_report.json'))['checks']:
-              print(f\"- {c['verdict']} {c['name']} :: {c['detail']}\")" >> "$GITHUB_STEP_SUMMARY"
+          if [ -f parity_report.json ]; then
+            MIRROR_SHA="$MIRROR_SHA" python3 - <<'PYEOF' >> "$GITHUB_STEP_SUMMARY"
+          import json, os
+          r = json.load(open('parity_report.json'))
+          print('## parity verdict: ' + r['verdict'])
+          print('mirror: ' + os.environ.get('MIRROR_SHA', '?'))
+          try:
+              w = json.load(open('wasmnode/wasm_parity.json'))
+              print('wasm bridge: ' + w.get('bridge', '?'))
+          except OSError:
+              print('wasm bridge: (no wasm_parity.json yet)')
+          for c in r['checks']:
+              print('- ' + c['verdict'] + ' ' + c['name'] + ' :: ' + c['detail'])
+          PYEOF
+          else
+            echo "## parity: no report produced (early step failure - see step logs)" >> "$GITHUB_STEP_SUMMARY"
+          fi
