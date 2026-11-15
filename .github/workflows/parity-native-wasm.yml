@@ -67,6 +67,21 @@ jobs:
         run: |
           pwd; ls
           ls studio/scripts/ci/ upstream/edge/steertts_edge/ ci-assets/edge/ dist/
+      - name: Build edge cmudict.lex (archives carry a git-LFS pointer; rebuild from nltk)
+        run: |
+          python - <<'EOF'
+          import sys
+          sys.path.insert(0, "upstream/edge")
+          import nltk
+          print("nltk", nltk.__version__)
+          nltk.download("cmudict", quiet=True)
+          from nltk.corpus import cmudict
+          from steertts_edge.edge_front.lexicon import build
+          entries = {w: pris[0] for w, pris in cmudict.dict().items()}
+          raw = build(entries)
+          open("ci-assets/edge/front/cmudict.lex", "wb").write(raw)
+          print("cmudict.lex built:", len(raw), "bytes from", len(entries), "entries")
+          EOF
       - name: Native parity run (torch CPU)
         run: |
           python "$GITHUB_WORKSPACE/studio/scripts/ci/native_parity.py" --code "$GITHUB_WORKSPACE/upstream" \
