@@ -34,7 +34,11 @@ async function step(page, name, fn) {
 }
 // Timer polling (not rAF): headless shells may not fire requestAnimationFrame
 // reliably, and several assertions target transient status text.
-const wf = (page, fn, timeout, arg) => page.waitForFunction(fn, arg === undefined ? null : arg, { polling: 500, timeout: timeout || 120000 });
+// NOTE: waitForFunction resolves to a JSHandle — unwrap with jsonValue().
+const wf = async (page, fn, timeout, arg) => {
+  const h = await page.waitForFunction(fn, arg === undefined ? null : arg, { polling: 500, timeout: timeout || 120000 });
+  return await h.jsonValue();
+};
 const hist = (page) => page.evaluate(() => (S.history[0] ? { n: S.history[0].sampleCount, m: S.history[0].model } : null));
 
 const browser = await chromium.launch({ args: ["--autoplay-policy=no-user-gesture-required"] });
