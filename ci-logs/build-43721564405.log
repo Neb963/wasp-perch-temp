@@ -1,0 +1,11 @@
+shared:INFO: (Emscripten: Running sanity checks)
+upstream/c/src/st_kernels.c:211:13: warning: unused function 'store_tile' [-Wunused-function]
+  211 | static void store_tile(float acc[MR][NR], float* C, int ldc, int mr, int nr, int mode) {
+      |             ^~~~~~~~~~
+1 warning generated.
+In file included from upstream/c/src/front/st_front.c:7:
+upstream/c/src/front/st_front_int.h:13:10: fatal error: 'st_base.h' file not found
+   13 | #include "st_base.h"
+      |          ^~~~~~~~~~~
+1 error generated.
+emcc: error: '/home/runner/work/_temp/d51d2931-f7c2-4ee3-a3ab-a3372a005478/emsdk-main/upstream/bin/clang -target wasm32-unknown-emscripten -fignore-exceptions -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr --sysroot=/home/runner/work/_temp/d51d2931-f7c2-4ee3-a3ab-a3372a005478/emsdk-main/upstream/emscripten/cache/sysroot -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/fakesdl -Xclang -iwithsysroot/include/compat -O2 -std=c11 -ffp-contract=off -fno-fast-math -Wall -Iupstream/c/include upstream/c/src/front/st_front.c -c -o /tmp/emscripten_temp_zk79tx60/st_front_18.o' failed (returned 1)
