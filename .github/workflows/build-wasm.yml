@@ -32,14 +32,14 @@ jobs:
             -s WASM=1 -s MODULARIZE=1 -s EXPORT_NAME=createSteerTTS \
             -s ENVIRONMENT=node,worker -s SINGLE_FILE=0 \
             -s ALLOW_MEMORY_GROWTH=1 -s INITIAL_MEMORY=64MB -s MAXIMUM_MEMORY=1024MB -s STACK_SIZE=8MB \
-            -s EXPORTED_FUNCTIONS='["_scl_version","_scl_create","_scl_destroy","_scl_synthesize_json","_scl_free_wav","_scl_has","_malloc","_free"]' \
+            -s EXPORTED_FUNCTIONS='[["_scl_version","_scl_create","_scl_destroy","_scl_synthesize_json","_scl_free_wav","_scl_free_str","_scl_map_prompt","_scl_resolve_json","_scl_has","_scl_director_load","_scl_director_moods","_scl_director_plan_json","_scl_director_free","_scl_speaker_vector","_malloc","_free"]' \
             -s EXPORTED_RUNTIME_METHODS='["FS","HEAPU8","HEAPF32","cwrap","getValue","UTF8ToString"]' \
             -s STRICT=1 -s NODEJS_CATCH_EXIT=0 > dist-build.log 2>&1
           RC=$?
           echo "emcc exit: $RC"
           tail -n 100 dist-build.log
           cp dist-build.log dist/build.log
-          printf '{"bridge":"scl-bridge-0.2.0","upstream":"5008f8e032f69266c3f37788825cfda3112eab55","emsdk":"3.1.68","flags":"-O2 -ffp-contract=off scalar single-thread MEMFS","simd":false,"threads":false}' > dist/BUILD-MANIFEST.json
+          printf '{"bridge":"scl-bridge-0.3.0","upstream":"5008f8e032f69266c3f37788825cfda3112eab55","emsdk":"3.1.68","flags":"-O2 -ffp-contract=off scalar single-thread MEMFS","simd":false,"threads":false}' > dist/BUILD-MANIFEST.json
           exit $RC
       - name: Smoke test (instantiate + version, no model)
         run: node studio/src/tools/wasm-build/smoke-test.mjs dist/steertts-wasm.js 2>&1 | tee -a dist-build.log; test ${PIPESTATUS[0]} -eq 0
