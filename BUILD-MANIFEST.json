@@ -1,0 +1,1 @@
+{"decoder":"nano-edge-tts-1.75M-c11","tensors":104,"emsdk":"3.1.68","flags":"-O2 -ffp-contract=off scalar single-thread","simd":false,"threads":false}
