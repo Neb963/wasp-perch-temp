@@ -1,0 +1,50 @@
+# Build-only CI: compile the nano C11 decoder to WASM. No weights, no audio.
+name: Build Nano WASM decoder
+on:
+  push:
+    branches: [nano-wasm]
+    paths: ["nano/**", ".github/workflows/build-nano-wasm.yml"]
+  workflow_dispatch: {}
+permissions: { contents: write }
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Emscripten 3.1.68
+        uses: mymindstorm/setup-emsdk@v14
+        with: { version: 3.1.68 }
+      - name: Compile (single-thread scalar, no embedded assets)
+        run: |
+          mkdir -p dist
+          set +e
+          emcc -O2 -std=c11 -ffp-contract=off -fno-fast-math -Wall \
+            nano/nano_decoder.c \
+            -o dist/nano-decoder.js \
+            -s WASM=1 -s MODULARIZE=1 -s EXPORT_NAME=createNanoDecoder \
+            -s ENVIRONMENT=web,worker,node -s SINGLE_FILE=0 \
+            -s ALLOW_MEMORY_GROWTH=1 -s INITIAL_MEMORY=64MB -s MAXIMUM_MEMORY=1024MB -s STACK_SIZE=8MB \
+            -s NO_EXIT_RUNTIME=1 \
+            -s EXPORTED_FUNCTIONS='["_nano_version","_nano_tensor_count","_nano_tensor_len","_nano_set_tensor","_nano_weights_ready","_nano_buf","_nano_decode","_nano_out_ptr","_nano_out_len","_main"]' \
+            -s EXPORTED_RUNTIME_METHODS='["HEAPF32"]' \
+            -s STRICT=1 -s NODEJS_CATCH_EXIT=0 > dist-build.log 2>&1
+          RC=$?
+          echo "emcc exit: $RC"
+          tail -n 60 dist-build.log
+          ls -la dist/
+          printf '{"decoder":"nano-edge-tts-1.75M-c11","tensors":104,"emsdk":"3.1.68","flags":"-O2 -ffp-contract=off scalar single-thread","simd":false,"threads":false}' > dist/BUILD-MANIFEST.json
+          exit $RC
+      - name: Smoke test (synthetic weights, determinism + sensitivity)
+        run: node nano/smoke.mjs dist/nano-decoder.js 2>&1 | tee -a dist-build.log; test ${PIPESTATUS[0]} -eq 0
+      - uses: actions/upload-artifact@v4
+        with: { name: nano-decoder-dist, path: dist/ }
+      - name: Publish dist branch (on success)
+        if: success()
+        run: |
+          cd "$GITHUB_WORKSPACE"
+          git clone --no-checkout "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" pub && cd pub
+          git config user.email "nano-ci@local" && git config user.name "nano-ci"
+          git checkout --orphan nano-wasm-dist
+          git rm -rf . > /dev/null 2>&1 || true
+          cp ../dist/nano-decoder.js ../dist/nano-decoder.wasm ../dist/BUILD-MANIFEST.json .
+          git add . && git commit -m "nano wasm dist ${{ github.run_id }}" && git push -f origin nano-wasm-dist
